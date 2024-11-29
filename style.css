@@ -1,5 +1,90 @@
-html {
+/* Primary CSS */
+body {
 	margin: 0 auto;
 	background-color: #fff;
 	width: 100%;
+	font-family: gothamBold, Tahoma, sans-serif;
 }
+
+h1 {
+	font-family: drukSuper, Tahoma, sans-serif;
+	font-size: 2rem;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: drukHeavy, Tahoma, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.noMargin {
+	margin: 0;
+}
+
+/* Color Pallet */
+.white {
+	color: #fff;
+}
+
+.light {
+	color: #95a6b2;
+}
+
+.mid {
+	color: #375b6d;
+}
+
+.dark {
+	color: #233036;
+}
+
+.accentOrg {
+	color: #f28022;
+}
+
+.accentBlue {
+	color: #42c0b9;
+}
+
+/* Background Color Pallet */
+.lightBg {
+	background-color: #95a6b2;
+}
+
+.midBg {
+	background-color: #375b6d;
+}
+
+.darkBg {
+	background-color: #233036;
+}
+
+.accentOrgBg {
+	background-color: #f28022;
+}
+
+.accentBlueBg {
+	background-color: #42c0b9;
+}
+
+/* Header */
+
+.contactBanner {
+	height: 3rem;
+	text-align: center;
+}
+
+.alertContacts {
+	padding-top: 0.8rem;
+	font-family: gothamBook, Tahoma, sans-serif;
+}
+
+
+
+/* Font Families */
+@font-face { font-family: drukSuper; src: url('fonts/DrukTextWide-Super-Trial.otf'); }
+@font-face { font-family: drukHeavy; src: url('fonts/DrukTextWide-Heavy-Trial.otf'); }
+@font-face { font-family: gothamBold; src: url('fonts/Gotham-Bold.otf'); }
+@font-face { font-family: gothamBook; src: url('fonts/Gotham-Book.otf'); }
