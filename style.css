@@ -1,3 +1,5 @@
+
+
 /* Primary CSS */
 body {
 	margin: 0 auto;
@@ -16,12 +18,69 @@ h2, h3, h4, h5, h6 {
 }
 
 a {
+	color: #233036;
 	text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #f28022,
+    #f28022 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
 }
+
+a:hover {
+ background-position: 0;
+}
+
+.dropdown .dropbtn {
+  font-size: 1rem;  
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 
 .noMargin {
 	margin: 0;
 }
+
+.active {
+	color: #f28022;
+	border-bottom: 0.15rem solid #f28022;
+}
+
 
 /* Color Pallet */
 .white {
@@ -48,6 +107,8 @@ a {
 	color: #42c0b9;
 }
 
+
+
 /* Background Color Pallet */
 .lightBg {
 	background-color: #95a6b2;
@@ -69,8 +130,8 @@ a {
 	background-color: #42c0b9;
 }
 
-/* Header */
 
+/* Header */
 .contactBanner {
 	height: 3rem;
 	text-align: center;
@@ -81,6 +142,40 @@ a {
 	font-family: gothamBook, Tahoma, sans-serif;
 }
 
+nav {
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logoContainer {
+	max-width: 33%;
+}
+
+.logo {
+	width: 13rem;
+	padding: 0rem 2rem;
+}
+
+menu {
+	width: 60%;
+	display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin: auto 1rem;
+}
+
+menu li {
+	padding: 0rem 1.2rem;
+  height: 2rem;
+}
+
+
+/* Main */
+main {
+	background-color: #233036;
+	height: 100vh;
+}
 
 
 /* Font Families */
