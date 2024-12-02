@@ -15,12 +15,12 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-	font-family: gothamBold, Tahoma, sans-serif;
+	font-family: gothamBook, Tahoma, sans-serif;
 }
 
 p {
   font-family: gothamBook, Tahoma, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 a {
@@ -367,6 +367,38 @@ main {
   margin: 1rem 0rem;
 }
 
+.floatTitleContainer {
+  width: 90%;
+  text-align: center;
+  margin: 0rem auto 1rem auto;
+}
+
+
+/* Review Section */
+.reviewContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.reviewStars {
+  width: 7rem;
+}
+
+#reviewFloater {
+  padding: 1.5rem;
+  background-color: #fff;
+  color: #000;
+  width: 27%;
+  border-radius: 0;
+}
+
+
+
+
 /* Footer */
 footer {
   height: 5rem;
@@ -380,6 +412,9 @@ footer {
 @media screen  and (min-width: 1024px) {
   .mobileTopImgContainer {
     display: none;
+  }
+  .floatTitleContainer h2 {
+    font-size: 2rem;
   }
 }
 
@@ -443,6 +478,16 @@ footer {
   }
   h1 {
     font-size: 2rem;
+  }
+  .margin {
+    margin: 0rem auto;
+  }
+  #reviewFloater {
+    width: 100%;
+    margin: 1rem;
+  }
+  .floatTitleContainer {
+    margin: auto;
   }
 }
 
