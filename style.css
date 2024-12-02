@@ -15,7 +15,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-	font-family: drukHeavy, Tahoma, sans-serif;
+	font-family: gothamBold, Tahoma, sans-serif;
 }
 
 p {
@@ -245,6 +245,11 @@ main {
   position: relative;
 }
 
+.panelContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .topContentContainer {
   display: flex;
   justify-content: space-between;
@@ -264,9 +269,6 @@ main {
 .topWritten {
   width: 40%;
   padding: 2rem 1rem 0rem 3rem;
-}
-
-.topWrittenTitle {
 }
 
 .topImgContainer {
@@ -300,11 +302,11 @@ main {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-right: 1rem;
+  transition-duration: .3s;
 }
 
 .topBtns:hover {
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-  transition-duration: .1s;
 }
 
 .mobileTopImgContainer {
@@ -317,6 +319,60 @@ main {
   width: 100%;
   height: auto;
 }
+
+/* Floating Panels for second main panel */
+.floatContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+
+.floater {
+  width: calc(33.33333% - 1rem);
+  height: auto;
+  background-color: #375b6d;
+  color: #fff;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.floatImg {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.floatText{
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.floatText p {
+  margin: 0;
+}
+
+.margin {
+  margin: 2.5rem auto;
+}
+
+.marginEdit {
+  margin: 1rem 0rem;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+}
+
+
 
 
 /* ---- Media Queries ---- */
@@ -391,14 +447,17 @@ main {
 }
 
 /* Tablets */
-@media screen and (max-width: 1024px) and (min-width: 600px) {
+@media screen and (max-width: 1024px) and (min-width: 650px) {
   .hideTablet{
     display: none;
+  }
+  .floater {
+    width: calc(50% - 1rem);
   }
 }
 
 /* Mobiles */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
   #menuToggle {
     width: 75%;
   }
@@ -409,7 +468,19 @@ main {
     padding-left: 1rem;
   }
   .topWritten {
-    padding: 1rem 1rem 1rem 0.5rem;
+    padding: 0rem 1rem 1rem 0.5rem;
+  }
+  .floater {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .floatContainer {
+    padding: 0;
+  }
+  .floatImg {
+    border-radius: 0;
+  }
 }
 
 
