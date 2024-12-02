@@ -10,11 +10,17 @@ body {
 
 h1 {
 	font-family: drukSuper, Tahoma, sans-serif;
-	font-size: 2rem;
+	font-size: 2.5rem;
+  margin: 2rem 0;
 }
 
 h2, h3, h4, h5, h6 {
 	font-family: drukHeavy, Tahoma, sans-serif;
+}
+
+p {
+  font-family: gothamBook, Tahoma, sans-serif;
+  font-size: 1.1rem;
 }
 
 a {
@@ -46,6 +52,22 @@ a:hover {
 	border-bottom: 0.15rem solid #f28022;
 }
 
+.drukSuper {
+  font-family: drukSuper, Tahoma, sans-serif;
+}
+
+.drukHeavy {
+  font-family: drukHeavy, Tahoma, sans-serif;
+}
+
+.gothamBold {
+  font-family: gothamBold, Tahoma, sans-serif;
+}
+
+.gothamBook {
+  font-family: gothamBook, Tahoma, sans-serif;
+}
+
 
 /* Color Pallet */
 .white {
@@ -74,6 +96,10 @@ a:hover {
 
 
 /* Background Color Pallet */
+.whiteBg {
+  background-color: #fff;
+}
+
 .lightBg {
 	background-color: #95a6b2;
 }
@@ -195,7 +221,7 @@ menu li {
   height: 100%;
   right: -31rem;
   width: 50%;
-  transition: 0.3s ease;
+  transition: 0.6s ease;
 }
 
 .slide {
@@ -215,23 +241,123 @@ menu li {
 
 /* Main */
 main {
-	background-color: #233036;
-	height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
+.topContentContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 45rem;
+  background-color: #375b6d;
+}
+
+.topContent {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: inherit;
+  justify-content: inherit;
+  border-radius: 2rem;
+}
+
+.topWritten {
+  width: 40%;
+  padding: 2rem 1rem 0rem 3rem;
+}
+
+.topWrittenTitle {
+}
+
+.topImgContainer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 60%;
+}
+
+.topImg {
+  width: auto;
+  height: 100%;
+  border-radius: 2rem;
+  max-width: 55rem;
+  display: block;
+}
+
+.btnsContainer {
+  margin: 2rem 0;
+}
+
+.topBtns {
+  border-radius: 1rem;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 1rem;
+}
+
+.topBtns:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.mobileTopImgContainer {
+  width: 100%;
+  display: inherit;
+  justify-content: center;
+}
+
+.mobileTopImg {
+  width: 100%;
+  height: auto;
+}
+
 
 /* ---- Media Queries ---- */
-/* Small Desktops and above */
-@media screen and (min-width: 1024px) {
+/* All Desktops */
+@media screen  and (min-width: 1024px) {
+  .mobileTopImgContainer {
+    display: none;
+  }
+}
+
+/* Big Desktops and more */
+@media screen  and (min-width: 1475px) {
   .mobileNavContainer {
     display: none;
   }
 }
 
-/* Tablets */
-@media screen and (max-width: 1024px) and (min-width: 600px) {
+/* Small Desktops */
+@media screen and (min-width: 1024px) and (max-width: 1585px) {
+  .mobileNavContainer {
+    display: none;
+  }
+  .topImg {
+    width: 100%;
+    height: 50%;
+  }
+  .topImgContainer {
+    margin: auto;
+    width: 50%;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets & Mobiles */
+@media screen and (max-width: 1024px) {
   .mobileNav {
     display: inline-block;
   }
@@ -241,16 +367,38 @@ main {
   .hideTablet{
     display: none;
   }
+  .topContentContainer {
+    height: auto;
+    display: block;
+    background-color: #fff;
+  }
+  .topImgContainer {
+    display: none;
+  }
+  .topContent {
+    width: 100%;
+    border-radius: 0;
+  }
+  .topWritten {
+    padding: 1rem;
+    width: 95%;
+    display: inherit;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .hideTablet{
+    display: none;
+  }
 }
 
 /* Mobiles */
 @media screen and (max-width: 600px){
-  .mobileNav {
-    display: inline-block;
-  }
-  .desktopNav {
-    display: none;
-  }
   #menuToggle {
     width: 75%;
   }
@@ -260,6 +408,8 @@ main {
   .logo {
     padding-left: 1rem;
   }
+  .topWritten {
+    padding: 1rem 1rem 1rem 0.5rem;
 }
 
 
