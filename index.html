@@ -25,7 +25,11 @@
 			<!-- Light banner at the top with contact details -->
 			<section class="contactBanner accentBlueBg">
 				<h3 class="alertContacts white noMargin">
-					Call us today: <a href="tel:+61356105115">03 5610 5115</a> | Email us: <a href="mailto:hello@tdacvic.com?subject=Website Enquire">hello@tdacvic.com</a>
+					<span class="hideMobile">Call us today: </span>
+					<a class="topLinks" href="tel:+61356105115">0356 105 115</a>
+					 | 
+					 <span class="hideMobile">Email us: </span>
+					 <a class="topLinks" href="mailto:hello@tdacvic.com?subject=Website Enquire">hello@tdacvic.com</a>
 					</h3>
 			</section>
 
@@ -37,47 +41,64 @@
 				</section>
 
 				<!-- Navigation Menu -->
-				<menu>
-					<li class="active"><a href="#" class="accentOrg">Home</a></li>
-					<li><a href="#" class="linkThing">About Us</a></li>
-					<li class="dropdown">
-				    <button class="dropbtn">Join Us
-				      <i class="fa fa-caret-down"></i>
-				    </button>
-				    <span class="dropdown-content">
-				      <a href="#">Link 1</a>
-				      <a href="#">Link 2</a>
-				      <a href="#">Link 3</a>
-				    </span>
-				  </li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Merch Store</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</menu>
+				<section class="mobile">
+					<menu class="desktopNav">
+						<li class="active"><a href="#" class="accentOrg">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Join Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Merch Store</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</menu>
+
+					<!-- Mobile burger menu -->
+		    	<section class='mobileNav' onclick="menuSwitch(this)">
+		    		<div class="container">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+		    	</section>
+
+		    </section>
 			</nav>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main>
-			<!-- Attempting to make a mobile menu -->
-			<div role="navigation">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+			<!-- Content menu for the mobile devices -->
+			<section class="mobileNavContainer" id="menuToggle">
+				<menu class="mobileNavLinks">
+	    		<li><a href="#">About Us</a></li>
+					<li><a href="#">Join Us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Merch Store</a></li>
+					<li><a href="#">Contact Us</a></li>
+	      </menu>
+    	</section>
+			
 		</main>
 
 		<footer>
 			
 		</footer>
+
+		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
+		<script>
+			let changed = false;
+			function menuSwitch(x) {
+			  x.classList.toggle('change');
+			  var element = document.getElementById("menuToggle");
+
+			  if (changed === false) {
+  				element.classList.add("slide");
+			  	changed = true;
+			  } else  {
+  				element.classList.remove("slide");
+			  	changed = false;
+			  }
+			}
+
+		</script>
 	</body>
 </html>
