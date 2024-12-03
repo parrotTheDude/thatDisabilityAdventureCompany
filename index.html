@@ -101,10 +101,10 @@
     	</section>
 
     	<!-- What we offer panel -->
-    	<section class="panelContainer lightBg">
-    		<section class="topContent whiteBg margin">
+    	<section class="panelContainer whiteBg">
+    		<section class="topContent whiteBg">
     			<section class="floatContainer">
-    				<section class="floatTitleContainer accentOrg">
+    				<section class="floatTitleContainer">
     					<h4>Socialise and explore</h4>
     					<h2>Our days include all types of events and experiences</h2>
     				</section>
@@ -166,9 +166,9 @@
     	</section>
 
     	<!-- Reviews Panel -->
-    	<section class="panelContainer midBg">
+    	<section class="panelContainer whiteBg">
     		<section class="reviewContainer">
-    			<section class="floatTitleContainer accentBlue">
+    			<section class="floatTitleContainer accentBlue" id="black">
     				<h2>What our customers are saying...</h2>
     			</section>
     			<section class="floater" id="reviewFloater">
@@ -191,8 +191,34 @@
 
     	<!-- Get in Touch Panel -->
     	<section class="panelContainer midBg">
-    		<section class="contactContainer">
-    			
+    		<section class="contactContainer white">
+    			<section class="contactTitleContainer">
+    				<h2>Get in touch today!</h2>
+    			</section>
+
+    			<section class="contactFormContainer">
+    				<form action="#">
+					    <input class="formInput" type="text" id="fname" name="firstname" placeholder="Your name*">
+
+					    <input class="formInput" type="text" id="lname" name="lastname" placeholder="Your last name*">
+
+					    <input class="formInput" type="email" id="email" name="email" placeholder="Your email*">
+
+					    <input class="formInput" type="telephone" id="telephone" name="telephone" placeholder="Telephone*">
+
+					    <textarea class="formMessage" id="subject" name="subject" placeholder="Write your message here!"></textarea>
+
+					  	<section class="checkboxContainer">
+							  <input type="checkbox" id="newsletter" name="check" value="" />
+							  <label for="newsletter">
+							    Sign up for our newsletter!     <span><!-- This span is needed to create the "checkbox" element --></span>
+							  </label>
+							</section>
+
+					    <input class="topBtns accentBlueBg" type="submit" value="Submit">
+					  </form>
+    			</section>
+
     		</section>
     	</section>
 
