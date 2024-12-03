@@ -366,11 +366,16 @@ main {
 }
 
 .floatTitleContainer {
-  width: 90%;
+  width: 100%;
   text-align: center;
   margin: 0rem auto 1rem auto;
   color: #000;
 }
+
+.floatTitleContainer h2 {
+    width: 95%;
+    margin: 2rem auto;
+  }
 
 
 /* Review Section */
@@ -552,10 +557,38 @@ input[type=submit]:hover {
 
 /* Footer */
 footer {
-  height: 5rem;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 1rem;
 }
 
+.footerLogo {
+  width: 15rem;
+}
+
+.cc {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.socialIcons {
+  width: 100%;
+  display: inherit;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  filter: invert(1);
+}
+
+.gap {
+  width: 2rem;
+}
 
 
 
@@ -647,6 +680,7 @@ footer {
   .floatTitleContainer {
     margin: auto;
     color: #fff;
+    width: 90%;
   }
   .floatContainer {
     background-color: #375b6d;
