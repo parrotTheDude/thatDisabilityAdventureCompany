@@ -36,11 +36,11 @@ a {
   background-position: -100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
- background-position: 0;
+  background-position: 0;
 }
 
 .noMargin {
@@ -297,11 +297,10 @@ main {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  height: 4rem;
+  height: 3rem;
   padding: 0 1.6rem;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-right: 1rem;
   transition-duration: .3s;
 }
 
@@ -351,6 +350,11 @@ main {
   justify-content: center;
   margin: auto;
   text-align: center;
+  padding: 1.5rem 0;
+}
+
+.floatText h2 {
+  width: 90%;
 }
 
 .floatText p {
@@ -368,13 +372,14 @@ main {
 .floatTitleContainer {
   width: 100%;
   text-align: center;
-  margin: 0rem auto 1rem auto;
+  margin: 1rem auto;
   color: #000;
+  padding: 2.5rem;
 }
 
 .floatTitleContainer h2 {
     width: 95%;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
 
@@ -430,6 +435,7 @@ main {
   margin-top: 0.3rem;
   margin-bottom: 1rem;
   resize: vertical;
+  font-size: 1rem;
   font-family: gothamBook, Tahoma, sans-serif;
 }
 
@@ -442,6 +448,7 @@ main {
   margin-top: 0.3rem;
   margin-bottom: 1rem;
   resize: vertical;
+  font-size: 1rem;
   font-family: gothamBook, Tahoma, sans-serif;
   height: 13rem;
 }
@@ -584,6 +591,10 @@ footer {
 .icon {
   width: 2rem;
   filter: invert(1);
+}
+
+.lrgIcon {
+  width: 4rem;
 }
 
 .gap {
