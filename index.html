@@ -4,14 +4,15 @@
 		<!-- Important Links -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://jbowerman.com/tdac/">
+		<!-- <base href="https://jbowerman.com/tdac/"> -->
+		<!-- YOU NEED TO REMOVE THIS COMMENT AFTER EDITING -->
 
 		<!-- Links for style sheets -->
 		<link rel="stylesheet" href="style.css">
 
  		<!--Add favorites icons-->   
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="apple-touch-icon" href="icons/favicon.webp"/>
+		<link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
 		<link rel="icon" type="image/x-icon" href="icons/favicon.webp"/>
 
 		<!-- Title and Description tags -->
@@ -91,7 +92,18 @@
 			<!-- Primary Panel -->
     	<section class="topContentContainer">
     		<section class="mobileTopImgContainer">
-    				<img class="asyncImage mobileTopImg" src="img/index/crew-min.webp" data-src="img/index/crew.webp" alt="Crew Image">
+  					<img 
+  					class="asyncImage mobileTopImg"
+  					srcset="
+  					img/index/crew/crew.webp 1x,
+  					img/index/crew/crew2.webp 2x,
+  					img/index/crew/crew3.webp 3x,
+  					img/index/crew/crew4.webp 4x
+  					" 
+
+  					src="img/index/crew/crew-min.webp" 
+  					data-src="img/index/crew/crew.webp" 
+  					alt="Crew Image">
     		</section>
 
     		<section class="videoContainer" id="videoToggle">
@@ -114,7 +126,18 @@
     			</section>
 
     			<section class="topImgContainer">
-    				<img class="asyncImage topImg" src="img/index/crew-min.webp" data-src="img/index/crew.webp" alt="Crew Image">
+    				<img 
+  					class="asyncImage topImg"
+  					srcset="
+  					img/index/crew/crew.webp 1x,
+  					img/index/crew/crew2.webp 2x,
+  					img/index/crew/crew3.webp 3x,
+  					img/index/crew/crew4.webp 4x
+  					" 
+
+  					src="img/index/crew/crew-min.webp" 
+  					data-src="img/index/crew/crew.webp" 
+  					alt="Crew Image">
     			</section>
     		</article>
     	</section>
@@ -244,7 +267,7 @@
     			<section class="contactFormContainer">
     				<form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation formStyle" novalidate>
 		          <input type="hidden" name="access_key" value="9a219e03-db22-4ae5-8d58-d198339642a4" />
-		          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+		          <input type="hidden" name="subject" value="TDAC Web Enquiry" />
 		          <input type="checkbox" name="botcheck" id="" style="display: none;" />
 	          	<div class="inputContainer">
 	              <input type="text" name="name" id="first_name" placeholder="Firstname*" required class="formInput"/>
@@ -254,7 +277,6 @@
 	            </div>
 	            <div class="inputContainer">
 	              <input type="text" name="last_name" id="lname" placeholder="Lastname*" required class="formInput">
-
 	              <div class="empty-feedback invalid-feedback">
 	                Please provide your last name.
 	              </div>
@@ -270,7 +292,6 @@
 	            </div>
 	            <div class="inputContainer">
 	              <input type="text" name="phone" id="phone" placeholder="+61 456 789 123*" required class="formInput" />
-
 	              <div class="empty-feedback invalid-feedback">
 	                Please provide your phone number.
 	              </div>
