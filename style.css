@@ -6,6 +6,7 @@ body {
 	background-color: #fff;;
 	width: 100%;
 	font-family: gothamBold, Tahoma, sans-serif;
+  font-display: swap;
 }
 
 h1 {
@@ -201,6 +202,7 @@ nav {
 
 .logo {
 	width: 13rem;
+  height: 5.7rem;
 	padding: 0rem 2rem;
 }
 
@@ -367,13 +369,14 @@ main {
 
 .mobileTopImgContainer {
   width: 100%;
+  min-height: 22rem;
   display: inherit;
   justify-content: center;
 }
 
 .mobileTopImg {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* Floating Panels for second main panel */
@@ -397,7 +400,7 @@ main {
 
 .floatImg {
   width: 100%;
-  height: auto;
+  height: 30%;
 }
 
 .floatText{
@@ -452,6 +455,7 @@ main {
 
 .reviewStars {
   width: 5rem;
+  height: 5rem;
 }
 
 #reviewFloater {
@@ -582,6 +586,7 @@ footer {
 
 .footerLogo {
   width: 15rem;
+  height: 7rem;
 }
 
 .cc {
@@ -599,10 +604,12 @@ footer {
 
 .icon {
   width: 2.5rem;
+  height: 2.5rem;
 }
 
 .lrgIcon {
   width: 4rem;
+  height: 4rem;
 }
 
 .gap {
@@ -838,7 +845,15 @@ footer {
 
 
 /* Font Families */
-@font-face { font-family: drukSuper; src: url('fonts/DrukTextWide-Super-Trial.otf'); }
-@font-face { font-family: drukHeavy; src: url('fonts/DrukTextWide-Heavy-Trial.otf'); }
-@font-face { font-family: gothamBold; src: url('fonts/Gotham-Bold.otf'); }
-@font-face { font-family: gothamBook; src: url('fonts/Gotham-Book.otf'); }
+@font-face { font-family: drukSuper; src: url('fonts/DrukTextWide-Super-Trial.otf'); 
+  font-display: swap;
+ }
+@font-face { font-family: drukHeavy; src: url('fonts/DrukTextWide-Heavy-Trial.otf'); 
+  font-display: swap;
+ }
+@font-face { font-family: gothamBold; src: url('fonts/Gotham-Bold.otf'); 
+  font-display: swap;
+ }
+@font-face { font-family: gothamBook; src: url('fonts/Gotham-Book.otf'); 
+  font-display: swap;
+ }
