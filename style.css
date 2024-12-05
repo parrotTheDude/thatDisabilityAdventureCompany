@@ -635,7 +635,11 @@ footer {
 
 
 
+/* Contacts Page */
 
+#contactSizing {
+  min-height: 16rem;
+}
 
 
 
@@ -662,6 +666,10 @@ footer {
   .aboutContentContainer{
     height: auto;
     padding: 2rem;
+  }
+  #topContactWritten {
+    width: 40%;
+    margin: auto 3rem;
   }
 }
 
