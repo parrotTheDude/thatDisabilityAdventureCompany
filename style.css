@@ -585,7 +585,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   height: auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .footerLogo {
@@ -593,10 +593,28 @@ footer {
   height: 7rem;
 }
 
-.cc {
+.bottomContainer {
+  display: flex;
   width: 100%;
+  justify-content: center;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+}
+
+.bottomContainer a {
+  background-image: linear-gradient( to right, #f28022, #f28022 50%, #fff 50% );
+}
+
+.footerNote {
+  color: #fff;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.cc {
   text-align: center;
   font-size: 0.8rem;
+  margin: 0;
 }
 
 .socialIcons {
