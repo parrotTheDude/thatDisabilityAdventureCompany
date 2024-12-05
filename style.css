@@ -55,7 +55,7 @@ video {
   width: 100%;
   height: 100%;
   padding-top: 8rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .videoDisplay {
@@ -74,6 +74,11 @@ video {
   justify-content: center;
   padding: 0.4rem;
   margin: auto;
+  background-color: #375b6d;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  z-index: 15;
 }
 
 #closeSVG {
@@ -442,11 +447,11 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
-  margin: 2rem auto;
+  margin: 0rem auto;
 }
 
 .reviewStars {
-  width: 7rem;
+  width: 5rem;
 }
 
 #reviewFloater {
@@ -479,7 +484,7 @@ main {
 }
 
 .formInput {
-  width: 100%;
+  width: 95%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
@@ -492,12 +497,10 @@ main {
 }
 
 .formMessage {
-  width: 99%;
+  width: 98%;
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 0.25rem;
-  box-sizing: border-box;
-  margin-top: 0.3rem;
   margin-bottom: 1rem;
   resize: vertical;
   font-size: 1rem;
@@ -509,108 +512,57 @@ input[type=submit]:hover {
   background-color: #95a6b2;
 }
 
+.inputContainer {
+  width: 50%;
+}
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+.greenText {
+  color: #50ff00;
+}
+
+.redText {
+  color: #ff3131;
+}
+
+#formBtn {
+  text-align: center;
+  margin: 1rem auto;
+}
+
 .flex {
   display: flex;
   justify-content: center;
 }
 
-.checkboxContainer {
-  margin: 1rem auto;
+.formStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.checkboxContainer .checkbox {
-  display: table-cell;
+#result{
+  display: flex;
   width: 100%;
-  height: 100%;
-  vertical-align: middle;
   text-align: center;
-}
-
-.checkboxContainer label {
-  display: inline-block;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-}
-.checkboxContainer label span {
-  display: inline-block;
-  position: relative;
-  background-color: transparent;
-  width: 25px;
-  height: 25px;
-  transform-origin: center;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin-right: 10px;
-  transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
-}
-.checkboxContainer label span:before {
-  content: "";
-  width: 0px;
-  height: 2px;
-  border-radius: 2px;
-  background: #fff;
-  position: absolute;
-  transform: rotate(45deg);
-  top: 13px;
-  left: 9px;
-  transition: width 50ms ease 50ms;
-  transform-origin: 0% 0%;
-}
-.checkboxContainer label span:after {
-  content: "";
-  width: 0;
-  height: 2px;
-  border-radius: 2px;
-  background: #fff;
-  position: absolute;
-  transform: rotate(305deg);
-  top: 16px;
-  left: 10px;
-  transition: width 50ms ease;
-  transform-origin: 0% 0%;
-}
-.checkboxContainer label:hover span:before {
-  width: 5px;
-  transition: width 100ms ease;
-}
-.checkboxContainer label:hover span:after {
-  width: 10px;
-  transition: width 150ms ease 100ms;
-}
-
-.checkboxContainer input[type=checkbox] {
-  display: none;
-}
-.checkboxContainer input[type=checkbox]:checked + label span {
-  background-color: #fff;
-  transform: scale(1.25);
-}
-.checkboxContainer input[type=checkbox]:checked + label span:after {
-  width: 10px;
-  background: #f28022;
-  transition: width 150ms ease 100ms;
-}
-.checkboxContainer input[type=checkbox]:checked + label span:before {
-  width: 5px;
-  background: #f28022;
-  transition: width 150ms ease 100ms;
-}
-.checkboxContainer input[type=checkbox]:checked + label:hover span {
-  background-color: #fff;
-  transform: scale(1.25);
-}
-.checkboxContainer input[type=checkbox]:checked + label:hover span:after {
-  width: 10px;
-  background: #f28022;
-  transition: width 150ms ease 100ms;
-}
-.checkboxContainer input[type=checkbox]:checked + label:hover span:before {
-  width: 5px;
-  background: #f28022;
-  transition: width 150ms ease 100ms;
-}
+  justify-content: center;}
 
 #topSocials {  
   width: 2rem;
@@ -689,9 +641,6 @@ footer {
   }
   .contactTitleContainer h2 {
     font-size: 2rem;
-  }
-  .formInput {
-    width: 49%;
   }
   #aboutSubTitle {
     margin: 5rem auto 1rem auto;
@@ -786,6 +735,8 @@ footer {
    #reviewFloater2 {
     width: 100%;
     margin: 1rem;
+    color: white;
+    background-color: #375b6d;
   }
   .floatTitleContainer {
     margin: auto;
@@ -806,6 +757,9 @@ footer {
   .videoContainer {
     padding: 0;
   }
+  .inputContainer {
+    width: 100%;
+  }
 }
 
 /* Tablets */
@@ -816,8 +770,8 @@ footer {
   .floater {
     width: calc(50% - 1rem);
   }
-  .formInput {
-    width: 49%;
+  .formMessage {
+    width: 96%;
   }
 }
 
@@ -847,7 +801,7 @@ footer {
     border-radius: 0;
   }
   .formMessage {
-    width: 100%;
+    width: 95%;
   }
   .reviewContainer {
     margin: 0 auto;
@@ -868,31 +822,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 650px) and (min-width: 450px) { 
+@media screen and (max-width: 650px) { 
   video {
     height: 16rem;
-    width: 27rem;
+    width: 100%;
   }
    .videoContainer {
     padding-top: 18rem;
   }
   .close {
-    width: 27rem;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 449px) { 
-  video {
-    height: 14rem;
-    width: 27rem;
-  }
-   .videoContainer {
-    padding-top: 18rem;
-  } 
-  .close {
-    margin-top: 0.8rem;
-  }
-}
 
 
 /* Font Families */

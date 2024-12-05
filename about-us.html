@@ -4,7 +4,7 @@
 		<!-- Important Links -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="#">
+		<base href="https://jbowerman.com/tdac/">
 
 		<!-- Links for style sheets -->
 		<link rel="stylesheet" href="style.css">
@@ -43,12 +43,12 @@
 				<!-- Navigation Menu -->
 				<section class="mobile">
 					<menu class="desktopNav">
-						<li><a href="https://jbowerman.com/tdac/" class="accentOrg">Home</a></li>
-						<li class="active"><a href="https://jbowerman.com/tdac/about-us.html">About Us</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Join Us</a></li>
-						<li><a href="#">Merch Store</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="/tdac/" class="accentOrg">Home</a></li>
+						<li class="active"><a href="/tdac/about-us.html">About Us</a></li>
+						<li><a href="/tdac/services.html">Services</a></li>
+						<li><a href="/tdac/join-us.html">Join Us</a></li>
+						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<li><a href="/tdac/contact.html">Contact Us</a></li>
 						<section class="hideSocials">
 							<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="icon" id="topSocials" src="icons/insta.svg"></a>
 							<span class="gap"></span>
@@ -74,14 +74,14 @@
 			<!-- Content menu for the mobile devices -->
 			<section class="mobileNavContainer" id="menuToggle">
 				<menu class="mobileNavLinks">
-					<li><a href="https://jbowerman.com/tdac/" class="accentOrg">Home</a></li>
-	    		<li><a href="https://jbowerman.com/tdac/about-us.html">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Join Us</a></li>
-					<li><a href="#">Merch Store</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="/tdac/" class="accentOrg">Home</a></li>
+						<li><a href="/tdac/about-us.html">About Us</a></li>
+						<li><a href="/tdac/services.html">Services</a></li>
+						<li><a href="/tdac/join-us.html">Join Us</a></li>
+						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<li><a href="/tdac/contact.html">Contact Us</a></li>
 					<li class="mobileSocials">
-						<a href="https://www.instagram.com/thatdisabilityadventurecompany/ target="_blank""><img class="icon" id="topSocials" src="icons/insta.svg"></a>
+						<a href="https://www.instagram.com/thatdisabilityadventurecompany/ target="_blank"><img class="icon" id="topSocials" src="icons/insta.svg"></a>
 							<span class="gap"></span>
 							<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="icon"id="topSocials" src="icons/facebook.svg"></a>
 					</li>
@@ -175,28 +175,55 @@
     			</section>
 
     			<section class="contactFormContainer">
-    				<form action="#">
-					    <input class="formInput" type="text" id="fname" name="firstname" placeholder="Your name*" required>
+    				<form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation formStyle" novalidate>
+		          <input type="hidden" name="access_key" value="9a219e03-db22-4ae5-8d58-d198339642a4" />
+		          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+		          <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-					    <input class="formInput" type="text" id="lname" name="lastname" placeholder="Your lastname*" required>
+	          	<div class="inputContainer">
+	              <input type="text" name="name" id="first_name" placeholder="Firstname*" required class="formInput"/>
+	              <div class="empty-feedback invalid-feedback">
+	                Please provide your first name.
+	              </div>
+	            </div>
 
-					    <input class="formInput" type="email" id="email" name="email" placeholder="Your email*" required>
+	            <div class="inputContainer">
+	              <input type="text" name="last_name" id="lname" placeholder="Lastname*" required class="formInput">
 
-					    <input class="formInput" type="telephone" id="telephone" name="telephone" placeholder="Telephone*" required>
+	              <div class="empty-feedback invalid-feedback">
+	                Please provide your last name.
+	              </div>
+	            </div>
 
-					    <textarea class="formMessage" id="subject" name="subject" placeholder="Write your message here!" required></textarea>
+	            <div class="inputContainer">
+	              <input type="email" name="email" id="email" placeholder="your@email.com*" required class="formInput" />
+	              <div class="empty-feedback">
+	                Please provide your email address.
+	              </div>
+	              <div class="invalid-feedback">
+	                Please provide a valid email address.
+	              </div>
+	            </div>
 
-					  	<section class="checkboxContainer">
-							  <input type="checkbox" id="newsletter" name="check" value="" />
-							  <label for="newsletter">
-							    Sign up for our newsletter!     <span><!-- This span is needed to create the "checkbox" element --></span>
-							  </label>
-							</section>
+	            <div class="inputContainer">
+	              <input type="text" name="phone" id="phone" placeholder="+61 456 789 123*" required class="formInput" />
 
-					    <input class="topBtns accentBlueBg" type="submit" value="Submit">
-					  </form>
+	              <div class="empty-feedback invalid-feedback">
+	                Please provide your phone number.
+	              </div>
+	            </div>
+
+		          <div class="formMessage">
+		            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
+		          </div>
+
+	            <button type="submit" id="formBtn" class="topBtns accentBlueBg">
+	              Send Message
+	            </button>
+
+		          <p id="result"></p>
+		        </form>
     			</section>
-
     		</section>
     	</section>
 
@@ -227,6 +254,78 @@
 			  	changed = false;
 			  }
 			}
+
+			(function () {
+			  "use strict";
+			  /*
+			   * Form Validation
+			   */
+
+			  // Fetch all the forms we want to apply custom validation styles to
+			  const forms = document.querySelectorAll(".needs-validation");
+			  const result = document.getElementById("result");
+			  // Loop over them and prevent submission
+			  Array.prototype.slice.call(forms).forEach(function (form) {
+			    form.addEventListener(
+			      "submit",
+			      function (event) {
+			        if (!form.checkValidity()) {
+			          event.preventDefault();
+			          event.stopPropagation();
+
+			          form.querySelectorAll(":invalid")[0].focus();
+			        } else {
+			          /*
+			           * Form Submission using fetch()
+			           */
+
+			          const formData = new FormData(form);
+			          event.preventDefault();
+			          event.stopPropagation();
+			          const object = {};
+			          formData.forEach((value, key) => {
+			            object[key] = value;
+			          });
+			          const json = JSON.stringify(object);
+			          result.innerHTML = "Please wait...";
+
+			          fetch("https://api.web3forms.com/submit", {
+			            method: "POST",
+			            headers: {
+			              "Content-Type": "application/json",
+			              Accept: "application/json"
+			            },
+			            body: json
+			          })
+			            .then(async (response) => {
+			              let json = await response.json();
+			              if (response.status == 200) {
+			                result.innerHTML = json.message;
+			                result.classList.add("greenText");
+			              } else {
+			                console.log(response);
+			                result.innerHTML = json.message;
+			                result.classList.add("redText");
+			              }
+			            })
+			            .catch((error) => {
+			              console.log(error);
+			              result.innerHTML = "Something went wrong!";
+			            })
+			            .then(function () {
+			              form.reset();
+			              form.classList.remove("was-validated");
+			              setTimeout(() => {
+			                result.style.display = "none";
+			              }, 5000);
+			            });
+			        }
+			        form.classList.add("was-validated");
+			      },
+			      false
+			    );
+			  });
+			})();
 
 		</script>
 	</body>
