@@ -202,6 +202,40 @@
 			  }
 			}
 
+			let services = false;
+			function servicesSwitch(x) {
+			  x.classList.toggle('liChange');
+				var ulDrop = document.getElementById("servicesDrop");
+				var liElement = document.getElementById("serviceLi");
+
+				if (services === false) {
+  				ulDrop.classList.add("displayMobile");
+  				liElement.classList.add("liChange");
+			  	services = true;
+			  } else  {
+  				ulDrop.classList.remove("displayMobile");
+  				liElement.classList.remove("liChange");
+			  	services = false;
+			  }
+			}
+
+			let join = false;
+			function joinSwitch(x) {
+			  x.classList.toggle('liChange');
+				var ulDrop = document.getElementById("joinDrop");
+				var liElement = document.getElementById("joinLi");
+
+				if (join === false) {
+  				ulDrop.classList.add("displayMobile");
+  				liElement.classList.add("liChange");
+			  	join = true;
+			  } else  {
+  				ulDrop.classList.remove("displayMobile");
+  				liElement.classList.remove("liChange");
+			  	join = false;
+			  }
+			}
+
 			(function () {
 			  "use strict";
 			  /*
