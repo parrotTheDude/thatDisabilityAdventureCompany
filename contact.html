@@ -4,7 +4,7 @@
 		<!-- Important Links -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://jbowerman.com/tdac/">
+		<!-- <base href="https://jbowerman.com/tdac/"> -->
 
 		<!-- Links for style sheets -->
 		<link rel="stylesheet" href="style.css">
@@ -45,9 +45,23 @@
 					<menu class="desktopNav">
 						<li><a href="/tdac/" class="accentOrg">Home</a></li>
 						<li><a href="/tdac/about-us.html">About Us</a></li>
-						<li><a href="/tdac/services.html">Services</a></li>
-						<li><a href="/tdac/join-us.html">Join Us</a></li>
-						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<div class="dropdown">
+						  <button class="dropbtn">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+						  <div class="dropdown-content">
+						    <a href="#">Group Based Activites</a>
+						    <a href="#">Overnight Stays</a>
+						    <a href="#">Lifeskills</a>
+						    <a href="#">One to One</a>
+						  </div>
+						</div>
+						<div class="dropdown">
+						  <button class="dropbtn">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+						  <div class="dropdown-content">
+						    <a href="#">Become a participant</a>
+						    <a href="#">Join our team!</a>
+						  </div>
+						</div>
+						<li><a href="/tdac/merch.html">Merchandise</a></li>
 						<li class="active"><a href="/tdac/contact.html">Contact Us</a></li>
 						<section class="hideSocials">
 							<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
@@ -76,9 +90,21 @@
 				<menu class="mobileNavLinks">
 					<li><a href="/tdac/" class="accentOrg">Home</a></li>
 						<li><a href="/tdac/about-us.html">About Us</a></li>
-						<li><a href="/tdac/services.html">Services</a></li>
-						<li><a href="/tdac/join-us.html">Join Us</a></li>
-						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<li id="serviceLi"><button class="mobileDropbtn" onclick="servicesSwitch(this)">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+							<ul class="ulSecondary" id="servicesDrop">
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Group Based Activites</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Overnight Stays</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Life Skills</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">One to One</a></li>
+							</ul>
+						</li>
+						<li id="joinLi"><button class="mobileDropbtn" onclick="joinSwitch(this)">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+							<ul class="ulSecondary" id="joinDrop">
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Become a participant</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Join our team!</a></li>
+							</ul>
+						</li>
+						<li><a href="/tdac/merch.html">Merchandise</a></li>
 						<li><a href="/tdac/contact.html">Contact Us</a></li>
 					<li class="mobileSocials">
 						<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>

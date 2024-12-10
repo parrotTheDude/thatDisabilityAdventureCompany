@@ -62,7 +62,7 @@
 						    <a href="#">Join our team!</a>
 						  </div>
 						</div>
-						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<li><a href="/tdac/merch.html">Merchandise</a></li>
 						<li><a href="/tdac/contact.html">Contact Us</a></li>
 						<section class="hideSocials">
 							<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
@@ -91,21 +91,21 @@
 				<menu class="mobileNavLinks">
 					<li><a href="/tdac/" class="accentOrg">Home</a></li>
 						<li><a href="/tdac/about-us.html">About Us</a></li>
-						<li id="headingLi">Services
-							<ul class="ulSecondary">
-								<li class="secondaryList"><a href="/tdac/about-us.html">Group Based Activites</a></li>
-								<li class="secondaryList"><a href="/tdac/about-us.html">Overnight Stays</a></li>
-								<li class="secondaryList"><a href="/tdac/about-us.html">Life Skills</a></li>
-								<li class="secondaryList"><a href="/tdac/about-us.html">One to One</a></li>
+						<li id="serviceLi"><button class="mobileDropbtn" onclick="servicesSwitch(this)">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+							<ul class="ulSecondary" id="servicesDrop">
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Group Based Activites</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Overnight Stays</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Life Skills</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">One to One</a></li>
 							</ul>
 						</li>
-						<li id="headingLi">Join Us
-							<ul class="ulSecondary">
-								<li class="secondaryList"><a href="/tdac/about-us.html">Become a participant</a></li>
-								<li class="secondaryList"><a href="/tdac/about-us.html">Join our team!</a></li>
+						<li id="joinLi"><button class="mobileDropbtn" onclick="joinSwitch(this)">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+							<ul class="ulSecondary" id="joinDrop">
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Become a participant</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Join our team!</a></li>
 							</ul>
 						</li>
-						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<li><a href="/tdac/merch.html">Merchandise</a></li>
 						<li><a href="/tdac/contact.html">Contact Us</a></li>
 					<li class="mobileSocials">
 						<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>
@@ -383,6 +383,40 @@
 			  } else  {
   				element.classList.remove("slide");
 			  	changed = false;
+			  }
+			}
+
+			let services = false;
+			function servicesSwitch(x) {
+			  x.classList.toggle('liChange');
+				var ulDrop = document.getElementById("servicesDrop");
+				var liElement = document.getElementById("serviceLi");
+
+				if (services === false) {
+  				ulDrop.classList.add("displayMobile");
+  				liElement.classList.add("liChange");
+			  	services = true;
+			  } else  {
+  				ulDrop.classList.remove("displayMobile");
+  				liElement.classList.remove("liChange");
+			  	services = false;
+			  }
+			}
+
+			let join = false;
+			function joinSwitch(x) {
+			  x.classList.toggle('liChange');
+				var ulDrop = document.getElementById("joinDrop");
+				var liElement = document.getElementById("joinLi");
+
+				if (join === false) {
+  				ulDrop.classList.add("displayMobile");
+  				liElement.classList.add("liChange");
+			  	join = true;
+			  } else  {
+  				ulDrop.classList.remove("displayMobile");
+  				liElement.classList.remove("liChange");
+			  	join = false;
 			  }
 			}
 

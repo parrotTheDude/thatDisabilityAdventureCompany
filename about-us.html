@@ -4,7 +4,7 @@
 		<!-- Important Links -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://jbowerman.com/tdac/">
+		<!-- <base href="https://jbowerman.com/tdac/"> -->
 
 		<!-- Links for style sheets -->
 		<link rel="stylesheet" href="style.css">
@@ -46,9 +46,23 @@
 					<menu class="desktopNav">
 						<li><a href="/tdac/" class="accentOrg">Home</a></li>
 						<li class="active"><a href="/tdac/about-us.html">About Us</a></li>
-						<li><a href="/tdac/services.html">Services</a></li>
-						<li><a href="/tdac/join-us.html">Join Us</a></li>
-						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<div class="dropdown">
+						  <button class="dropbtn">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+						  <div class="dropdown-content">
+						    <a href="#">Group Based Activites</a>
+						    <a href="#">Overnight Stays</a>
+						    <a href="#">Lifeskills</a>
+						    <a href="#">One to One</a>
+						  </div>
+						</div>
+						<div class="dropdown">
+						  <button class="dropbtn">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+						  <div class="dropdown-content">
+						    <a href="#">Become a participant</a>
+						    <a href="#">Join our team!</a>
+						  </div>
+						</div>
+						<li><a href="/tdac/merch.html">Merchandise</a></li>
 						<li><a href="/tdac/contact.html">Contact Us</a></li>
 						<section class="hideSocials">
 							<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
@@ -77,9 +91,21 @@
 				<menu class="mobileNavLinks">
 					<li><a href="/tdac/" class="accentOrg">Home</a></li>
 						<li><a href="/tdac/about-us.html">About Us</a></li>
-						<li><a href="/tdac/services.html">Services</a></li>
-						<li><a href="/tdac/join-us.html">Join Us</a></li>
-						<li><a href="/tdac/merch.html">Merch Store</a></li>
+						<li id="serviceLi"><button class="mobileDropbtn" onclick="servicesSwitch(this)">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+							<ul class="ulSecondary" id="servicesDrop">
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Group Based Activites</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Overnight Stays</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Life Skills</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">One to One</a></li>
+							</ul>
+						</li>
+						<li id="joinLi"><button class="mobileDropbtn" onclick="joinSwitch(this)">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
+							<ul class="ulSecondary" id="joinDrop">
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Become a participant</a></li>
+								<li class="secondaryList"><a class="mobileDropA" href="/tdac/about-us.html">Join our team!</a></li>
+							</ul>
+						</li>
+						<li><a href="/tdac/merch.html">Merchandise</a></li>
 						<li><a href="/tdac/contact.html">Contact Us</a></li>
 					<li class="mobileSocials">
 						<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>
@@ -95,7 +121,7 @@
     			<img 
 					class="asyncImage mobileTopImg"
 					src="img/about/aboutUs/aboutUs-min.webp" 
-					data-src="img/about/aboutUs/aboutUs.webp" 
+					data-src="img/about/aboutUs.webp" 
 					alt="TDAC T-shirt model">
     		</section>
 
@@ -104,7 +130,7 @@
     				<img 
 					class="asyncImage topImg"
 					src="img/about/aboutUs/aboutUs-min.webp" 
-					data-src="img/about/aboutUs/aboutUs.webp" 
+					data-src="img/about/aboutUs.webp" 
 					alt="TDAC T-shirt model">
     			</section>
     			<section class="topWritten">
@@ -130,7 +156,7 @@
     					<section>
     						<img 
 								class="floatImg"
-								src="img/about/isaiah/isaiah.webp" 
+								src="img/about/isaiah.webp" 
 								alt="Isaiah"
 								loading="lazy">
     					</section>
@@ -144,7 +170,7 @@
     					<section>
     						<img 
 								class="floatImg"
-								src="img/about/cody/cody.webp" 
+								src="img/about/cody.webp" 
 								alt="Cody"
 								loading="lazy">
     					</section>
@@ -158,13 +184,13 @@
     					<section>
     						<img 
 								class="floatImg"
-								src="img/about/unknown/unknown.webp" 
+								src="img/about/unknown.webp" 
 								alt="Unknown Man"
 								loading="lazy">
     					</section>
     					<section class="floatText">
     						<h2>Unknown Man</h2>
-    						<p>I have no idea who this man is. He just showed up one day on the photos album. Some say he has not birth certificate or passport. Perhaps one day we will know. For now. We accept him simply as Unknown Man</p>
+    						<p>I have no idea who this man is. He just showed up one day on the photos album. Some say he has no birth certificate or passport. Perhaps one day we will know. For now. We accept him simply as Unknown Man</p>
     					</section>
     				</section>
     			</section>
@@ -176,7 +202,7 @@
     		<section class="mobileTopImgContainer">
     				<img 
 							class="mobileTopImg"
-							src="img/about/snow/snow.webp" 
+							src="img/about/snow.webp" 
 							alt="Snow trip with TDAC"
 							loading="lazy">
     		</section>
@@ -185,7 +211,7 @@
     			<section class="aboutImgContainer">
     				<img 
 							class="topImg"
-							src="img/about/snow/snow.webp" 
+							src="img/about/snow.webp" 
 							alt="Snow trip with TDAC"
 							loading="lazy">
     			</section>

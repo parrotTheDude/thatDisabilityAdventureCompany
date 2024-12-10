@@ -218,10 +218,22 @@ menu li {
 
 .dropbtn {
   background-color: #fff;
-  color: #000;  padding: 1rem 0.2rem 1rem 1rem;
+  color: #000;  
+  padding: 1rem 0.2rem 1rem 1rem;
   font-size: 1rem;
   font-family: gothamBold, Tahoma, sans-serif;;
   border: none;
+}
+
+.mobileDropbtn {
+  background-color: #fff;
+  color: #000;  
+  font-size: 1.5rem;
+  font-family: gothamBold, Tahoma, sans-serif;;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  padding: 0;
 }
 
 .dropdown {
@@ -233,7 +245,7 @@ menu li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #fff;
   min-width: 14rem;
   box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -244,6 +256,7 @@ menu li {
   padding: 1rem;
   text-decoration: none;
   display: block;
+  border-bottom: 1px #42c0b9 solid;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -260,6 +273,7 @@ menu li {
 
 .ulSecondary {
   padding: 0;
+  display: none;
 }
 
 .secondaryList {
@@ -271,8 +285,20 @@ menu li {
   font-size: 1.3rem;
 }
 
-#headingLi {
-  padding: 0.5rem 2rem 0rem 2rem;
+.displayMobile {
+  display: block;
+}
+
+.liChange {
+  background-color: #42c0b9;
+  color: #fff;
+}
+
+.mobileDropA {
+  -webkit-text-fill-color: #fff;
+  background-image: none;
+  background-size: 0;
+  background-position: 0;
 }
 
 
@@ -290,10 +316,6 @@ menu li {
   padding-right: 2rem;
   display: none;
   transition: 0.4s ease;
-}
-
-.mobileSocials {
-
 }
 
 .container {
@@ -344,6 +366,7 @@ menu li {
 .mobileNavLinks li {
   padding: 1rem 2rem;
   font-size: 1.5rem;
+  transition-duration: 0.3s;
 }
 
 
@@ -745,6 +768,51 @@ footer {
 }
 
 
+
+/* Merch Page */
+
+.mainMerchPanel {
+  width: 100%;
+  height: 35rem;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/merch/merchPic1.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.mainMerchTextContainer {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  color: #fff;
+  display: block;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.mainMerchText {
+  padding-top: 10%;
+}
+
+.secondaryMerchPanel {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.merchImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.merchImg {
+  width: 100%;
+  height: 100%;
+}
 
 
 
