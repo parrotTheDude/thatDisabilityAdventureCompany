@@ -24,7 +24,7 @@
 	<section class="socialIcons">
 		<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>
 		<span class="gap"></span>
-		<img src="icons/up.svg" alt="Up Arrow" class="icon" onclick="toTheTop()">
+		<img src="icons/up.svg" alt="Up Arrow" class="icon" onclick="toTheTop()" loading="lazy">
 		<span class="gap"></span>
 		<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="icon" alt="Facebook Icon" src="icons/facebook.svg" loading="lazy"></a>
 	</section>
@@ -32,8 +32,8 @@
 	<section class="rights">
 		<p><i>That Disability Adventure Company</i> acknowledges Aboriginal and Torres Strait Islander peoples as the First Peoples of Australia. We pay respect to them, their cultural and spiritual heritage, and to Elders past, present, and emerging. We acknowledge the ongoing impact of intergenerational trauma that has occurred since colonisation and commit to truth-telling as we walk alongside them toward reconciliation.</p>
 		<p><i>That Disability Adventure Company</i> welcomes people from all cultures, faiths, backgrounds, and experiences, and celebrates all identities, genders, sexes, orientations and abilities. We embrace diverse voices in our decision-making to ensure we deliver inclusive services.</p>
-		<img src="icons/australia.svg" alt="Australian Flag" class="flags">
-		<img src="icons/aborigin.svg" alt="Aboriginal Flag" class="flags">
+		<img src="icons/australia.svg" alt="Australian Flag" class="flags" loading="lazy">
+		<img src="icons/aborigin.svg" alt="Aboriginal Flag" class="flags" loading="lazy">
 	</section>
 
 	<section class="lastWord">

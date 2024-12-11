@@ -20,8 +20,8 @@
 	<!-- <li><a href="/tdac/merch.php">Merchandise</a></li> -->
 	<li><a href="/tdac/contact.php">Contact Us</a></li>
 	<section class="hideSocials">
-		<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
+		<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
 		<span class="gap"></span>
-		<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="icon"id="topSocials" alt="Facebook Icon" src="icons/facebook.svg"></a>
+		<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="topSocials" alt="Facebook Icon" src="icons/facebook.svg"></a>
 	</section>
 </menu>

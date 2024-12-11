@@ -29,7 +29,7 @@
     		<section class="mobileTopImgContainer" id="aboutSizing">
     			<img 
 					class="asyncImage mobileTopImg"
-					src="img/about/aboutUs/aboutUs-min.webp" 
+					src="img/about/aboutUs-min.webp" 
 					data-src="img/about/aboutUs.webp" 
 					alt="TDAC T-shirt model">
     		</section>
@@ -38,7 +38,7 @@
     			<section class="aboutImgContainer">
     				<img 
 					class="asyncImage topImg"
-					src="img/about/aboutUs/aboutUs-min.webp" 
+					src="img/about/aboutUs-min.webp" 
 					data-src="img/about/aboutUs.webp" 
 					alt="TDAC T-shirt model">
     			</section>

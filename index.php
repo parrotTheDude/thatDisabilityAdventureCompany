@@ -186,7 +186,7 @@
     				<p>The moment I started working in the support sector I knew. I KNEW. This was my calling in life</p>
     				<h4>Cody McCodison</h4>
     			</section>
-    			<section class="floater" id="reviewFloater">
+    			<section class="floater" id="reviewFloater3">
     				<img class="reviewStars" alt="Fivestars"  src="icons/fiveStar.svg" loading="lazy">
     				<p>I just FuCKING LOVE IT BRO</p>
     				<h4>Isaiah Abrahams</h4>
@@ -201,10 +201,10 @@
 			    <img src="img/index/slides/slide1.webp" alt="Day out on the surf" loading="lazy">
 			  </section>
 			  <section class="mySlides fade">
-			    <img src="img/index/slides/slide2.webp" alt="Group around an armchair">
+			    <img src="img/index/slides/slide2.webp" alt="Group around an armchair" loading="lazy">
 			  </section>
 			  <section class="mySlides fade">
-			    <img src="img/index/slides/slide3.webp" alt="Snow day!">
+			    <img src="img/index/slides/slide3.webp" alt="Snow day!" loading="lazy">
 			  </section>
 			</section>
 			<?php include ('inc/contactForm.php');?>
