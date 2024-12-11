@@ -1,119 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Important Links -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://jbowerman.com/tdac/">
-
-		<!-- Links for style sheets -->
-		<link rel="stylesheet" href="style.css">
-
- 		<!--Add favorites icons-->   
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="apple-touch-icon" href="icons/favicon.webp"/>
-		<link rel="icon" type="image/x-icon" href="icons/favicon.webp"/>
-		<link rel="preload" as="image" href="img/index/oneOnOne.webp">
-
-		<!-- Title and Description tags -->
-		<title>Privacy Policy | That Disability Adventure Company</title>
-		<meta name="description" content="That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together." />
+		<?php
+			$page_title = 'Privacy Policy | That Disability Adventure Company';
+			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+		  include ('inc/head.php');
+		?>
 	</head>
 
 	<body id="theTop">
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
-			<!-- Light banner at the top with contact details -->
-			<section class="contactBanner accentBlueBg">
-				<h3 class="alertContacts white noMargin">
-					<span class="hideMobile">Call us today: </span>
-					<a class="topLinks" href="tel:+61356105115">0356 105 115</a>
-					 | 
-					 <span class="hideMobile">Email us: </span>
-					 <a class="topLinks" href="mailto:hello@tdacvic.com?subject=Website Enquire">hello@tdacvic.com</a>
-					</h3>
-			</section>
-
-			<!-- Nav section including logo -->
-			<nav>
-				<!-- Logo container -->
-				<section class="logoContainer">
-					<img  class="logo" alt="TDAC Logo" src="icons/logo.webp">
-				</section>
-
-				<!-- Navigation Menu -->
-				<section class="mobile">
-					<menu class="desktopNav">
-						<li><a href="/tdac/" class="accentOrg">Home</a></li>
-						<li><a href="/tdac/about-us.html">About Us</a></li>
-						<div class="dropdown">
-						  <button class="dropbtn">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
-						  <div class="dropdown-content">
-						    <a href="/tdac/group-activities.html">Group Based Activites</a>
-						    <a href="/tdac/overnight-stays.html">Overnight Stays</a>
-						    <a href="/tdac/lifeskills.html">Lifeskills</a>
-						    <a href="/tdac/one-to-one.html">One to One</a>
-						  </div>
-						</div>
-						<div class="dropdown">
-						  <button class="dropbtn">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
-						  <div class="dropdown-content">
-						    <a href="/tdac/register.html">Become a participant</a>
-						    <a href="/tdac/careers.html">Join our team!</a>
-						  </div>
-						</div>
-						<!-- <li><a href="/tdac/merch.html">Merchandise</a></li> -->
-						<li><a href="/tdac/contact.html">Contact Us</a></li>
-						<section class="hideSocials">
-							<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
-							<span class="gap"></span>
-							<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="icon"id="topSocials" alt="Facebook Icon" src="icons/facebook.svg"></a>
-						</section>
-					</menu>
-
-					<!-- Mobile burger menu -->
-		    	<section class='mobileNav' onclick="menuSwitch(this)">
-		    		<div class="container">
-						  <div class="bar1"></div>
-						  <div class="bar2"></div>
-						  <div class="bar3"></div>
-						</div>
-		    	</section>
-
-		    </section>
-			</nav>
+			<?php 
+			  $page_name = 'index';
+			  include ('inc/header.php'); 
+		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main class="darkBg">
 			<!-- Content menu for the mobile devices -->
-			<section class="mobileNavContainer" id="menuToggle">
-				<menu class="mobileNavLinks">
-					<li><a href="/tdac/" class="accentOrg">Home</a></li>
-						<li><a href="/tdac/about-us.html">About Us</a></li>
-						<li id="serviceLi"><button class="mobileDropbtn" onclick="servicesSwitch(this)">Services <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
-							<ul class="ulSecondary" id="servicesDrop">
-								<li class="secondaryList"><a class="mobileDropA" href="/tdac/group-activities.html">Group Based Activites</a></li>
-								<li class="secondaryList"><a class="mobileDropA" href="/tdac/overnight-stays.html">Overnight Stays</a></li>
-								<li class="secondaryList"><a class="mobileDropA" href="/tdac/lifeskills.html">Life Skills</a></li>
-								<li class="secondaryList"><a class="mobileDropA" href="/tdac/one-to-one.html">One to One</a></li>
-							</ul>
-						</li>
-						<li id="joinLi"><button class="mobileDropbtn" onclick="joinSwitch(this)">Join Us <img src="icons/downArrow.svg" class="downArrow" alt="Dropdown Arrow"></button>
-							<ul class="ulSecondary" id="joinDrop">
-								<li class="secondaryList"><a class="mobileDropA" href="/tdac/register.html">Become a participant</a></li>
-								<li class="secondaryList"><a class="mobileDropA" href="/tdac/careers.html">Join our team!</a></li>
-							</ul>
-						</li>
-						<!-- <li><a href="/tdac/merch.html">Merchandise</a></li> -->
-						<li><a href="/tdac/contact.html">Contact Us</a></li>
-					<li class="mobileSocials">
-						<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" id="topSocials" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>
-						<span class="gap"></span>
-						<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="icon"id="topSocials" alt="Facebook Icon" src="icons/facebook.svg" loading="lazy"></a>
-					</li>
-	      </menu>
-    	</section>
+			<?php include ('inc/mobileNav.php'); ?>
 			
 			<!-- Primary Panel -->
     	<section class="privacyContainer">
@@ -258,109 +165,11 @@
 
 		</main>
 
-		<footer class="darkBg white">
-			<section class="footLogoCon">
-				<img class="footerLogo" alt="TDAC White Logo" src="icons/whiteLogo.webp" loading="lazy">
-			</section>
-
-			<section class="footerNavContainer">
-				<menu class="footerNav">
-					<li><a href="/tdac/" class="accentOrg">Home</a></li>
-					<li><a href="/tdac/about-us.html">About Us</a></li>
-					<li><a href="/tdac/group-activities.html">Group Activites</a></li>
-					<li><a href="/tdac/overnight-stays.html">Overnight Stays</a></li>
-					<li><a href="/tdac/lifeskills.html">Lifeskills</a></li>
-					<li><a href="/tdac/one-to-one.html">One to One</a></li>
-				</menu>
-				<menu class="footerNav">
-					<li><a href="/tdac/register.html">Become a participant</a></li>
-					<li><a href="/tdac/careers.html">Join our team!</a></li>
-					<!-- <li><a href="/tdac/merch.html">Merchandise</a></li> -->
-					<li><a href="/tdac/contact.html">Contact Us</a></li>
-					<li><a href="/tdac/privacy.html">Privacy Policy</a></li>
-				</menu>
-			</section>
-
-			<section class="socialIcons">
-				<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>
-				<span class="gap"></span>
-				<img src="icons/up.svg" alt="Up Arrow" class="icon" onclick="toTheTop()">
-				<span class="gap"></span>
-				<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="icon" alt="Facebook Icon" src="icons/facebook.svg" loading="lazy"></a>
-			</section>
-
-			<section class="rights">
-				<p><i>That Disability Adventure Company</i> acknowledges Aboriginal and Torres Strait Islander peoples as the First Peoples of Australia. We pay respect to them, their cultural and spiritual heritage, and to Elders past, present, and emerging. We acknowledge the ongoing impact of intergenerational trauma that has occurred since colonisation and commit to truth-telling as we walk alongside them toward reconciliation.</p>
-				<p><i>That Disability Adventure Company</i> welcomes people from all cultures, faiths, backgrounds, and experiences, and celebrates all identities, genders, sexes, orientations and abilities. We embrace diverse voices in our decision-making to ensure we deliver inclusive services.</p>
-				<img src="icons/australia.svg" alt="Australian Flag" class="flags">
-				<img src="icons/aborigin.svg" alt="Aboriginal Flag" class="flags">
-			</section>
-
-			<section class="lastWord">
-				<p class="cc">© 2024 Copyrights. All Rights Reserved</p>
-				<aside class="bottomContainer">
-					<a target="_blank" href="https://www.jbowerman.com/">
-						<p class="footerNote">created by jacob</p>
-					</a>
-				</aside>
-			</section>
-		</footer>
+		<?php include ('inc/footer.php');?>
 
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
-			let changed = false;
-			function menuSwitch(x) {
-			  x.classList.toggle('change');
-			  var element = document.getElementById("menuToggle");
-
-			  if (changed === false) {
-  				element.classList.add("slide");
-			  	changed = true;
-			  } else  {
-  				element.classList.remove("slide");
-			  	changed = false;
-			  }
-			}
-
-			let services = false;
-			function servicesSwitch(x) {
-			  x.classList.toggle('liChange');
-				var ulDrop = document.getElementById("servicesDrop");
-				var liElement = document.getElementById("serviceLi");
-
-				if (services === false) {
-  				ulDrop.classList.add("displayMobile");
-  				liElement.classList.add("liChange");
-			  	services = true;
-			  } else  {
-  				ulDrop.classList.remove("displayMobile");
-  				liElement.classList.remove("liChange");
-			  	services = false;
-			  }
-			}
-
-			let join = false;
-			function joinSwitch(x) {
-			  x.classList.toggle('liChange');
-				var ulDrop = document.getElementById("joinDrop");
-				var liElement = document.getElementById("joinLi");
-
-				if (join === false) {
-  				ulDrop.classList.add("displayMobile");
-  				liElement.classList.add("liChange");
-			  	join = true;
-			  } else  {
-  				ulDrop.classList.remove("displayMobile");
-  				liElement.classList.remove("liChange");
-			  	join = false;
-			  }
-			}
-
-			function toTheTop(){
-			  document.querySelector('#theTop').scrollIntoView({
-			    behavior: 'smooth'
-			  });
-			}
+			<?php include ('inc/js/coreJs.php');?>
 		</script>
 	</body>
 </html>
