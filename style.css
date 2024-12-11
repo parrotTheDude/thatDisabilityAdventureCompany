@@ -768,6 +768,111 @@ footer {
 }
 
 
+/* Services Pages */
+.leftPanel {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.leftTextContainer {
+  width: 85%;
+}
+
+.rightPanel {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 5rem 0rem 4rem 6rem;
+}
+
+.blockTitle {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.block li {
+  padding: 0.8rem;
+  font-family: gothamBook, Tahoma, sans-serif;
+}
+
+.paraBigger {
+  font-size: 1.2rem;
+}
+
+.whatToExpect {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 0rem;
+  text-align: center;
+}
+
+.whatToExpectIconsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.whatToExpectIcons {
+  width: 20%;
+  padding: 2%;
+}
+
+.whatToExpectIcon {
+  height: 5rem;
+  width: 5rem;
+}
+
+.panelTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  padding: 2rem;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.accessPanel {
+  color: white;
+  padding: 1rem 3rem 5rem 3rem;
+  width: calc(50% - 6rem);
+}
+
+.orange {
+  color: orange;
+}
+
+.changeLink {
+  color: orange;
+  -webkit-text-fill-color: orange;
+}
+
 
 /* Merch Page */
 
@@ -814,6 +919,18 @@ footer {
   height: 100%;
 }
 
+.toTheTopContainer {
+  width: 100%;
+  display: inherit;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.toTheTop {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
 
 
 /* ---- Media Queries ---- */
@@ -960,6 +1077,19 @@ footer {
   .inputContainer {
     width: 100%;
   }
+  .accessChange {
+    flex-wrap: wrap;
+  }
+  .leftPanel {
+    width: 100%;
+  }
+  .rightPanel {
+    width: 100%;
+    padding: 0rem 0rem 4rem 4rem;
+  }
+  .accessPanel {
+    width: 100%;
+  }
 }
 
 /* Tablets */
@@ -972,6 +1102,9 @@ footer {
   }
   .formMessage {
     width: 96%;
+  }
+  .whatToExpectIcons {
+    width: 44%;
   }
 }
 
@@ -1013,6 +1146,12 @@ footer {
     margin: 0;
     color: white;
     background-color: #375b6d;
+  }
+  .rightPanel {
+    padding: 0rem 0rem 4rem 2rem;
+  }
+  .whatToExpectIcons {
+    width: 85%;
   }
 }
 
