@@ -731,7 +731,7 @@ footer {
 }
 
 .footerNav li {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .footerNav a {
@@ -967,6 +967,29 @@ footer {
   height: 100%;
 }
 
+.privacyContainer {
+  width: 100%;
+  height: auto;
+  background-color: #233036;
+  color: #fff;
+  margin: 0;
+  padding: 2rem;
+}
+
+.privacyContainer h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.privacy {
+  width: 85%;
+  margin: auto;
+}
+
+.privacy li {
+  font-family: gothamBook, Tahoma, sans-serif;;
+}
+
 
 /* ---- Media Queries ---- */
 /* All Desktops */
@@ -996,6 +1019,7 @@ footer {
   }
   .footerNav {
     display: flex;
+    margin: 0;
   }
 }
 

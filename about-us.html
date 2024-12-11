@@ -20,7 +20,7 @@
 		<meta name="description" content="That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together." />
 	</head>
 
-	<body>
+	<body id="theTop">
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<!-- Light banner at the top with contact details -->
@@ -469,6 +469,11 @@
 			  });
 			})();
 
+			function toTheTop(){
+			  document.querySelector('#theTop').scrollIntoView({
+			    behavior: 'smooth'
+			  });
+			}
 		</script>
 	</body>
 </html>
