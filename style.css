@@ -677,7 +677,6 @@ footer {
   width: 100%;
   justify-content: center;
   margin: 0.5rem 0;
-  padding: 0 1rem;
 }
 
 .bottomContainer a {
@@ -700,7 +699,8 @@ footer {
   width: 100%;
   display: inherit;
   justify-content: center;
-  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .icon {
@@ -715,6 +715,54 @@ footer {
 
 .gap {
   width: 2rem;
+}
+
+.footerNavContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footerNav {
+  list-style-type: none;
+  padding: 0;
+  font-family: gothamBook, Tahoma, sans-serif;
+}
+
+.footerNav li {
+  padding: 0.5rem;
+}
+
+.footerNav a {
+  background-image: linear-gradient( to right, #f28022, #f28022 50%, #fff 50% );
+}
+
+.footLogoCon {
+  width: 100%;
+  text-align: center;
+}
+
+.rights {
+  width: 90%;
+  border-top: 1px orange solid;
+  border-bottom: 1px orange solid;
+  text-align: center;
+  padding: 1rem;
+}
+
+.rights p {
+  font-size: 0.7rem;
+}
+
+.flags {
+  height: 3rem;
+  width: 3rem;
+  padding: 0rem 0.5rem;
+}
+
+.lastWord {
+  padding: 1rem;
 }
 
 
@@ -919,19 +967,6 @@ footer {
   height: 100%;
 }
 
-.toTheTopContainer {
-  width: 100%;
-  display: inherit;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.toTheTop {
-  height: 3rem;
-  width: 3rem;
-  cursor: pointer;
-}
-
 
 /* ---- Media Queries ---- */
 /* All Desktops */
@@ -958,6 +993,9 @@ footer {
   #topContactWritten {
     width: 40%;
     margin: auto 3rem;
+  }
+  .footerNav {
+    display: flex;
   }
 }
 
