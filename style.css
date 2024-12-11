@@ -990,6 +990,19 @@ footer {
   font-family: gothamBook, Tahoma, sans-serif;;
 }
 
+.registerBtn {
+  width: 80%;
+  margin: auto;
+  padding-top: 0.8rem;
+  padding-bottom: 0;
+  height: 2.2rem;
+}
+
+#specialBtn {
+  width: 90%;
+}
+
+
 
 /* ---- Media Queries ---- */
 /* All Desktops */
@@ -1152,6 +1165,14 @@ footer {
   .accessPanel {
     width: 100%;
   }
+  .privacyContainer {
+    padding: 0;
+  }
+  #joinChange {
+    margin: auto;
+    background-color: #375b6d;
+    color: #fff;
+  }
 }
 
 /* Tablets */
@@ -1214,6 +1235,9 @@ footer {
   }
   .whatToExpectIcons {
     width: 85%;
+  }
+  .aboutContentContainer {
+    background-color: #375b6d;
   }
 }
 
