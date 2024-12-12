@@ -57,3 +57,9 @@ function toTheTop(){
     behavior: 'smooth'
   });
 }
+
+function theTeam(){
+  document.querySelector('#team').scrollIntoView({
+    behavior: 'smooth'
+  });
+}

@@ -47,14 +47,14 @@
     				<h1 class="gothamBold" id="aboutTitle">That Disability Adventure Company</h1>
     				<p><i>That Disability Adventure Company</i> is passionate about creating opportunities for people living with disabilities to lead fulfilling and exciting lives. We assist people living with Mild to Moderate disabilities aged between 12 to 45 years old through supported outings and Adventures. Feel free to contact us below</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button">Meet the team!</button>
+    					<button class="topBtns accentOrgBg" role="button" onclick="theTeam()">Meet the team!</button>
     				</section>
     			</section>
     		</article>
     	</section>
 
     	<!-- Team panel -->
-    	<section class="panelContainer whiteBg">
+    	<section class="panelContainer whiteBg" id="team">
     		<section class="topContent whiteBg">
     			<section class="floatContainer">
     				<section class="floatTitleContainer">
