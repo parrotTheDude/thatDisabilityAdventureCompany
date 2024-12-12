@@ -129,7 +129,7 @@
     				<h1 class="gothamBold" id="aboutTitle">Are you ready for the experience of a life time?</h1>
     				<p><i>That Disability Adventure Company</i> is passionate about creating opportunities for people living with disabilities to lead fulfilling and exciting lives. We assist people living with Mild to Moderate disabilities aged between 12 to 45 years old through supported outings and Adventures. Feel free to contact us below</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="window.location.href='/tdac/services.html';">Learn more about our experiences</button>
+    					<button class="topBtns accentOrgBg" role="button" onclick="window.location.href='/tdac/group-activities.php';">Learn more about our experiences</button>
     				</section>
     			</section>
     		</article>

@@ -82,7 +82,7 @@
     						<img class="lrgIcon" alt="Group Icon" src="icons/group.svg" loading="lazy">
     						<h2>Group Based Activities</h2>
     						<p>Amazing adventures that Create friendships, independence, and unforgettable experiences</p>
-    					<button onclick="window.location.href='/tdac/group-activities.html';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/group-activities.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
     				
@@ -98,7 +98,7 @@
     						<img class="lrgIcon" alt="Overnight Icon" src="icons/half-moon.svg" loading="lazy">
     						<h2>Overnight Stays</h2>
     						<p>Offer participants a chance to explore, and create lasting memories in a safe, and enjoyable environments, while also working on Independent living skills.</p>
-    					<button onclick="window.location.href='/tdac/overnight-stays.html';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/overnight-stays.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -114,7 +114,7 @@
     						<img class="lrgIcon" alt="Life Skills Icon" src="icons/skill.svg" loading="lazy">
     						<h2>Life Skills Program</h2>
     						<p>Helps you learn important everyday skills, like taking care of themselves and doing things on their own, so they can feeling confident and capable. </p>
-    					<button onclick="window.location.href='/tdac/lifeskills.html';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/lifeskills.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
 
     				</section>
@@ -130,7 +130,7 @@
     						<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
     						<h2>1 on 1 Support</h2>
     						<p>Making sure you have a great time and can do the things you love, all while making sure everything is just right for you and helping you reach your own goals </p>
-    					<button onclick="window.location.href='/tdac/one-to-one.html';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/one-to-one.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -146,7 +146,7 @@
     						<img class="lrgIcon" alt="Join the Team Icon" src="icons/collaboration.svg" loading="lazy">
     						<h2>Join the Team</h2>
     						<p>There is no I in team. But it does include you!</p>
-    					<button onclick="window.location.href='/tdac/join-us.html';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/join-us.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -162,7 +162,7 @@
     						<img class="lrgIcon" alt="Merchandise Icon" src="icons/merchandise.svg" loading="lazy">
     						<h2>Merch!</h2>
     						<p>Look even more swagger with our t-shirts and hoodies!</p>
-    					<button onclick="window.location.href='/tdac/merch.html';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/merch.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
     			</section>
