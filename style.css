@@ -1020,6 +1020,21 @@ footer {
   width: 90%;
 }
 
+.lostContainer {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  background-color: #375b6d;
+  color: #fff;
+  padding: 5rem 0rem;
+}
+
+.lostIcon {
+  width: 8rem;
+  height: 8rem;
+}
+
 
 
 /* ---- Media Queries ---- */

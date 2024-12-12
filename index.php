@@ -82,7 +82,7 @@
     						<img class="lrgIcon" alt="Group Icon" src="icons/group.svg" loading="lazy">
     						<h2>Group Based Activities</h2>
     						<p>Amazing adventures that Create friendships, independence, and unforgettable experiences</p>
-    					<button onclick="window.location.href='/tdac/group-activities.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    						<button onclick="window.location.href='/tdac/group-activities.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
     				

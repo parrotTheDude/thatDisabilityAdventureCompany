@@ -70,7 +70,7 @@
   						<section class="whatToExpectIcons">
   							<img src="icons/customer.svg" alt="Support Icon" class="whatToExpectIcon">
   							<h3>Engaging work</h3>
-  							<p>A career with Sonder offers you rewarding experiences and the opportunity to work with a range of clients across a range of service offerings.</p>
+  							<p>A career with that disability adventure company offers you rewarding experiences and the opportunity to work with a range of clients across a range of service offerings.</p>
   						</section>
   					</section>
   					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Join the team</button>
