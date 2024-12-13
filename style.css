@@ -301,6 +301,11 @@ menu li {
   background-position: 0;
 }
 
+#joinChange h1 {
+  margin: 0rem;
+  padding: 2rem 0rem;
+}
+
 
 /* Mobile Nav */
 .mobile {
@@ -455,6 +460,11 @@ main {
 
 #aboutSizing {
   min-height: 18rem;
+}
+
+#careerSizing {
+  min-height: 18rem;
+  background-color: #375b6d;
 }
 
 .mobileTopImg {
@@ -711,6 +721,7 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 .socialIcons {
@@ -1179,12 +1190,18 @@ footer {
     color: #000;
   }
   .topSocials {
-    width: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     padding: 0rem 1rem;
     margin-top: 0rem;
   }
+  .footerNav {
+    list-style-type: square;
+  }
   .videoContainer {
     padding: 0;
+    background-color: rgba(0, 0, 0, 1);
+    padding-top: 31rem;
   }
   .inputContainer {
     width: 100%;
@@ -1276,9 +1293,6 @@ footer {
   .whatToExpectIcons {
     width: 85%;
   }
-  .aboutContentContainer {
-    background-color: #375b6d;
-  }
 }
 
 @media screen and (max-width: 1085px){
@@ -1291,9 +1305,6 @@ footer {
   video {
     height: 16rem;
     width: 100%;
-  }
-   .videoContainer {
-    padding-top: 18rem;
   }
   .close {
     width: 100%;

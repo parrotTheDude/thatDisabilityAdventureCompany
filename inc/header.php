@@ -4,7 +4,9 @@
 <nav>
 	<!-- Logo container -->
 	<section class="logoContainer">
-		<img  class="logo" alt="TDAC Logo" src="icons/logo.webp">
+		<a href="/tdac/">
+			<img  class="logo" alt="TDAC Logo" src="icons/logo.webp">
+		</a>
 	</section>
 
 	<!-- Navigation Menu -->

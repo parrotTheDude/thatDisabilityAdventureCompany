@@ -146,7 +146,7 @@
     						<img class="lrgIcon" alt="Join the Team Icon" src="icons/collaboration.svg" loading="lazy">
     						<h2>Join the Team</h2>
     						<p>There is no I in team. But it does include you!</p>
-    					<button onclick="window.location.href='/tdac/join-us.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/register.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -159,10 +159,14 @@
 		  					loading="lazy">
     					</section>
     					<section class="floatText">
-    						<img class="lrgIcon" alt="Merchandise Icon" src="icons/merchandise.svg" loading="lazy">
+    						<!-- <img class="lrgIcon" alt="Merchandise Icon" src="icons/merchandise.svg" loading="lazy">
     						<h2>Merch!</h2>
     						<p>Look even more swagger with our t-shirts and hoodies!</p>
-    					<button onclick="window.location.href='/tdac/merch.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/tdac/merch.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button> -->
+    					<img src="icons/startup.svg" alt="Goal Icon" class="lrgIcon" loading="lazy">
+    						<h2>Become a support worker</h2>
+    						<p>If you're interested in joining out group then click here!</p>
+    					<button onclick="window.location.href='/tdac/careers.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
     			</section>

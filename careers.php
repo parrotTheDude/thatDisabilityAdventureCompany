@@ -24,7 +24,7 @@
 			
 			<!-- Primary Panel -->
     	<section class="aboutContentContainer">
-    		<section class="mobileTopImgContainer" id="aboutSizing">
+    		<section class="mobileTopImgContainer" id="careerSizing">
     			<img 
 					class="mobileTopImg"
 					src="img/merch/merchPic2.webp"
@@ -39,7 +39,7 @@
 						alt="Happy friends">
     			</section>
     			<section class="topWritten" id="joinChange">
-    				<h1 class="gothamBold" id="aboutSubTitle">Become a support worker!</h1>
+    				<h1 class="gothamBold">Become a support worker!</h1>
     				<p>TDAC group-based activities and social outings are vibrant adventures that bring together people. Imagine a world of fun, laughter, and shared experiences, where everyone belongs.Our outings are like mini-expeditions designed to create memorable moments, build life skills and lasting friendships. Whether it's a day trip to an exciting place you haven't been to before, a hike through a picturesque park, or a thrilling activity that will get your heart racing, each activity is carefully chosen to provide an enriching and enjoyable experience.</p>
     				<section class="btnsContainer" id="aboutBtn">
     					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Get in touch!</button>
