@@ -48,3 +48,5 @@
 	</section>
 </footer>
 
+<?php include ('inc/analytics.php');?>
+
