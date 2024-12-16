@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Privacy Policy | That Disability Adventure Company';
-			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+			$page_title = 'TDAC Privacy Policy | Your Data, Our Commitment';
+			$page_decription = 'Learn how TDAC protects your personal information. Our Privacy Policy outlines how we collect, use, and safeguard your data to ensure your privacy.';
 		  include ('inc/head.php');
 		?>
 	</head>
