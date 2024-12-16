@@ -26,7 +26,7 @@
 				<img src="icons/lost.svg" class="lostIcon">
 				<h1>Oh no!</h1>
 				<h2>Oops! The page you’re looking for doesn’t exist. Explore our programs or head back to the homepage to discover more about TDAC.</h2>
-				<button onclick="window.location.href='/';" class="topBtns accentOrgBg marginEdit" role="button">Take me home!</button>
+				<div class="topBtns accentOrgBg marginEdit"><a href="/" class="linkBtn">Learn More</a></div>
 			</section>
 
 		</main>

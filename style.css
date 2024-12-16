@@ -433,6 +433,11 @@ main {
   margin: 2rem 0;
 }
 
+#contactTitle {
+  font-family: gothamBold, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
 .topBtns {
   border-radius: 1rem;
   border-style: none;
@@ -683,6 +688,19 @@ input[type=submit]:hover {
   height: 2rem;
   padding: 0.7rem 0.5rem 0rem 0.5rem;
   margin-top: -0.3rem;
+}
+
+.linkBtn {
+  color: #fff;
+  text-decoration: none;
+  background-image: none;
+  background-size: 0;
+  background-position: 0;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: initial;
+  padding-top: 0.7rem;
+  display: block;
+  font-family: gothamBook, Tahoma, sans-serif;
 }
 
 

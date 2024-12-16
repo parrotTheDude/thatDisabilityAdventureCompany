@@ -19,8 +19,8 @@
 </title>
 <meta name="description" content="<?php echo htmlspecialchars($page_decription); ?>" />
 
-<meta property="og:title" content="Registered NDIS Provider" />
+<meta property="og:title" content="Inclusive NDIS Adventures & Disability Programs | TDAC Australia" />
 <meta property="og:locale" content="en" />
-<meta property="og:description" content="That Disability Adventure Company is an NDIS provider that offers unique, person-centered services in Melbourne & Gippsland." />
-<meta property="og:site_name" content="TDAC Disability Services" />
+<meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
+<meta property="og:site_name" content="That Disability Adventure Company" />
 <meta name="ahrefs-site-verification" content="29ed00ef87140d2c7762f181473c1d417200feb2d956e5db6a1699253c6ebb45">
