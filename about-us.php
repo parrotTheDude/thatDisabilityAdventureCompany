@@ -124,11 +124,10 @@
 							loading="lazy">
     			</section>
     			<section class="topWritten">
-    				<h2 class="gothamBook" id="aboutSubTitle"></h2>
-    				<h1 class="gothamBold" id="aboutTitle">Are you ready for the experience of a life time?</h1>
+    				<h2 class="gothamBook" id="aboutSubTitle">Are you ready for the experience of a life time?</h2>
     				<p>Explore exciting events designed for individuals with disabilities! From group adventures to skill-building workshops, our events offer inclusive opportunities to connect, grow, and create lasting memories. Check out our upcoming events and join the fun today!</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/group-activities.php" class="linkBtn">Learn More</a></div>
+    					<div id="buttonFix" class="topBtns accentOrgBg marginEdit"><a href="/group-activities.php" class="linkBtn">Learn More</a></div>
     				</section>
     			</section>
     		</article>

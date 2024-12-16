@@ -572,6 +572,11 @@ main {
   border-radius: 0;
 }
 
+#buttonFix {
+  max-width: 7rem;
+  margin: auto;
+}
+
 .floater {
   width: calc(33.33333% - 1rem);
   height: auto;
@@ -701,6 +706,7 @@ input[type=submit]:hover {
   padding-top: 0.7rem;
   display: block;
   font-family: gothamBook, Tahoma, sans-serif;
+  text-align: center;
 }
 
 
