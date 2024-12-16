@@ -81,7 +81,7 @@
     						<img class="lrgIcon" alt="Group Icon" src="icons/group.svg" loading="lazy">
     						<h3>Group Based Activities</h3>
     						<p>Join our group-based activities to build skills, foster friendships, and enjoy inclusive adventures in a supportive environment across Melbourne and Gippsland.</p>
-    						<button onclick="window.location.href='/tdac/group-activities.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    						<button onclick="window.location.href='/group-activities.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
     				
@@ -97,7 +97,7 @@
     						<img class="lrgIcon" alt="Overnight Icon" src="icons/half-moon.svg" loading="lazy">
     						<h3>Overnight Stays</h3>
     						<p>Our overnight stays provide a safe, supportive space for individuals with disabilities to build independence, make friends, and enjoy unique, memorable experiences.</p>
-    					<button onclick="window.location.href='/tdac/overnight-stays.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/overnight-stays.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -113,7 +113,7 @@
     						<img class="lrgIcon" alt="Life Skills Icon" src="icons/skill.svg" loading="lazy">
     						<h3>Life Skills Program</h3>
     						<p>Discover life skills programs that empower individuals with disabilities to build independence, develop practical abilities, and gain confidence for everyday living.</p>
-    					<button onclick="window.location.href='/tdac/lifeskills.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/lifeskills.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
 
     				</section>
@@ -129,7 +129,7 @@
     						<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
     						<h3>1 on 1 Support</h3>
     						<p>Experience one-on-one support tailored to individual needs, helping people with disabilities achieve their goals, build independence, and live life to the fullest.</p>
-    					<button onclick="window.location.href='/tdac/one-to-one.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/one-to-one.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -145,7 +145,7 @@
     						<img class="lrgIcon" alt="Join the Team Icon" src="icons/collaboration.svg" loading="lazy">
     						<h3>Register as a Participant</h3>
     						<p>Register to become a participant and access tailored programs designed to empower individuals with disabilities. Join us to build skills, foster friendships, and create lasting memories in a supportive environment.</p>
-    					<button onclick="window.location.href='/tdac/register.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/register.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
 
@@ -161,7 +161,7 @@
     					<img src="icons/startup.svg" alt="Goal Icon" class="lrgIcon" loading="lazy">
     						<h3>Become a support worker</h3>
     						<p>Join our team as a support worker and make a difference in the lives of individuals with disabilities. Provide tailored support, foster connections, and help participants achieve their goals in a rewarding role.</p>
-    					<button onclick="window.location.href='/tdac/careers.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
+    					<button onclick="window.location.href='/careers.php';" class="topBtns accentOrgBg marginEdit" role="button">Learn more</button>
     					</section>
     				</section>
     			</section>

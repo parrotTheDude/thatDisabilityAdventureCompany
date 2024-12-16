@@ -1,10 +1,10 @@
 <!-- Important Links -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="https://jbowerman.com/tdac/">
+<base href="https://thatdisabilityadventurecompany.com.au/">
 
 <!-- Links for style sheets -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 
 	<!--Add favorites icons-->   
 <meta name="apple-mobile-web-app-capable" content="yes">

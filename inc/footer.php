@@ -5,19 +5,19 @@
 
 	<section class="footerNavContainer">
 		<menu class="footerNav">
-			<li><a href="/tdac/" class="accentOrg">Home</a></li>
-			<li><a href="/tdac/about-us.php">About Us</a></li>
-			<li><a href="/tdac/group-activities.php">Group Activites</a></li>
-			<li><a href="/tdac/overnight-stays.php">Overnight Stays</a></li>
-			<li><a href="/tdac/lifeskills.php">Lifeskills</a></li>
+			<li><a href="/" class="accentOrg">Home</a></li>
+			<li><a href="/about-us.php">About Us</a></li>
+			<li><a href="/group-activities.php">Group Activites</a></li>
+			<li><a href="/overnight-stays.php">Overnight Stays</a></li>
+			<li><a href="/lifeskills.php">Lifeskills</a></li>
 		</menu>
 		<menu class="footerNav">
-			<li><a href="/tdac/one-to-one.php">One to One</a></li>
-			<li><a href="/tdac/register.php">Become a participant</a></li>
-			<li><a href="/tdac/careers.php">Join our team!</a></li>
-			<!-- <li><a href="/tdac/merch.php">Merchandise</a></li> -->
-			<li><a href="/tdac/contact.php">Contact Us</a></li>
-			<li><a href="/tdac/privacy.php">Privacy Policy</a></li>
+			<li><a href="/one-to-one.php">One to One</a></li>
+			<li><a href="/register.php">Become a participant</a></li>
+			<li><a href="/careers.php">Join our team!</a></li>
+			<!-- <li><a href="/merch.php">Merchandise</a></li> -->
+			<li><a href="/contact.php">Contact Us</a></li>
+			<li><a href="/privacy.php">Privacy Policy</a></li>
 		</menu>
 	</section>
 
