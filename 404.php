@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = '404: What are you looking for? | That Disability Adventure Company';
-			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+			$page_title = 'Page Not Found | TDAC Adventures';
+			$page_decription = 'Oops! The page you’re looking for doesn’t exist. Explore our programs or head back to the homepage to discover more about TDAC.';
 		  include ('inc/head.php');
 		?>
 	</head>
@@ -25,7 +25,7 @@
 			<section class="lostContainer">
 				<img src="icons/lost.svg" class="lostIcon">
 				<h1>Oh no!</h1>
-				<h2>Looks like this page doesn't exist!</h2>
+				<h2>Oops! The page you’re looking for doesn’t exist. Explore our programs or head back to the homepage to discover more about TDAC.</h2>
 				<button onclick="window.location.href='/tdac/';" class="topBtns accentOrgBg marginEdit" role="button">Take me home!</button>
 			</section>
 

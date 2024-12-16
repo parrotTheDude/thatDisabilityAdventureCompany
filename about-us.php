@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'About Us | That Disability Adventure Company';
-			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+			$page_title = 'About TDAC: Inclusive Adventures and Support Programs';
+			$page_decription = 'Learn about TDAC’s mission to provide inclusive adventures and supportive programs, empowering individuals with disabilities to thrive and connect.';
 		  include ('inc/head.php');
 		?>
 	</head>
@@ -43,9 +43,8 @@
 					alt="TDAC T-shirt model">
     			</section>
     			<section class="topWritten">
-    				<h2 class="gothamBook" id="aboutSubTitle">Who are we?</h2>
     				<h1 class="gothamBold" id="aboutTitle">That Disability Adventure Company</h1>
-    				<p><i>That Disability Adventure Company</i> is passionate about creating opportunities for people living with disabilities to lead fulfilling and exciting lives. We assist people living with Mild to Moderate disabilities aged between 12 to 45 years old through supported outings and Adventures. Feel free to contact us below</p>
+    				<p>Who are we? <i>That Disability Adventure Company</i> is a passionate provider of inclusive, experience-based programs for individuals with disabilities. We focus on building confidence, fostering meaningful connections, and helping participants develop essential life skills. Based in Melbourne and Gippsland, our services are aligned with NDIS goals and tailored to support personal growth and independence. At TDAC, we believe in creating opportunities that inspire, empower, and leave lasting memories.</p>
     				<section class="btnsContainer" id="aboutBtn">
     					<button class="topBtns accentOrgBg" role="button" onclick="theTeam()">Meet the team!</button>
     				</section>
@@ -127,7 +126,7 @@
     			<section class="topWritten">
     				<h2 class="gothamBook" id="aboutSubTitle"></h2>
     				<h1 class="gothamBold" id="aboutTitle">Are you ready for the experience of a life time?</h1>
-    				<p><i>That Disability Adventure Company</i> is passionate about creating opportunities for people living with disabilities to lead fulfilling and exciting lives. We assist people living with Mild to Moderate disabilities aged between 12 to 45 years old through supported outings and Adventures. Feel free to contact us below</p>
+    				<p>Explore exciting events designed for individuals with disabilities! From group adventures to skill-building workshops, our events offer inclusive opportunities to connect, grow, and create lasting memories. Check out our upcoming events and join the fun today!</p>
     				<section class="btnsContainer" id="aboutBtn">
     					<button class="topBtns accentOrgBg" role="button" onclick="window.location.href='/tdac/group-activities.php';">Learn more about our experiences</button>
     				</section>

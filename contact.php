@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Contact Us | That Disability Adventure Company';
-			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+			$page_title = 'Get in Touch with TDAC';
+			$page_decription = 'Have questions or want to learn more about TDAC? Contact us today to explore our programs, services, and how we can support you or your loved ones!';
 		  include ('inc/head.php');
 		?>
 	</head>
