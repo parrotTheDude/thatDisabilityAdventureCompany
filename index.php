@@ -177,17 +177,17 @@
     			</section>
     			<section class="floater" id="reviewFloater">
     				<img class="reviewStars" alt="Fivestars"  src="icons/fiveStar.svg" loading="lazy">
-    				<h3>Tina Ricardo</h3>
+    				<h3 class="reviewTitle">Tina Ricardo</h3>
     				<p>TDAC has a team of wonderful carers providing invaluable services and incredible opportunities, especially for young males. Isaiah and Cody are not only highly competent and friendly but also truly inspiring leaders, guiding a motivated team of dedicated male carers. I highly recommend their exceptional care and outstanding service.</p>
     			</section>
     			<section class="floater" id="reviewFloater2">
     				<img class="reviewStars" alt="Fivestars"  src="icons/fiveStar.svg" loading="lazy">
-    				<h3>Lee nooy</h3>
+    				<h3 class="reviewTitle">Lee nooy</h3>
     				<p>I highly recommend That Disability Adventure Company. My son Todd and I have had the pleasure of knowing Cody and Isaiah for several years. Together, they’ve built an environment rooted in mutual respect, fun, and exciting adventures for everyone. Their commitment to delivering a high standard of care and fostering trust is truly commendable.</p>
     			</section>
     			<section class="floater" id="reviewFloater3">
     				<img class="reviewStars" alt="Fivestars"  src="icons/fiveStar.svg" loading="lazy">
-    				<h3>Tanya Stephens</h3>
+    				<h3 class="reviewTitle">Tanya Stephens</h3>
     				<p>Isaiah, Cody, and their team are fantastic, providing exceptional disability services for my client over the past several months. The entire crew at That Disability Adventure Company is experienced, professional, and deeply committed to delivering person-centred care. Their dedication to mentoring and supporting clients sets them apart as true leaders in the field.</p>
     			</section>
     		</section>

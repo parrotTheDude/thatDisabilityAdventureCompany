@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Careers | That Disability Adventure Company';
-			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+			$page_title = 'Join TDAC: Become a Support Worker and Make a Difference';
+			$page_decription = 'Join TDAC as a support worker and help empower individuals with disabilities through inclusive, person-centered care. Make a lasting impact today!';
 		  include ('inc/head.php');
 		?>
 	</head>
@@ -39,8 +39,8 @@
 						alt="Happy friends">
     			</section>
     			<section class="topWritten" id="joinChange">
-    				<h1 class="gothamBold">Become a support worker!</h1>
-    				<p>TDAC group-based activities and social outings are vibrant adventures that bring together people. Imagine a world of fun, laughter, and shared experiences, where everyone belongs.Our outings are like mini-expeditions designed to create memorable moments, build life skills and lasting friendships. Whether it's a day trip to an exciting place you haven't been to before, a hike through a picturesque park, or a thrilling activity that will get your heart racing, each activity is carefully chosen to provide an enriching and enjoyable experience.</p>
+    				<h1 class="gothamBold">Become a Support Worker and Make a Difference</h1>
+    				<p>Join TDAC as a support worker and make a meaningful impact on the lives of individuals with disabilities. Provide inclusive, person-centered care, build connections, and help participants achieve their goals. Be part of a supportive team that empowers others to grow, thrive, and create lasting memories.</p>
     				<section class="btnsContainer" id="aboutBtn">
     					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Get in touch!</button>
     				</section>
@@ -57,20 +57,17 @@
   						<section class="whatToExpectIcons">
   							<img src="icons/startup.svg" alt="Goal Icon" class="whatToExpectIcon">
   							<h3>Career growth</h3>
-  							<p>We strive to continually develop our teams and ensure appropriate training opportunities are available to all staff.</p>
-								<p>We foster a culture of learning and mentoring and will support you throughout your entire professional journey.</p>
+  							<p>At TDAC, we provide opportunities to advance your career through ongoing training, skill development, and mentorship. Join a team that values your growth and helps you achieve your professional goals while making a meaningful impact in the lives of others.</p>
   						</section>
   						<section class="whatToExpectIcons">
   							<img src="icons/teamwork.svg" alt="Teamwork Icon" class="whatToExpectIcon">
   							<h3>Outstanding culture</h3>
-  							<p>We take our work seriously, but we make sure we’re having fun too.</p>
-
-								<p>At TDAC, we have a strong focus on health and wellness. We offer a range of regular activities to encourage networking and promote staff wellbeing.</p>
+  							<p>Be part of an inclusive and supportive workplace that values collaboration, respect, and shared success. At TDAC, we foster a positive environment where every team member feels appreciated and empowered to contribute to our mission of making a difference.</p>
   						</section>
   						<section class="whatToExpectIcons">
   							<img src="icons/customer.svg" alt="Support Icon" class="whatToExpectIcon">
   							<h3>Engaging work</h3>
-  							<p>A career with that disability adventure company offers you rewarding experiences and the opportunity to work with a range of clients across a range of service offerings.</p>
+  							<p>Experience fulfilling and impactful work by supporting individuals with disabilities to achieve their goals and build independence. At TDAC, every day brings new opportunities to connect, inspire, and create lasting change in a rewarding and dynamic role.</p>
   						</section>
   					</section>
   					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Join the team</button>

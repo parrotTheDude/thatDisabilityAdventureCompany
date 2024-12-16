@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Register | That Disability Adventure Company';
-			$page_decription = 'That Disability Adventure Company is passionate about creating inclusive and supportive opportunities for people living with disabilities. Through experience-based programs, we gently encourage participants to move outside their comfort zone. Our individual and group-based programs work to foster new friendships, develop new skills and make incredible memories together.';
+			$page_title = 'Join TDAC: Empowering Adventures for Participants';
+			$page_decription = 'Register as a participant at TDAC to access inclusive programs designed to build skills, foster friendships, and create lasting memories.';
 		  include ('inc/head.php');
 		?>
 	</head>
@@ -39,8 +39,8 @@
 						alt="Happy friends">
     			</section>
     			<section class="topWritten" id="joinChange">
-    				<h1 class="gothamBold">Register to become a participant</h1>
-    				<p>TDAC group-based activities and social outings are vibrant adventures that bring together people. Imagine a world of fun, laughter, and shared experiences, where everyone belongs.Our outings are like mini-expeditions designed to create memorable moments, build life skills and lasting friendships. Whether it's a day trip to an exciting place you haven't been to before, a hike through a picturesque park, or a thrilling activity that will get your heart racing, each activity is carefully chosen to provide an enriching and enjoyable experience.</p>
+    				<h1 class="gothamBold">Empowering Adventures for Participants</h1>
+    				<p>Become a participant at TDAC and unlock opportunities for growth, connection, and adventure. Our inclusive programs, tailored to your unique needs, help build skills, foster friendships, and create lasting memories. With NDIS-aligned support, we’re here to help you thrive and achieve your goals.</p>
     				<section class="btnsContainer" id="aboutBtn">
     					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Register Now</button>
     				</section>

@@ -746,10 +746,14 @@ footer {
   width: 2rem;
 }
 
+.reviewTitle {
+  margin-top: 0;
+}
+
 .footerNavContainer {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -1195,9 +1199,6 @@ footer {
     height: 3rem;
     padding: 0rem 1rem;
     margin-top: 0rem;
-  }
-  .footerNav {
-    list-style-type: square;
   }
   .videoContainer {
     padding: 0;
