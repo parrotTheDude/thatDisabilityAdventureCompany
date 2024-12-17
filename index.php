@@ -47,7 +47,7 @@
     				<p>At <i>That Disability Adventure Company (TDAC)</i>, we provide inclusive programs for people with disabilities. Based in Melbourne and Gippsland, we offer experience-based adventures to foster skills, confidence, and lasting memories. Our tailored approach aligns with NDIS goals, encouraging participants to step outside their comfort zone and embrace new opportunities in supportive local communities.</p>
     				<section class="btnsContainer">
     					<button onclick="smoothScroll()" class="topBtns accentOrgBg" role="button" id="start">Get Started</button>
-    					<button class="topBtns accentBlueBg" role="button" onclick="videoPlayer(this)">Roll film</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="videoPlayer(this)">Roll Film</button>
     				</section>
     			</section>
 

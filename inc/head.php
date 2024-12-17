@@ -25,7 +25,7 @@
 <meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
 <meta property="og:site_name" content="That Disability Adventure Company" />
 <meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/" />
-<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/icons/logo.webp" />
+<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
 <meta property="og:type" content="website" />
 
 <meta name="ahrefs-site-verification" content="29ed00ef87140d2c7762f181473c1d417200feb2d956e5db6a1699253c6ebb45">
