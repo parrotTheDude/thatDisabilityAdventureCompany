@@ -46,7 +46,7 @@
     				<h1 class="gothamBold" id="aboutTitle">That Disability Adventure Company</h1>
     				<p>Who are we? <i>That Disability Adventure Company</i> is a passionate provider of inclusive, experience-based programs for individuals with disabilities. We focus on building confidence, fostering meaningful connections, and helping participants develop essential life skills. Based in Melbourne and Gippsland, our services are aligned with NDIS goals and tailored to support personal growth and independence. At TDAC, we believe in creating opportunities that inspire, empower, and leave lasting memories.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="theTeam()">Meet the team!</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="theTeam()">Meet the team!</button>
     				</section>
     			</section>
     		</article>
@@ -127,7 +127,7 @@
     				<h2 class="gothamBook" id="aboutSubTitle">Are you ready for the experience of a life time?</h2>
     				<p>Explore exciting events designed for individuals with disabilities! From group adventures to skill-building workshops, our events offer inclusive opportunities to connect, grow, and create lasting memories. Check out our upcoming events and join the fun today!</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<div id="buttonFix" class="topBtns accentOrgBg marginEdit"><a href="/group-activities.php" class="linkBtn">Learn More</a></div>
+    					<div id="buttonFix" class="topBtns accentBlueBg marginEdit"><a href="/group-activities.php" class="linkBtn">Learn More</a></div>
     				</section>
     			</section>
     		</article>

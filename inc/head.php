@@ -64,6 +64,6 @@
   "sameAs": [
     "https://www.facebook.com/ThatDisabilityAdventureCompany/",
     "https://www.instagram.com/thatdisabilityadventurecompany/"
-  ] 
+  ]
 }
 </script>

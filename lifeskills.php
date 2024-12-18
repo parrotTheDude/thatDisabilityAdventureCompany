@@ -42,7 +42,7 @@
     				<h1 class="gothamBold" id="aboutSubTitle">Life Skills</h1>
     				<p>Our life skills programs help individuals with disabilities develop essential abilities for everyday living. From cooking and budgeting to personal care and communication, our hands-on approach builds independence and confidence. Together, we create pathways for growth and a more empowered, fulfilling life.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Register Now</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Register Now</button>
     				</section>
     			</section>
     		</article>

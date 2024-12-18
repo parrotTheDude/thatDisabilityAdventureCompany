@@ -42,7 +42,7 @@
     				<h1 class="gothamBold" id="aboutSubTitle">Empowering Independence Through Overnight Activities</h1>
     				<p>TDAC’s overnight activities provide a safe and inclusive environment where individuals with disabilities can build independence, make friends, and enjoy memorable experiences. Our programs focus on fostering confidence, developing life skills, and creating lasting memories through engaging, person-centered care. Join the adventure today!</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Register Now</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Register Now</button>
     				</section>
     			</section>
     		</article>

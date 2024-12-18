@@ -23,31 +23,22 @@
 			<?php include ('inc/mobileNav.php'); ?>
 			
 			<!-- Primary Panel -->
-			<section class="videoContainer" id="videoToggle">
-  			<video id="video" controls>
-				  <source src="videos/tdacPromo.mp4" type="video/mp4" preload="none">
-					Your browser does not support the video tag.
-				</video>
-				<button class="close" onclick="videoPlayer(this)">Close</button>
-  		</section>
-
     	<section class="topContentContainer">
     		<section class="mobileTopImgContainer">
 					<img 
 					class="asyncImage mobileTopImg"
-					src="img/index/crew-min.webp" 
-					data-src="img/index/crew.webp" 
+					src="img/merch/merchPic4-min.webp" 
+					data-src="img/merch/merchPic4.webp" 
 					alt="Crew Image">
     		</section>
 
     		<article class="topContent whiteBg">
     			<section class="topWritten">
-    				<h1 class="gothamBold">Inclusive Adventures for All Abilities</h1>
-    				<h2 class="gothamBook">Disability Support in Victoria</h2>
+    				<h1 id="mobileh1" class="gothamBold">Inclusive Adventures for All Abilities</h1>
+    				<h2 id="mobileh2" class="gothamBook">Disability Support in Victoria</h2>
     				<p>At <i>That Disability Adventure Company (TDAC)</i>, we provide inclusive programs for people with disabilities. Based in Melbourne and Gippsland, we offer experience-based adventures to foster skills, confidence, and lasting memories. Our tailored approach aligns with NDIS goals, encouraging participants to step outside their comfort zone and embrace new opportunities in supportive local communities.</p>
-    				<section class="btnsContainer">
-    					<button onclick="smoothScroll()" class="topBtns accentOrgBg" role="button" id="start">Get Started</button>
-    					<button class="topBtns accentBlueBg" role="button" onclick="videoPlayer(this)">Roll Film</button>
+    				<section class="btnsContainer" id="btnIndex">
+    					<div class="topBtns accentBlueBg indexVideo"><a href="/tdacPromoVideo.php" class="linkBtn">Roll Film</a></div>
     				</section>
     			</section>
 
@@ -81,7 +72,7 @@
     						<img class="lrgIcon" alt="Group Icon" src="icons/group.svg" loading="lazy">
     						<h3>Group Based Activities</h3>
     						<p>Join our group-based activities to build skills, foster friendships, and enjoy inclusive adventures in a supportive environment across Melbourne and Gippsland.</p>
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/group-activities.php" class="linkBtn">Learn More</a></div>
+    					<div class="topBtns accentBlueBg marginEdit"><a href="/group-activities.php" class="linkBtn">Group Activities</a></div>
     					</section>
     				</section>
     				
@@ -97,7 +88,7 @@
     						<img class="lrgIcon" alt="Overnight Icon" src="icons/half-moon.svg" loading="lazy">
     						<h3>Overnight Stays</h3>
     						<p>Our overnight stays provide a safe, supportive space for individuals with disabilities to build independence, make friends, and enjoy unique, memorable experiences.</p>
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/overnight-stays.php" class="linkBtn">Learn More</a></div>
+    					<div class="topBtns accentBlueBg marginEdit"><a href="/overnight-stays.php" class="linkBtn">Overnight Stays</a></div>
     					</section>
     				</section>
 
@@ -113,7 +104,7 @@
     						<img class="lrgIcon" alt="Life Skills Icon" src="icons/skill.svg" loading="lazy">
     						<h3>Life Skills Program</h3>
     						<p>Discover life skills programs that empower individuals with disabilities to build independence, develop practical abilities, and gain confidence for everyday living.</p>
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/lifeskills.php" class="linkBtn">Learn More</a></div>
+    					<div class="topBtns accentBlueBg marginEdit"><a href="/lifeskills.php" class="linkBtn">Life Skills</a></div>
     					</section>
 
     				</section>
@@ -129,7 +120,7 @@
     						<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
     						<h3>1 on 1 Support</h3>
     						<p>Experience one-on-one support tailored to individual needs, helping people with disabilities achieve their goals, build independence, and live life to the fullest.</p>
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/one-to-one.php" class="linkBtn">Learn More</a></div>
+    					<div class="topBtns accentBlueBg marginEdit"><a href="/one-to-one.php" class="linkBtn">One to One</a></div>
     					</section>
     				</section>
 
@@ -145,7 +136,7 @@
     						<img class="lrgIcon" alt="Join the Team Icon" src="icons/collaboration.svg" loading="lazy">
     						<h3>Register as a Participant</h3>
     						<p>Register to become a participant and access tailored programs designed to empower individuals with disabilities. Join us to build skills, foster friendships, and create lasting memories in a supportive environment.</p>
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/register.php" class="linkBtn">Learn More</a></div>
+    					<div class="topBtns accentBlueBg marginEdit"><a href="/register.php" class="linkBtn">Register</a></div>
     					</section>
     				</section>
 
@@ -161,7 +152,7 @@
     					<img src="icons/startup.svg" alt="Goal Icon" class="lrgIcon" loading="lazy">
     						<h3>Become a support worker</h3>
     						<p>Join our team as a support worker and make a difference in the lives of individuals with disabilities. Provide tailored support, foster connections, and help participants achieve their goals in a rewarding role.</p>
-    					<div class="topBtns accentOrgBg marginEdit"><a href="/careers.php" class="linkBtn">Learn More</a></div>
+    					<div class="topBtns accentBlueBg marginEdit"><a href="/careers.php" class="linkBtn">Join Us</a></div>
     					</section>
     				</section>
     			</section>

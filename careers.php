@@ -42,7 +42,7 @@
     				<h1 class="gothamBold">Become a Support Worker and Make a Difference</h1>
     				<p>Join TDAC as a support worker and make a meaningful impact on the lives of individuals with disabilities. Provide inclusive, person-centered care, build connections, and help participants achieve their goals. Be part of a supportive team that empowers others to grow, thrive, and create lasting memories.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Get in touch!</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Get in touch!</button>
     				</section>
     			</section>
     		</article>

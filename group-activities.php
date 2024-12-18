@@ -42,7 +42,7 @@
     				<h1 class="gothamBold" id="aboutSubTitle">Explore Our Group-Based Activities</h1>
     				<p>TDAC’s group-based activities offer a supportive space for individuals with disabilities to connect, grow, and thrive. Our programs focus on building confidence, developing skills, and fostering friendships through shared adventures and experiences in a safe, inclusive environment. Join the fun today!</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Register Now</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Register Now</button>
     				</section>
     			</section>
     		</article>

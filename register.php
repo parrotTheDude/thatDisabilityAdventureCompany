@@ -42,7 +42,7 @@
     				<h1 class="gothamBold">Empowering Adventures for Participants</h1>
     				<p>Become a participant at TDAC and unlock opportunities for growth, connection, and adventure. Our inclusive programs, tailored to your unique needs, help build skills, foster friendships, and create lasting memories. With NDIS-aligned support, we’re here to help you thrive and achieve your goals.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Register Now</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Register Now</button>
     				</section>
     			</section>
     		</article>

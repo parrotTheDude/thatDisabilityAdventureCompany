@@ -42,7 +42,7 @@
     				<h1 class="gothamBold" id="aboutSubTitle">One-to-One Support</h1>
     				<p>Our one-to-one support services are designed to meet your unique needs. We focus on building independence, confidence, and practical skills, while empowering you to achieve your personal goals. With tailored guidance, we provide the care and attention you need to thrive every step of the way.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentOrgBg" role="button" onclick="smoothScroll()">Register Now</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="smoothScroll()">Register Now</button>
     				</section>
     			</section>
     		</article>
