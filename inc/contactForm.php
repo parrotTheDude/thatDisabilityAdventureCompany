@@ -41,7 +41,7 @@
         <div class="formMessage">
           <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
         </div>
-        <button type="submit" id="formBtn" class="topBtns accentBlueBg">
+        <button type="submit" id="formBtn" class="topBtns whiteBg">
           Send Message
         </button>
         <p id="result"></p>

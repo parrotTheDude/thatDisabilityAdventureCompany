@@ -25,8 +25,9 @@
 			<section class="lostContainer">
 				<img src="icons/lost.svg" class="lostIcon">
 				<h1>Oh no!</h1>
-				<h2>Oops! The page you’re looking for doesn’t exist. Explore our programs or head back to the homepage to discover more about TDAC.</h2>
-				<div id="buttonFix" class="topBtns accentBlueBg marginEdit"><a href="/" class="linkBtn">Take me home!</a></div>
+				<h2>Oops! The page you’re looking for doesn’t exist.</h2>
+				<h3>Explore our programs or head back to the homepage to discover more about TDAC.</h3>
+				<div id="buttonFix404" class="topBtns whiteBg marginEdit"><a href="/" class="linkBtn">Take me home!</a></div>
 			</section>
 
 		</main>

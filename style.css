@@ -161,7 +161,7 @@ video {
 }
 
 .accentBlueBg {
-	background-color: #42c0b9;
+	background-color: #327892;
 }
 
 
@@ -256,7 +256,7 @@ menu li {
   padding: 1rem;
   text-decoration: none;
   display: block;
-  border-bottom: 1px #42c0b9 solid;
+  border-bottom: 1px #327892 solid;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -290,7 +290,7 @@ menu li {
 }
 
 .liChange {
-  background-color: #42c0b9;
+  background-color: #327892;
   color: #fff;
 }
 
@@ -439,7 +439,7 @@ main {
 }
 
 #mobileh1 {
-  color: #42c0b9;
+  color: #327892;
   font-family: gothamBook, Tahoma, sans-serif;;
 }
 
@@ -455,6 +455,10 @@ main {
   -webkit-user-select: none;
   touch-action: manipulation;
   transition-duration: .3s;
+}
+
+.whiteBgspec {
+  background-color: #fff;
 }
 
 .topBtns:hover {
@@ -557,6 +561,7 @@ main {
 
 .marginEdit {
   margin: 1rem 0rem;
+  color: #327892;
 }
 
 .floatTitleContainer {
@@ -606,6 +611,11 @@ main {
 
 #buttonFix {
   max-width: 7rem;
+  margin: auto;
+}
+
+#buttonFix404 {
+  max-width: 15rem;
   margin: auto;
 }
 
@@ -701,6 +711,7 @@ input[type=submit]:hover {
 #formBtn {
   text-align: center;
   margin: 1rem auto;
+  color: #327892;
 }
 
 .flex {
@@ -727,8 +738,12 @@ input[type=submit]:hover {
   margin-top: -0.3rem;
 }
 
-.linkBtn {
+#whiteTxt{
   color: #fff;
+}
+
+.linkBtn {
+  color: #327892;
   text-decoration: none;
   background-image: none;
   background-size: 0;
@@ -1197,6 +1212,12 @@ footer {
   #mobileh1 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+  .whiteBgspec {
+    background-color: #327892;
+  }
+  .linkBtn {
+    color: #fff;
   }
   #btnIndex {
     justify-content: center;
