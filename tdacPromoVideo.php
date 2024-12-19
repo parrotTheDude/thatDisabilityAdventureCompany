@@ -56,14 +56,18 @@
 		<header>
 			<?php 
 			  $page_name = 'index';
-			  include ('inc/header.php'); 
+			  include ('inc/header.php');
 		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main class="darkBg">
 			<!-- Content menu for the mobile devices -->
-			<?php include ('inc/mobileNav.php'); ?>
+			<?php include ('inc/mobileNav.php');?>
+
+			<section class="videoH1">
+				<h1>TDAC Promotional Video</h1>
+			</section>
 
 			<section class="videoPlayer">
 				<iframe src="https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4" class="iFrameClass" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
@@ -82,7 +86,7 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
-			<?php include ('inc/js/contactJs.php');?>
+			<?php include ('inc/jshttps://thatdisabilityadventurecompany.com.au/contactJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
 		</script>
 	</body>

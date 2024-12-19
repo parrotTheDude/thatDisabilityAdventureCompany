@@ -14,7 +14,7 @@
 			<header>
 			<?php 
 			  $page_name = 'about';
-			  include ('inc/header.php'); 
+			  include ('inc/header.php');
 		  ?>
 		</header>
 		</header>
@@ -22,7 +22,7 @@
 		<!-- Main area for all the information needed -->
 		<main class="darkBg">
 			<!-- Content menu for the mobile devices -->
-			<?php include ('inc/mobileNav.php'); ?>
+			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Primary Panel -->
     	<section class="aboutContentContainer">
@@ -127,7 +127,7 @@
     				<h2 class="gothamBook" id="aboutSubTitle">Are you ready for the experience of a life time?</h2>
     				<p>Explore exciting events designed for individuals with disabilities! From group adventures to skill-building workshops, our events offer inclusive opportunities to connect, grow, and create lasting memories. Check out our upcoming events and join the fun today!</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<div id="buttonFix" class="topBtns accentBlueBg marginEdit"><a href="/group-activities.php" class="linkBtn">Learn More</a></div>
+    					<div id="buttonFix" class="topBtns accentBlueBg marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/group-activities" class="linkBtn" id="specialB">Learn More</a></div>
     				</section>
     			</section>
     		</article>
@@ -140,7 +140,7 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
-			<?php include ('inc/js/contactJs.php');?>
+			<?php include ('inc/jshttps://thatdisabilityadventurecompany.com.au/contactJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
 		</script>
 	</body>

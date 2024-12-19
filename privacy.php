@@ -13,14 +13,14 @@
 		<header>
 			<?php 
 			  $page_name = 'index';
-			  include ('inc/header.php'); 
+			  include ('inc/header.php');
 		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main class="darkBg">
 			<!-- Content menu for the mobile devices -->
-			<?php include ('inc/mobileNav.php'); ?>
+			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Primary Panel -->
     	<section class="privacyContainer">

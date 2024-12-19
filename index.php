@@ -13,14 +13,14 @@
 		<header>
 			<?php 
 			  $page_name = 'index';
-			  include ('inc/header.php'); 
+			  include ('inc/header.php');
 		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main class="darkBg">
 			<!-- Content menu for the mobile devices -->
-			<?php include ('inc/mobileNav.php'); ?>
+			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Primary Panel -->
     	<section class="topContentContainer">
@@ -38,7 +38,7 @@
     				<h2 id="mobileh2" class="gothamBook">Disability Support in Victoria</h2>
     				<p>At <i>That Disability Adventure Company (TDAC)</i>, we provide inclusive programs for people with disabilities. Based in Melbourne and Gippsland, we offer experience-based adventures to foster skills, confidence, and lasting memories. Our tailored approach aligns with NDIS goals, encouraging participants to step outside their comfort zone and embrace new opportunities in supportive local communities.</p>
     				<section class="btnsContainer" id="btnIndex">
-    					<div class="topBtns accentBlueBg indexVideo"><a href="/tdacPromoVideo.php" class="linkBtn" id="whiteTxt">Roll Film</a></div>
+    					<div class="topBtns accentBlueBg indexVideo"><a href="/tdacPromoVideo" class="linkBtn" id="whiteTxt">Roll Film</a></div>
     				</section>
     			</section>
 
@@ -72,7 +72,7 @@
     						<img class="lrgIcon" alt="Group Icon" src="icons/group.svg" loading="lazy">
     						<h3>Group Based Activities</h3>
     						<p>Join our group-based activities to build skills, foster friendships, and enjoy inclusive adventures in a supportive environment across Melbourne and Gippsland.</p>
-    					<div class="topBtns whiteBgspec marginEdit"><a href="/group-activities.php" class="linkBtn">Group Activities</a></div>
+    					<div class="topBtns whiteBgspec marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/group-activities" class="linkBtn">Group Activities</a></div>
     					</section>
     				</section>
     				
@@ -88,7 +88,7 @@
     						<img class="lrgIcon" alt="Overnight Icon" src="icons/half-moon.svg" loading="lazy">
     						<h3>Overnight Stays</h3>
     						<p>Our overnight stays provide a safe, supportive space for individuals with disabilities to build independence, make friends, and enjoy unique, memorable experiences.</p>
-    					<div class="topBtns whiteBgspec marginEdit"><a href="/overnight-stays.php" class="linkBtn">Overnight Stays</a></div>
+    					<div class="topBtns whiteBgspec marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/overnight-stays" class="linkBtn">Overnight Stays</a></div>
     					</section>
     				</section>
 
@@ -104,7 +104,7 @@
     						<img class="lrgIcon" alt="Life Skills Icon" src="icons/skill.svg" loading="lazy">
     						<h3>Life Skills Program</h3>
     						<p>Discover life skills programs that empower individuals with disabilities to build independence, develop practical abilities, and gain confidence for everyday living.</p>
-    					<div class="topBtns whiteBgspec marginEdit"><a href="/lifeskills.php" class="linkBtn">Life Skills</a></div>
+    					<div class="topBtns whiteBgspec marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/lifeskills" class="linkBtn">Life Skills</a></div>
     					</section>
 
     				</section>
@@ -120,7 +120,7 @@
     						<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
     						<h3>1 on 1 Support</h3>
     						<p>Experience one-on-one support tailored to individual needs, helping people with disabilities achieve their goals, build independence, and live life to the fullest.</p>
-    					<div class="topBtns whiteBgspec marginEdit"><a href="/one-to-one.php" class="linkBtn">One to One</a></div>
+    					<div class="topBtns whiteBgspec marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/one-to-one" class="linkBtn">One to One</a></div>
     					</section>
     				</section>
 
@@ -136,7 +136,7 @@
     						<img class="lrgIcon" alt="Join the Team Icon" src="icons/collaboration.svg" loading="lazy">
     						<h3>Register as a Participant</h3>
     						<p>Register to become a participant and access tailored programs designed to empower individuals with disabilities. Join us to build skills, foster friendships, and create lasting memories in a supportive environment.</p>
-    					<div class="topBtns whiteBgspec marginEdit"><a href="/register.php" class="linkBtn">Register</a></div>
+    					<div class="topBtns whiteBgspec marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/register" class="linkBtn">Register</a></div>
     					</section>
     				</section>
 
@@ -152,7 +152,7 @@
     					<img src="icons/startup.svg" alt="Goal Icon" class="lrgIcon" loading="lazy">
     						<h3>Become a support worker</h3>
     						<p>Join our team as a support worker and make a difference in the lives of individuals with disabilities. Provide tailored support, foster connections, and help participants achieve their goals in a rewarding role.</p>
-    					<div class="topBtns whiteBgspec marginEdit"><a href="/careers.php" class="linkBtn">Join Us</a></div>
+    					<div class="topBtns whiteBgspec marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/careers" class="linkBtn">Join Us</a></div>
     					</section>
     				</section>
     			</section>
@@ -205,8 +205,7 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
-			<?php include ('inc/js/videoJs.php');?>
-			<?php include ('inc/js/contactJs.php');?>
+			<?php include ('inc/jshttps://thatdisabilityadventurecompany.com.au/contactJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
 			<?php include ('inc/js/slideshowJs.php');?>
 		</script>

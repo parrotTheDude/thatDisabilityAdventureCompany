@@ -5,19 +5,20 @@
 
 	<section class="footerNavContainer">
 		<menu class="footerNav">
-			<li><a href="/" class="accentOrg">Home</a></li>
-			<li><a href="/about-us.php">About Us</a></li>
-			<li><a href="/group-activities.php">Group Activites</a></li>
-			<li><a href="/overnight-stays.php">Overnight Stays</a></li>
-			<li><a href="/lifeskills.php">Lifeskills</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/" class="accentOrg">Home</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/about-us">About Us</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/group-activities">Group Activites</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/overnight-stays">Overnight Stays</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/lifeskills">Lifeskills</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/sitemap.xml" target="_blank">Sitemap</a></li>
 		</menu>
 		<menu class="footerNav">
-			<li><a href="/one-to-one.php">One to One</a></li>
-			<li><a href="/register.php">Become a participant</a></li>
-			<li><a href="/careers.php">Join our team!</a></li>
-			<!-- <li><a href="/merch.php">Merchandise</a></li> -->
-			<li><a href="/contact.php">Contact Us</a></li>
-			<li><a href="/privacy.php">Privacy Policy</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/one-to-one">One to One</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/register">Become a participant</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/careers">Join our team!</a></li>
+			<!-- <li><a href="/merch">Merchandise</a></li> -->
+			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/privacy">Privacy Policy</a></li>
 		</menu>
 	</section>
 

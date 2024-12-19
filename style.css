@@ -80,6 +80,15 @@ video {
   z-index: 15;
 }
 
+.videoH1 {
+  width: 100%;
+  text-align: center;
+}
+
+.videoH1 h1 {
+  color: white;
+}
+
 #closeSVG {
   width: 2rem;
   cursor: pointer;
@@ -379,6 +388,10 @@ menu li {
 main {
   overflow: hidden;
   position: relative;
+}
+
+#specialB {
+  color: #fff;
 }
 
 .panelContainer {
@@ -1407,6 +1420,9 @@ footer {
   }
   .slideshow-container {
     display: none;
+  }
+  .videoH1 h1 {
+    font-size: 1rem;
   }
 }
 
