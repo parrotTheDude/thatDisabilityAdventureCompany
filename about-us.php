@@ -73,7 +73,7 @@
     					</section>
     					<section class="floatText">
     						<h2>Isaiah Abrahams</h2>
-    						<p>Loves long walks on the beach, getting Thai massages and not drinking when everyone else is having fun.</p>
+    						<!-- <p>Loves long walks on the beach, getting Thai massages and not drinking when everyone else is having fun.</p> -->
     					</section>
     				</section>
     				
@@ -86,8 +86,8 @@
 								loading="lazy">
     					</section>
     					<section class="floatText">
-    						<h2>Cody McCodison</h2>
-    						<p>Loves life. Passionate about helping those who need it most.</p>
+    						<h2>Cody Waters</h2>
+    						<!-- <p>Loves life. Passionate about helping those who need it most.</p> -->
     					</section>
     				</section>
 
@@ -100,8 +100,8 @@
 								loading="lazy">
     					</section>
     					<section class="floatText">
-    						<h2>Unknown Man</h2>
-    						<p>I have no idea who this man is. He just showed up one day on the photos album. Some say he has no birth certificate or passport. Perhaps one day we will know. For now. We accept him simply as Unknown Man</p>
+    						<h2>Dan Stevens</h2>
+    						<!-- <p>I have no idea who this man is. He just showed up one day on the photos album. Some say he has no birth certificate or passport. Perhaps one day we will know. For now. We accept him simply as Unknown Man</p> -->
     					</section>
     				</section>
     			</section>
