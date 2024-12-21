@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'One to One Support | TDAC Australia';
 			$page_decription = 'Personalized one-to-one support tailored to your needs, helping build confidence, independence, and achieve your goals';
+			$page_name = '/one-to-one';
 		  include ('inc/head.php');
 		?>
 

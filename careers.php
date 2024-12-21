@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'Join TDAC: Become a Support Worker and Make a Difference';
 			$page_decription = 'Join TDAC as a support worker and help empower individuals with disabilities through inclusive, person-centered care. Make a lasting impact today!';
+			$page_name = '/careers';
 		  include ('inc/head.php');
 		?>
 

@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'Join TDAC: Empowering Adventures for Participants';
 			$page_decription = 'Register as a participant at TDAC to access inclusive programs designed to build skills, foster friendships, and create lasting memories.';
+			$page_name = '/register';
 		  include ('inc/head.php');
 		?>
 

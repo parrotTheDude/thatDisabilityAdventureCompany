@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'Group-Based Activities | TDAC Australia';
 			$page_decription = 'Join TDAC’s group-based activities for inclusive, fun, and supportive programs that build skills, foster friendships, and create lasting memories.';
+			$page_name = '/group-activities';
 		  include ('inc/head.php');
 		?>
 

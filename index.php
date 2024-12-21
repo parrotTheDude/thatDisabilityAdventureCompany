@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'Inclusive NDIS Adventures & Disability Programs | TDAC Australia';
 			$page_decription = 'Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures.';
+			$page_name = '/';
 		  include ('inc/head.php');
 		?>
 	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
@@ -39,7 +40,7 @@
     				<h2 id="mobileh2" class="gothamBook">Disability Support in Victoria</h2>
     				<p>At <i>That Disability Adventure Company (TDAC)</i>, we provide inclusive programs for people with disabilities. Based in Melbourne and Gippsland, we offer experience-based adventures to foster skills, confidence, and lasting memories. Our tailored approach aligns with NDIS goals, encouraging participants to step outside their comfort zone and embrace new opportunities in supportive local communities.</p>
     				<section class="btnsContainer" id="btnIndex">
-    					<div class="topBtns accentBlueBg indexVideo"><a href="/tdacPromoVideo" class="linkBtn" id="whiteTxt">Roll Film</a></div>
+    					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Roll Film</a></div>
     				</section>
     			</section>
 

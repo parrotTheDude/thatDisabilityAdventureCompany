@@ -19,11 +19,11 @@
 </title>
 <meta name="description" content="<?php echo htmlspecialchars($page_decription); ?>" />
 
-<meta property="og:title" content="Inclusive NDIS Adventures & Disability Programs | TDAC Australia" />
+<meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>" />
 <meta property="og:locale" content="en" />
-<meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
+<meta property="og:description" content="<?php echo htmlspecialchars($page_decription); ?>" />
 <meta property="og:site_name" content="That Disability Adventure Company" />
-<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/" />
+<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au<?php echo htmlspecialchars($page_name); ?>" />
 <meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
 <meta property="og:type" content="website" />
 
@@ -36,7 +36,7 @@
   "name": "That Disability Adventure Company",
   "image": "https://thatdisabilityadventurecompany.com.au/icons/logo.webp",
   "@id": "",
-  "url": "https://thatdisabilityadventurecompany.com.au/",
+  "url": "https://thatdisabilityadventurecompany.com.au<?php echo htmlspecialchars($page_name); ?>",
   "telephone": "0356 105 115",
   "address": {
     "@type": "PostalAddress",

@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'About TDAC: Inclusive Adventures and Support Programs';
 			$page_decription = 'Learn about TDAC’s mission to provide inclusive adventures and supportive programs, empowering individuals with disabilities to thrive and connect.';
+			$page_name = '/about-us';
 		  include ('inc/head.php');
 		?>
 

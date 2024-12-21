@@ -4,6 +4,7 @@
 		<?php
 			$page_title = 'Overnight Stays | TDAC Australia';
 			$page_decription = 'Experience safe, supportive overnight stays that build independence, foster friendships, and create lasting memories in an inclusive environment.';
+			$page_name = '/overnight-stays';
 		  include ('inc/head.php');
 		?>
 

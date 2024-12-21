@@ -13,7 +13,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
 		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/tdacPromoVideo" />
+		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/promo-video" />
 
 		<!-- Title and Description tags -->
 		<title>Promo Video for That Disability Adventure Company</title>
@@ -22,8 +22,8 @@
 		<meta property="og:title" content="Inclusive NDIS Adventures & Disability Programs | TDAC Australia" />
 		<meta property="og:locale" content="en" />
 		<meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
-		<meta property="og:site_name" content="That Disability Adventure Company" />
-		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/" />
+		<meta property="og:site_name" content="Inclusive NDIS Adventures & Disability Programs | TDAC Australia" />
+		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/promo-video" />
 		<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
 		<meta property="og:type" content="website" />
 
@@ -36,16 +36,16 @@
 	      "name": "Who is That Disability Adventure Company?",
 	      "description": "That Disability Adventure Company (TDAC) is committed to empowering individuals with disabilities through inclusive, experience-based programs designed to inspire growth and foster connections. Our offerings include group activities, overnight stays, and life skills development, all tailored to align with NDIS goals. Based in Melbourne, Gippsland and the mornington peninsula, TDAC provides a supportive environment where participants can build confidence, enhance independence, and create lasting memories while achieving personal goals.",
 	      "thumbnailUrl": [
-	        "https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp",
+	        "https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp"
 	       ],
-	      "uploadDate": "2024-12-16T08:00:00+08:00",
-	      "duration": "PT1M54S",
+	      "uploadDate": "2024-12-16",
+	      "duration": "PT4M5S",
 	      "contentUrl": "https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4",
 	      "embedUrl": "https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4",
 	      "interactionStatistic": {
 	        "@type": "InteractionCounter",
 	        "interactionType": { "@type": "WatchAction" },
-	        "userInteractionCount": 5647018
+	        "userInteractionCount": 1
 	      }
 	    }
 	    </script>
