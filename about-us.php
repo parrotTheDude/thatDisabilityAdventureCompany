@@ -6,6 +6,8 @@
 			$page_decription = 'Learn about TDAC’s mission to provide inclusive adventures and supportive programs, empowering individuals with disabilities to thrive and connect.';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/about-us" />
 	</head>
 
 	<body id="theTop">

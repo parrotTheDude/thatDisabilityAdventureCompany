@@ -6,6 +6,8 @@
 			$page_decription = 'Develop practical life skills to enhance independence and confidence in everyday tasks through guided, hands-on support.';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/lifeskills" />
 	</head>
 
 	<body id="theTop">

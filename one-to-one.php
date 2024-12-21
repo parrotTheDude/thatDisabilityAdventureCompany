@@ -6,6 +6,8 @@
 			$page_decription = 'Personalized one-to-one support tailored to your needs, helping build confidence, independence, and achieve your goals';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/one-to-one" />
 	</head>
 
 	<body id="theTop">

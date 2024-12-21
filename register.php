@@ -6,6 +6,8 @@
 			$page_decription = 'Register as a participant at TDAC to access inclusive programs designed to build skills, foster friendships, and create lasting memories.';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/register" />
 	</head>
 
 	<body id="theTop">

@@ -6,6 +6,7 @@
 			$page_decription = 'Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures.';
 		  include ('inc/head.php');
 		?>
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
 	</head>
 
 	<body id="theTop">

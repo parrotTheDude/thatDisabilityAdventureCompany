@@ -6,6 +6,8 @@
 			$page_decription = 'Learn how TDAC protects your personal information. Our Privacy Policy outlines how we collect, use, and safeguard your data to ensure your privacy.';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/privacy" />
 	</head>
 
 	<body id="theTop">

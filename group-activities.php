@@ -6,6 +6,8 @@
 			$page_decription = 'Join TDAC’s group-based activities for inclusive, fun, and supportive programs that build skills, foster friendships, and create lasting memories.';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/group-activities" />
 	</head>
 
 	<body id="theTop">

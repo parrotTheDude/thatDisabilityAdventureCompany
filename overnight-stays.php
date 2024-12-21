@@ -6,6 +6,8 @@
 			$page_decription = 'Experience safe, supportive overnight stays that build independence, foster friendships, and create lasting memories in an inclusive environment.';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/overnight-stays" />
 	</head>
 
 	<body id="theTop">

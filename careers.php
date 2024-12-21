@@ -6,6 +6,8 @@
 			$page_decription = 'Join TDAC as a support worker and help empower individuals with disabilities through inclusive, person-centered care. Make a lasting impact today!';
 		  include ('inc/head.php');
 		?>
+
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/careers" />
 	</head>
 
 	<body id="theTop">

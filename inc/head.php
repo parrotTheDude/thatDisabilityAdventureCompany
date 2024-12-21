@@ -10,7 +10,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
 
 <!-- Title and Description tags -->
 <title>
