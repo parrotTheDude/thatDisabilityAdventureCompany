@@ -140,7 +140,7 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
-			<?php include ('inc/jshttps://thatdisabilityadventurecompany.com.au/contactJs.php');?>
+			<?php include ('inc/js/contactJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
 		</script>
 	</body>
