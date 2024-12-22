@@ -17,6 +17,7 @@
 	    <a href="https://thatdisabilityadventurecompany.com.au/careers">Join our team!</a>
 	  </div>
 	</div>
+	<li><a href="https://thatdisabilityadventurecompany.com.au/disability-day-programs">Blog</a></li>
 	<!-- <li><a href="/merch">Merchandise</a></li> -->
 	<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 	<section class="hideSocials">

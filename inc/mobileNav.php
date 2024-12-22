@@ -17,6 +17,7 @@
 				</ul>
 			</li>
 			<!-- <li><a href="/merch">Merchandise</a></li> -->
+			<li><a href="https://thatdisabilityadventurecompany.com.au/disability-day-programs">Blog</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 		<li class="mobileSocials">
 			<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>

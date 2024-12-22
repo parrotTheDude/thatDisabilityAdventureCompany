@@ -1136,6 +1136,88 @@ footer {
   height: 8rem;
 }
 
+.articleTitleContainer {
+  width: 80%;
+  margin: 3rem auto;
+  display: block;
+  background-color: #fff;
+  color: #327892;
+  text-align: center;
+}
+
+.articleIcon {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
+
+.articleTitle {
+  margin: 2rem auto 1rem auto;
+  width: 40%;
+  font-size: 2rem;
+  font-family: gothamBook;
+}
+
+.mainArticle {
+  background-color: #327892;
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 2rem;
+}
+
+.textContainer {
+  width: 40%;
+  margin: auto;
+}
+
+.paragraphSection {
+  padding-bottom: 2rem;
+}
+
+.imgContainerArticle img {
+  width: 100%;
+  height: auto;
+}
+
+.imgLabel {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.articleLink {
+  color: #fff;
+  text-decoration: underline;
+  background-image: linear-gradient( to right, #22f24c, #22f24c 50%, #fff 50% );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+ /* Style the header: fixed position (always stay at the top) */
+.progressbarHead {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #327892;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #f28022;
+  width: 0%;
+} 
+
 
 
 /* ---- Media Queries ---- */
@@ -1426,6 +1508,24 @@ footer {
   }
 }
 
+/* Article Responsivness */
+@media screen and (max-width: 1530px){
+  .articleTitle {
+    width: 65%;
+  }
+  .textContainer {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .articleTitle {
+    width: 100%;
+  }
+  .textContainer {
+    width: 100%;
+  }
+}
 
 
 /* Font Families */
