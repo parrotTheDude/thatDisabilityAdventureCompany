@@ -365,6 +365,7 @@ menu li {
   height: 100%;
   right: -31rem;
   width: 50%;
+  z-index: 10;
   transition: 0.6s ease;
 }
 

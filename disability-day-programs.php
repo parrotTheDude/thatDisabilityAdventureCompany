@@ -86,8 +86,8 @@
 						</section>
 
 						<section class="imgContainerArticle">
-							<img src="/img/blog/day-trip-in-melbourne.webp" alt="Day trip in melbourne">
-							<p class="imgLabel">Day trip in melbourne</p>
+							<img src="/img/blog/day-trip-in-melbourne.webp" alt="Day trip in Melbourne">
+							<p class="imgLabel">Day trip in Melbourne</p>
 						</section>
 
 						<section class="paragraphSection">

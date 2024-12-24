@@ -14,7 +14,6 @@
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<?php 
-			  $page_name = 'index';
 			  include ('inc/header.php');
 		  ?>
 		</header>
