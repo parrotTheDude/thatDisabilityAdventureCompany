@@ -1,16 +1,1 @@
-(() => {
-  'use strict';
-  // Page is loaded
-  const objects = document.getElementsByClassName('asyncImage');  Array.from(objects).map((item) => {
-    // Start loading image
-    const img = new Image();
-    img.src = item.dataset.src;
-    // Once image is loaded replace the src of the HTML element
-    img.onload = () => {
-      item.classList.remove('asyncImage');
-      return item.nodeName === 'IMG' ? 
-        item.src = item.dataset.src :        
-        item.style.backgroundImage = `url(${item.dataset.src})`;
-    };
-  });
-})();
+(()=>{"use strict";const s=document.getElementsByClassName("asyncImage");Array.from(s).map(s=>{const a=new Image;a.src=s.dataset.src,a.onload=()=>(s.classList.remove("asyncImage"),"IMG"===s.nodeName?s.src=s.dataset.src:s.style.backgroundImage=`url(${s.dataset.src})`)})})();

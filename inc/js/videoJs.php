@@ -1,14 +1,1 @@
-let videoplayed = false;
-function videoPlayer(x) {
-  var video = document.getElementById("videoToggle");
-
-
-  if (videoplayed === false) {
-		video.classList.add("videoDisplay");
-  	videoplayed = true;
-  } else  {
-		video.classList.remove("videoDisplay");
-    document.getElementById("video").pause();
-  	videoplayed = false;
-  }
-}
+let videoplayed=!1;function videoPlayer(e){var d=document.getElementById("videoToggle");!1===videoplayed?(d.classList.add("videoDisplay"),videoplayed=!0):(d.classList.remove("videoDisplay"),document.getElementById("video").pause(),videoplayed=!1)}
