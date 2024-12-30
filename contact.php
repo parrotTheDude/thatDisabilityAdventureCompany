@@ -68,6 +68,7 @@
 			        <div class="formMessage">
 			          <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
 			        </div>
+			        <div class="h-captcha" data-captcha="true"></div>
 			        <button type="submit" id="formBtn" class="topBtns whiteBg">
 			          Send Message
 			        </button>

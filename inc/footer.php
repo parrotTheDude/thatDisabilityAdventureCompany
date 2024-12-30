@@ -50,5 +50,19 @@
 	</section>
 </footer>
 
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script type="text/javascript">
+	const form = document.getElementById('form');
+	form.addEventListener('submit', function(e) {
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+	});
+</script>
+
 <?php include ('inc/analytics.php');?>
 
