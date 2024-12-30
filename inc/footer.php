@@ -16,9 +16,10 @@
 			<li><a href="https://thatdisabilityadventurecompany.com.au/one-to-one">One to One</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/register">Become a participant</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/careers">Join our team!</a></li>
-			<!-- <li><a href="/merch">Merchandise</a></li> -->
+			<li><a href="https://thatdisabilityadventurecompany.com.au/disability-day-programs">Blog</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/privacy">Privacy Policy</a></li>
+
 		</menu>
 	</section>
 
@@ -39,7 +40,7 @@
 
 	<section class="lastWord">
 		<?php
-			echo "<p class='cc'>Copyright &copy; " . date('Y') . " thatdisabilityadventurecompany.com</p>";
+			echo "<p class='cc'>Copyright &copy; " . date('Y') . " thatdisabilityadventurecompany.com.au</p>";
 		?>
 		<aside class="bottomContainer">
 			<a target="_blank" href="https://www.jbowerman.com/">
