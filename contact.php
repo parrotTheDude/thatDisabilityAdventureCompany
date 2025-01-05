@@ -31,6 +31,7 @@
 					<section class="contactTitleContainer">
 						<img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg" loading="lazy">
 						<h1 id="contactTitle">Get in touch today!</h1>
+						<br />
 					</section>
 
 					<section class="contactFormContainer">
