@@ -38,7 +38,7 @@
 	      "thumbnailUrl": [
 	        "https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp"
 	       ],
-	      "uploadDate": "2024-12-16",
+	      "uploadDate": "2025-01-05T09:00:00+10:00",
 	      "duration": "PT4M5S",
 	      "contentUrl": "https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4",
 	      "embedUrl": "https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4",
