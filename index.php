@@ -33,6 +33,7 @@
 					alt="Crew Image">
     		</section>
 
+    		<!-- Hero Panel -->
     		<article class="topContent whiteBg">
     			<section class="topWritten">
     				<h1 id="mobileh1" class="gothamBold">Inclusive Adventures for All Abilities</h1>
