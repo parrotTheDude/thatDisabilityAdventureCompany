@@ -50,7 +50,6 @@
 	</section>
 </footer>
 
-<script src="https://web3forms.com/client/script.js" async defer></script>
 <script type="text/javascript">
 	const form = document.getElementById('form');
 	form.addEventListener('submit', function(e) {

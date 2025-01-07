@@ -9,10 +9,10 @@
   use Postmark\PostmarkClient;
   use Postmark\Models\PostmarkAttachment;
 
-  $name = "";
-  $email = "";
-  $phone = "0";
-  $message = "";
+  $name = "John Doe";
+  $email = "random@email.com";
+  $phone = "0456123123";
+  $message = "No message sent";
 
   if(isset($_POST['submit'])) {
     $name = ucwords(strtolower($_POST['name']));
