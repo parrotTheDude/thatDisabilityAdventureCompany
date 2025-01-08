@@ -38,7 +38,9 @@
     			<section class="topWritten">
     				<h1 id="mobileh1" class="gothamBold">Inclusive Disability Support Services for All Abilities</h1>
     				<h2 id="mobileh2" class="gothamBook">Disability Services in Victoria</h2>
-    				<p><i>That Disability Adventure Company (TDAC)</i> provides inclusive day programs for people with disabilities. If you're looking for fun things to do in the city, NDIS assistance with daily life or independent living help, we're the guys for you! Based in Melbourne, Gippsland, and the Mornington Peninsula, we aim to be different to your regular support worker agencies. Our programs are experience-based adventures designed to improve living skills, social confidence, and create lasting memories. We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
+    				<p><i>That Disability Adventure Company (TDAC)</i> provides inclusive day programs for people with disabilities. If you're looking for fun things to do in the city, NDIS assistance with daily life or independent living help, we're the guys for you!</p>
+    				<p>Based in Melbourne, Gippsland, and the Mornington Peninsula, we aim to be different to your regular support worker agencies. Our programs are experience-based adventures designed to improve living skills, social confidence, and create lasting memories.</p>
+    				<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team. Want to find out more? Check out our promo video below!</p>
     				<section class="btnsContainer" id="btnIndex">
     					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Roll Film</a></div>
     				</section>
