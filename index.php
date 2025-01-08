@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'NDIS Disability Day Programs | TDAC Australia';
+			$page_title = 'NDIS Disability Day Programs | That Disability Adventure Company';
 			$page_decription = 'We provide disability services for young adults looking to improve their independent living skills and engage in activities for people with disabilities.';
 			$page_name = '/';
 		  include ('inc/head.php');
