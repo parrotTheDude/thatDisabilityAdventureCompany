@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Inclusive NDIS Adventures & Disability Programs | TDAC Australia';
-			$page_decription = 'Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures.';
+			$page_title = 'NDIS Disability Day Programs | TDAC Australia';
+			$page_decription = 'We provide disability services for young adults looking to improve their independent living skills and engage in activities for people with disabilities.';
 			$page_name = '/';
 		  include ('inc/head.php');
 		?>
@@ -36,9 +36,9 @@
     		<!-- Hero Panel -->
     		<article class="topContent whiteBg">
     			<section class="topWritten">
-    				<h1 id="mobileh1" class="gothamBold">Inclusive Adventures for All Abilities</h1>
-    				<h2 id="mobileh2" class="gothamBook">Disability Support in Victoria</h2>
-    				<p>At <i>That Disability Adventure Company (TDAC)</i>, we provide inclusive programs for people with disabilities. Based in Melbourne and Gippsland, we offer experience-based adventures to foster skills, confidence, and lasting memories. Our tailored approach aligns with NDIS goals, encouraging participants to step outside their comfort zone and embrace new opportunities in supportive local communities.</p>
+    				<h1 id="mobileh1" class="gothamBold">Inclusive Disability Support Services for All Abilities</h1>
+    				<h2 id="mobileh2" class="gothamBook">Disability Services in Victoria</h2>
+    				<p><i>That Disability Adventure Company (TDAC)</i> provides inclusive day programs for people with disabilities. If you're looking for fun things to do in the city, NDIS assistance with daily life or independent living help, we're the guys for you! Based in Melbourne, Gippsland, and the Mornington Peninsula, we aim to be different to your regular support worker agencies. Our programs are experience-based adventures designed to improve living skills, social confidence, and create lasting memories. We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
     				<section class="btnsContainer" id="btnIndex">
     					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Roll Film</a></div>
     				</section>
