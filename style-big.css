@@ -628,6 +628,11 @@ main {
   margin: auto;
 }
 
+#buttonFixAbout {
+  max-width: 16rem;
+  margin: auto;
+}
+
 #buttonFix404 {
   max-width: 15rem;
   margin: auto;

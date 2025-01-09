@@ -130,7 +130,7 @@
     				<h2 class="gothamBook" id="aboutSubTitle">Are you ready for the experience of a life time?</h2>
     				<p>Explore exciting events designed for individuals with disabilities! From group adventures to skill-building workshops, our events offer inclusive opportunities to connect, grow, and create lasting memories. Check out our upcoming events and join the fun today!</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<div id="buttonFix" class="topBtns accentBlueBg marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/group-activities" class="linkBtn" id="specialB">See our group activities!</a></div>
+    					<div id="buttonFixAbout" class="topBtns accentBlueBg marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/group-activities" class="linkBtn" id="specialB">See our group activities!</a></div>
     				</section>
     			</section>
     		</article>

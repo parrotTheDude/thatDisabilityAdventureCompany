@@ -43,8 +43,8 @@
 			echo "<p class='cc'>Copyright &copy; " . date('Y') . " thatdisabilityadventurecompany.com.au</p>";
 		?>
 		<aside class="bottomContainer">
-			<a target="_blank" href="https://www.jbowerman.com/">
-				<p class="footerNote">created by jacob</p>
+			<a target="_blank" href="https://www.bowermandigital.com/">
+				<p class="footerNote">Built, designed and optimised by Bowerman Digital</p>
 			</a>
 		</aside>
 	</section>
