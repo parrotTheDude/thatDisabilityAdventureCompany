@@ -34,41 +34,39 @@
 
     $postmarkToken = POSTMARK_TOKEN;
 
-     if (preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-       if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-         $client = new PostmarkClient($postmarkToken);
+     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+       $client = new PostmarkClient($postmarkToken);
 
-         $fromEmail = "hello@thatdisabilityadventurecompany.com.au";
-         $toEmail = "hello@tdacvic.com";
-         $subject = $name . " wants to get in contact.";
-         $htmlBody = "<strong>Hello!</strong> My name is " . $name . ". <br /><br />Email: " . $email . "<br />Phone: " . $phone . "<br /><br />Message:<br />" . $message;
-         $textBody = "Hello! My name is " . $name  . ".Email: " . $email . "Phone: " . $phone . "Message:" . $message;;
-         $tag = "contact-form-enquiry";
-         $trackOpens = false;
-         $trackLinks = "None";
-         $messageStream = "outbound"; 
+       $fromEmail = "hello@thatdisabilityadventurecompany.com.au";
+       $toEmail = "hello@tdacvic.com";
+       $subject = $name . " wants to get in contact.";
+       $htmlBody = "<strong>Hello!</strong> My name is " . $name . ". <br /><br />Email: " . $email . "<br />Phone: " . $phone . "<br /><br />Message:<br />" . $message;
+       $textBody = "Hello! My name is " . $name  . ".Email: " . $email . "Phone: " . $phone . "Message:" . $message;;
+       $tag = "contact-form-enquiry";
+       $trackOpens = false;
+       $trackLinks = "None";
+       $messageStream = "outbound"; 
 
-         // Send an email to me about contact information
-         $sendResult = $client->sendEmail(
-           $fromEmail,
-           $toEmail,
-           $subject,
-           $htmlBody,
-           $textBody,
-           $tag,
-           $trackOpens,
-           NULL, // Reply To
-           NULL, // CC
-           NULL, // BCC
-           NULL, // Header array
-           NULL, // Attachment array
-           $trackLinks,
-           NULL, // Metadata array
-           $messageStream
-         );
-         $status = true;
-       }
-     } else {
-       $status = false;
+       // Send an email to me about contact information
+       $sendResult = $client->sendEmail(
+         $fromEmail,
+         $toEmail,
+         $subject,
+         $htmlBody,
+         $textBody,
+         $tag,
+         $trackOpens,
+         NULL, // Reply To
+         NULL, // CC
+         NULL, // BCC
+         NULL, // Header array
+         NULL, // Attachment array
+         $trackLinks,
+         NULL, // Metadata array
+         $messageStream
+       );
+       $status = true;
      }
-  }
+   } else {
+     $status = false;
+   }
