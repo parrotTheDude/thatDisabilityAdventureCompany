@@ -50,7 +50,8 @@
 	</section>
 </footer>
 
-<script type="text/javascript">
+<!-- hCaptcha JS -->
+<!-- <script type="text/javascript">
 	const form = document.getElementById('form');
 	form.addEventListener('submit', function(e) {
     const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
@@ -61,7 +62,7 @@
         return
     }
 	});
-</script>
+</script> -->
 
 <?php include ('inc/analytics.php');?>
 

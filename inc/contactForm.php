@@ -24,8 +24,8 @@
           <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
         </div>
 
-        <div class="h-captcha" data-sitekey="d31cc366-e12a-4ec0-89e0-e4e051de8d32"></div>
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        <!-- <div class="h-captcha" data-sitekey="d31cc366-e12a-4ec0-89e0-e4e051de8d32"></div>
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script> -->
 
         <div class="formBtnContainer">
           <button type="submit" id="formBtn" name="submit" class="topBtns whiteBg">Send Message</button>
