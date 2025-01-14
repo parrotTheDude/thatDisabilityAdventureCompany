@@ -24,6 +24,7 @@
           <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
         </div>
 
+        <!-- To be used if and when I upgrade the plan again -->
         <!-- <div class="h-captcha" data-sitekey="d31cc366-e12a-4ec0-89e0-e4e051de8d32"></div>
         <script src="https://js.hcaptcha.com/1/api.js" async defer></script> -->
 
