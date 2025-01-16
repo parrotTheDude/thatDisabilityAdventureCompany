@@ -37,15 +37,39 @@
      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
        $client = new PostmarkClient($postmarkToken);
 
+       $templateId = 38711879;
        $fromEmail = "hello@thatdisabilityadventurecompany.com.au";
-       $toEmail = "hello@tdacvic.com";
+       $toEmail = $email;
        $subject = $name . " wants to get in contact.";
        $htmlBody = "<strong>Hello!</strong> My name is " . $name . ". <br /><br />Email: " . $email . "<br />Phone: " . $phone . "<br /><br />Message:<br />" . $message;
        $textBody = "Hello! My name is " . $name  . ".Email: " . $email . "Phone: " . $phone . "Message:" . $message;;
-       $tag = "contact-form-enquiry";
-       $trackOpens = false;
+       $tag = "contact-form-receipt";
+       $trackOpens = true;
        $trackLinks = "None";
        $messageStream = "outbound"; 
+
+       // Send an email to client to confirm:
+        $sendResult = $client->sendEmailWithTemplate(
+          $fromEmail,
+          $toEmail,
+          $templateId,
+          ["name" => $name],
+          true, // Inline CSS
+          "enquiry-confirmation", // Tag
+          $trackOpens, // Track opens
+          NULL, // Reply To
+          NULL, // CC
+          NULL, // BCC
+          NULL, // Header array
+          NULL, // Attachment array
+          NULL, // Track links
+          NULL, // Metadata array
+          NULL // Message stream
+        );
+
+      $toEmail = "hello@tdacvic.com";
+      $tag = "contact-form-enquiry";
+      $trackOpens = false;
 
        // Send an email to me about contact information
        $sendResult = $client->sendEmail(
