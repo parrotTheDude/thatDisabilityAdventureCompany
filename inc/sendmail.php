@@ -14,6 +14,8 @@
   $phone = "0456123123";
   $message = "No message sent";
 
+  // Need to work more on thid. Check DB contains email already or not? 
+
   if(isset($_POST['submit'])) {
     $name = ucwords(strtolower($_POST['name']));
     $l_name = ucwords(strtolower($_POST['last_name']));
