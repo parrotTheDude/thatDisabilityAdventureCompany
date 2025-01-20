@@ -130,7 +130,7 @@
     				<p class="paraBigger">Getting started is easy! You can:</p>
     				<ul class="block">
     					<li>Fill out our easy <span class="orange" onclick="smoothScroll()">online referral form</span></li>
-    					<li>Call us on <a class="topLinks changeLink" href="tel:+61356105115">0356 105 115</a></li>
+    					<li>Call us on <a class="topLinks changeLink" href="tel:1800319581">1800 319 581</a></li>
     					<li>Email us @ <a class="topLinks changeLink" href="mailto:hello@tdacvic.com?subject=Website Enquire">hello@tdacvic.com</a></li>
     				</ul>
     			</section>

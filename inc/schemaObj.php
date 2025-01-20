@@ -6,7 +6,7 @@
   "image": "https://thatdisabilityadventurecompany.com.au/icons/logo.webp",
   "@id": "",
   "url": "https://thatdisabilityadventurecompany.com.au/",
-  "telephone": "0356 105 115",
+  "telephone": "1800 319 581",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "",

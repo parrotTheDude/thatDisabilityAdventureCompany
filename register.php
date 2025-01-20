@@ -66,7 +66,7 @@
   							<img src="icons/call.svg" alt="Teamwork Icon" class="whatToExpectIcon">
   							<h3>Call us</h3>
   							<section class="topBtns accentBlueBg registerBtn">
-  								<a class="topLinks" href="tel:+61356105115">0356 105 115</a>
+  								<a class="topLinks" href="tel:1800319581">1800 319 581</a>
   							</section>
   						</section>
   						<section class="whatToExpectIcons">

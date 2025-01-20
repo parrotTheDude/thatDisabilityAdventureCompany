@@ -86,9 +86,9 @@
           NULL, // BCC
           NULL, // Header array
           NULL, // Attachment array
-          NULL, // Track links
+          $trackLinks, // Track links
           NULL, // Metadata array
-          NULL // Message stream
+          $messageStream // Message stream
         );
 
         $templateId = 38713021;
@@ -113,9 +113,9 @@
           NULL, // BCC
           NULL, // Header array
           NULL, // Attachment array
-          NULL, // Track links
+          $trackLinks, // Track links
           NULL, // Metadata array
-          NULL // Message stream
+          $messageStream // Message stream
         );
 
         $emailsSent = true;
