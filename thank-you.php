@@ -31,11 +31,17 @@
 				<section class="contactContainer white">
 					<section class="contactTitleContainer">
 						<img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg" loading="lazy">
+						<?php if($emailsSent == true) { ?>
 						<h1 id="contactTitle">Thanks for getting in touch, <?php echo $name; ?></h1>
 		        <p>We will be in touch soon.</p>
+		        <?php } else  { ?>
+		        <h1 id="contactTitle">Something went wrong.</h1>
+		        <p>Your email wasn't sent. Please try again</p>
+		      	<?php } ?>
 					</section>
 
 					<section class="contactFormContainer">
+						<?php if($emailsSent == true) { ?>
 		        <section class="formContainer">
 		          <p>Here are your message details:</p>
 		          <br />
@@ -43,6 +49,7 @@
 		          <p>Telephone: <?php echo $phone; ?></p>
 		          <p>Message:<br /><?php echo $message; ?></p>
 			      </section>
+			    <?php } ?>
 			      <section class="btnsContainer">
     					<div class="topBtns accentBlueBg" id="thanksBtn"><a href="https://thatdisabilityadventurecompany.com.au/" class="linkBtn" id="blueTxt">Take me home!</a></div>
     				</section>

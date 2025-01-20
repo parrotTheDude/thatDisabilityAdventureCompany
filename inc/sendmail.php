@@ -13,6 +13,8 @@
   $email = "random@email.com";
   $phone = "0456123123";
   $message = "No message sent";
+  $dbInserted = false;
+  $emailsSent = false;
 
   // Need to work more on thid. Check DB contains email already or not? 
 
@@ -28,26 +30,49 @@
     $id = hash('sha256', $hash);
     $emailValid = 0;
 
-    $sql_statement = "
-    INSERT INTO user (id, first_name, last_name, email, email_valid, phone, date_created, last_updated) 
-    VALUE ('$id', '$name', '$l_name', '$email', '$emailValid', '$phone', '$dateCreated', '$lastUpdated')";
-
-    $users = $db_link->query($sql_statement) or die($db_link->error);
-
     $postmarkToken = POSTMARK_TOKEN;
 
-     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $client = new PostmarkClient($postmarkToken);
 
-       $templateId = 38711879;
-       $fromEmail = "hello@thatdisabilityadventurecompany.com.au";
-       $toEmail = $email;
-       $tag = "contact-form-receipt";
-       $trackOpens = true;
-       $trackLinks = "None";
-       $messageStream = "outbound"; 
+    // Checks to see if the person getting in contact has emailed before. If not then stores their data in the database 
+    try {
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $sql_statement = "SELECT `email` FROM `user` WHERE `email` = '$email'";
 
-       // Send an email to client to confirm:
+        $emailCheck = $db_link->query($sql_statement) or die($db_link->error);
+
+        if(mysqli_num_rows($emailCheck)) {
+          $sql_statement = "
+          UPDATE `user` SET `last_updated`= '$lastUpdated' WHERE email = '$email'";
+
+          $users = $db_link->query($sql_statement) or die($db_link->error);
+        } else {
+          $sql_statement = "
+          INSERT INTO user (id, first_name, last_name, email, email_valid, phone, date_created, last_updated) 
+          VALUE ('$id', '$name', '$l_name', '$email', '$emailValid', '$phone', '$dateCreated', '$lastUpdated')";
+
+          $users = $db_link->query($sql_statement) or die($db_link->error);
+        }
+      }
+      $dbInserted = true;
+    } catch (Exception $e) {
+      $dbInserted = false;
+    }
+    
+
+    try {
+      // Sends the emails to the contact and the company
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $client = new PostmarkClient($postmarkToken);
+
+        $templateId = 38711879;
+        $fromEmail = FROM_EMAIL;
+        $toEmail = $email;
+        $tag = "contact-form-receipt";
+        $trackOpens = true;
+        $trackLinks = "None";
+        $messageStream = "outbound"; 
+
+        // Send an email to client to confirm:
         $sendResult = $client->sendEmailWithTemplate(
           $fromEmail,
           $toEmail,
@@ -66,12 +91,12 @@
           NULL // Message stream
         );
 
-      $templateId = 38713021;
-      $toEmail = "hello@tdacvic.com";
-      $tag = "contact-form-enquiry";
-      $trackOpens = false;
+        $templateId = 38713021;
+        $toEmail = TO_EMAIL;
+        $tag = "contact-form-enquiry";
+        $trackOpens = false;
 
-      // Send an email to client to confirm:
+        // Send an email to client to confirm:
         $sendResult = $client->sendEmailWithTemplate(
           $fromEmail,
           $toEmail,
@@ -92,8 +117,11 @@
           NULL, // Metadata array
           NULL // Message stream
         );
-       $status = true;
-     }
-   } else {
-     $status = false;
-   }
+
+        $emailsSent = true;
+        }
+      } catch (Exception $e) {
+      $emailsSent = false;
+    }
+    }
+    
