@@ -9,6 +9,7 @@
   use Postmark\PostmarkClient;
   use Postmark\Models\PostmarkAttachment;
 
+  // Set base variables incase something goes wrong
   $name = "John Doe";
   $email = "random@email.com";
   $phone = "0456123123";
@@ -16,9 +17,9 @@
   $dbInserted = false;
   $emailsSent = false;
 
-  // Need to work more on thid. Check DB contains email already or not? 
-
+  // Checks if the form was sent correctly submitted
   if(isset($_POST['submit'])) {
+    // Cleans up the variables
     $name = ucwords(strtolower($_POST['name']));
     $l_name = ucwords(strtolower($_POST['last_name']));
     $email = str_replace(' ', '', strtolower($_POST['email']));
@@ -48,7 +49,7 @@
         } else {
           $sql_statement = "
           INSERT INTO user (id, first_name, last_name, email, email_valid, phone, date_created, last_updated) 
-          VALUE ('$id', '$name', '$l_name', '$email', '$emailValid', '$phone', '$dateCreated', '$lastUpdated')";
+          VALUES ('$id', '$name', '$l_name', '$email', '$emailValid', '$phone', '$dateCreated', '$lastUpdated')";
 
           $users = $db_link->query($sql_statement) or die($db_link->error);
         }

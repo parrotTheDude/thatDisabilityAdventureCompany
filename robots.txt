@@ -1,4 +1,7 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+Disallow: /validate-email$
+Disallow: /test$
+Disallow: /thank-you$
 Sitemap: https://thatdisabilityadventurecompany.com.au/sitemap.xml
