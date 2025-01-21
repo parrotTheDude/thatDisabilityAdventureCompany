@@ -4,6 +4,8 @@
 
   db_connect();
 
+  
+
  	// Sets variables for the token passed from the email link
   $token = $_GET['tkn'];
   // Check variables
@@ -16,32 +18,45 @@
 
 	try {
 		// Selects the userToken data from the db where the token matches
-		$sql_statement = "SELECT `id`, `emailToken`, `dateCreated` FROM `user_tokens` WHERE `emailToken` = '$token'";
+		$sql_statement = "
+			SELECT `emailToken`, `dateCreated`, `tokenSpent`, `salt`, `email` 
+			FROM `user_tokens` 
+			JOIN user ON user_tokens.id = user.id
+			WHERE `emailToken` = '$token'";
+
   	$validEmailCheck = $db_link->query($sql_statement) or die($db_link->error);
 
 	  $emailCheck_row = $validEmailCheck->fetch_assoc();
 
 	  // Assigns the db data to variables
-	  $id = $emailCheck_row['id'];
+	  $tokenSpent = $emailCheck_row['tokenSpent'];
 	  // Recreates the hash to validate the token
-	  $hash =  $emailCheck_row['emailToken'] . $emailCheck_row['dateCreated'];
+	  $email = $emailCheck_row['email'];
+	  $salt = $emailCheck_row['salt'];
+	  $dateTokenGen = $emailCheck_row['dateCreated'];
+  	$hash =  $email . $salt;
 		$checkToken = hash('sha256', $hash);
 
 		// Checks if the email value exists
 	  if(mysqli_num_rows($validEmailCheck)) {
-	  	// Checks if the token was created within the last 24 hours
-	  	if(strtotime($currentDateTime) - strtotime($emailCheck_row['dateCreated']) < 86400) {
-	  		// If the token matches the token gen then it is granted
-	  		if ($checkToken == $token) {
-	  			$tokenValid = true;
-	  		} else {
-	  			$tokenValid = false;
-	  			$errorCheck = "This token has expired.";
-	  		}
+	  	if ($tokenSpent == 0) {
+	  		// Checks if the token was created within the last 24 hours
+		  	if(strtotime($currentDateTime) - strtotime($dateTokenGen) < 86400) {
+		  		// If the token matches the token gen then it is granted
+		  		if ($checkToken == $token) {
+		  			$tokenValid = true;
+		  		} else {
+		  			$tokenValid = false;
+		  			$errorCheck = "This token has expired.";
+		  		}
+		  	} else {
+		  		// If it is over 24hrs then the token is deemed expired
+		  		$tokenExpired = true;
+		  		$errorCheck = "This link has expired. Please request a new link from the team.";
+		  	}
 	  	} else {
-	  		// If it is over 24hrs then the token is deemed expired
-	  		$tokenExpired = true;
-	  		$errorCheck = "This link has expired. Please request a new link from the team.";
+	  		$tokenValid = false;
+	  		$errorCheck = "This token as already been used";
 	  	}
 	  }	else {
 	  	$tokenValid = false;
@@ -53,15 +68,17 @@
 	  	$sql_statement = "
       UPDATE `user` SET `email_valid`= 1, `last_updated`= '$currentDateTime' WHERE id = '$id'";
 
+      // DONT ID VARIABLE. NEED OT FIX THIS!!!!
+
+
+      $users = $db_link->query($sql_statement) or die($db_link->error);
+      $sql_statement = "
+      UPDATE `user_tokens` SET `tokenSpent`= 1 WHERE id = '$id'";
       $users = $db_link->query($sql_statement) or die($db_link->error);
 	  }
-
-
 	} catch (Exception $e) {
-		$errorCheck = "Somethings went wrong";
+		$errorCheck = "Something went wrong";
 	}
-
-// NEED TO CHANGE THE SPENT VALUE TO 1 ONCE IT HAS BEEN VERIFIED
 
 ?>
 <!DOCTYPE html>
