@@ -4,8 +4,6 @@
 
   db_connect();
 
-  
-
  	// Sets variables for the token passed from the email link
   $token = $_GET['tkn'];
   // Check variables
@@ -66,14 +64,10 @@
 	  // Double bool to make sure the token is valid and witin expiry. Then updates the email to be valid and the last updated along with it
 	  if ($tokenValid == true && $tokenExpired == false) {
 	  	$sql_statement = "
-      UPDATE `user` SET `email_valid`= 1, `last_updated`= '$currentDateTime' WHERE id = '$id'";
-
-      // DONT ID VARIABLE. NEED OT FIX THIS!!!!
-
-
+      UPDATE `user` SET `email_valid`= 1, `last_updated`= '$currentDateTime' WHERE email = '$email'";
       $users = $db_link->query($sql_statement) or die($db_link->error);
       $sql_statement = "
-      UPDATE `user_tokens` SET `tokenSpent`= 1 WHERE id = '$id'";
+      UPDATE `user_tokens` SET `tokenSpent`= 1 WHERE emailToken = '$checkToken'";
       $users = $db_link->query($sql_statement) or die($db_link->error);
 	  }
 	} catch (Exception $e) {
