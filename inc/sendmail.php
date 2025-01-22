@@ -40,8 +40,12 @@
         $sql_statement = "SELECT `email` FROM `user` WHERE `email` = '$email'";
 
         $emailCheck = $db_link->query($sql_statement) or die($db_link->error);
+        $emailCheck_row = $emailCheck->fetch_assoc();
 
-        if(mysqli_num_rows($emailCheck)) {
+        $checker = $emailCheck_row['email'];
+
+         // If they do, it updates it with a new token and fresh expiry date
+        if($checker != NULL) {
           $sql_statement = "
           UPDATE `user` SET `last_updated`= '$lastUpdated' WHERE email = '$email'";
 
