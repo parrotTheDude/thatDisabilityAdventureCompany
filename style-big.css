@@ -256,7 +256,6 @@ menu li {
   min-width: 14rem;
   box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 0.6rem;
 }
 
 .dropdown-content a {
@@ -269,7 +268,7 @@ menu li {
 
 .dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block; z-index: 100}
 
 .dropdown:hover .dropbtn {background-color: #f28022; color: #fff}
 
@@ -643,7 +642,7 @@ main {
 }
 
 .floater {
-  width: calc(33.33333% - 1rem);
+  width: calc(50% - 1rem);
   height: auto;
   background-color: #375b6d;
   color: #fff;
@@ -1121,6 +1120,11 @@ footer {
   padding-top: 3rem;
 }
 
+.textContainerWhoWeAre {
+  width: 90%;
+  margin: auto;
+}
+
 .howDoWeWorkContainer {
   width: 100%;
   height: auto;
@@ -1151,7 +1155,11 @@ footer {
 }
 
 #howText {
-  padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#whyText {
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 #linkHow {
@@ -1165,9 +1173,22 @@ footer {
 
 .eventContainer {
   width: 100%;
-  height: 20rem;
+  height: auto;
   background-color: #327892;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0rem;
+}
+
+.eventTitle {
+  width: 100%;
+  text-align: center;
+}
+
+.eventImgContainer {
+  width: 32;
 }
 
 #howBtn {
@@ -1188,6 +1209,30 @@ footer {
   transition-duration: 0.3s; }
 .nav-transparent { background-color:rgba(1,1,1,0.3); 
   transition-duration: 0.3s;}
+
+.blogPanel {
+  width: 30%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  transition: 0.3s;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.blogPanel:hover {
+  transform: scale(1.05);
+}
+
+.blogImgContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.blogLink {
+  color: #000;
+  text-decoration: none;
+}
 
 
 /* Merch Page */
@@ -1399,6 +1444,9 @@ footer {
     display: flex;
     margin: 0;
   }
+  .bigTitle {
+    font-size: 2rem;
+  }
 }
 
 /* Big Desktops and more */
@@ -1417,6 +1465,12 @@ footer {
   .videoPlayer {
     height: 720px;
     padding-top: 0;
+  }
+  .blogPanel {
+    width: 30%;
+  }
+  .floater {
+  width: calc(25% - 1rem);
   }
 }
 
@@ -1455,6 +1509,14 @@ footer {
   #mobileh1 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+  .blogPanel {
+    width: 45%;
+    margin: 1rem;
+  }
+  .imgBlogContainer img {
+    height: auto;
+    width: 100%;
   }
   .logo {
    padding: 0.7rem 1rem 0rem;
@@ -1603,6 +1665,10 @@ footer {
 @media screen and (max-width: 650px){
   #menuToggle {
     width: 75%;
+  }
+  .blogPanel {
+    width: 100%;
+    box-shadow: none;
   }
   #btnIndex {
     margin-bottom: 6rem;
