@@ -13,7 +13,7 @@ $message = $message ?? 'No message provided.';
 <head>
     <?php
         $page_title = 'Thank you for your enquiry!';
-        $page_description = 'Thanks for getting in contact! Get ready to explore our programs, services, and how we can support you or your loved ones!';
+        $page_decription = 'Thanks for getting in contact! Get ready to explore our programs, services, and how we can support you or your loved ones!';
         $page_name = '/thank-you';
         include('inc/head.php');
     ?>
