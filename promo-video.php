@@ -66,12 +66,12 @@
 			<?php include ('inc/mobileNav.php');?>
 
 			<section class="videoH1">
-				<h1>TDAC Promotional Video</h1>
+				<h1>That Disability Adventure Company</h1>
 			</section>
 
 			<section class="videoPlayer">
 				<iframe src="https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4" class="iFrameClass" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-					<video id="video" controls>
+					<video id="video" controls autoplay>
 				  <source src="videos/tdacPromo.mp4" type="video/mp4" preload="none">
 					Your browser does not support the video tag.
 				</video>
