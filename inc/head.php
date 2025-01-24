@@ -27,8 +27,6 @@
 <meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
 <meta property="og:type" content="website" />
 
-<meta name="ahrefs-site-verification" content="29ed00ef87140d2c7762f181473c1d417200feb2d956e5db6a1699253c6ebb45">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -13,17 +13,18 @@
 		<title>TEST PAGE</title>
 		<meta name="description" content="Testing page" />
 		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
+		<meta name="theme-color" content="#233036"/>
 	</head>
 
 	<body id="theTop">
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<!-- Nav section including logo -->
-			<nav>
+			<nav id="myNav">
 				<!-- Logo container -->
 				<section class="logoContainer">
 					<a href="https://thatdisabilityadventurecompany.com.au/">
-						<img  class="logo" alt="TDAC Logo" src="icons/logo.webp">
+						<img  class="logo" alt="TDAC Logo" src="icons/whiteLogo.webp">
 					</a>
 				</section>
 
@@ -52,50 +53,57 @@
 			<!-- Primary Panel -->
     	<section class="topContentContainer">
     		<section class="landingHero">
-    			<section class="landingPic">
-    				<img src="img/index/landingPic.webp" alt="thatdisabilityadventurecompany landing picture">
-    			</section>
     			<section class="landingHeroText">
     				<h1 class="landingTitles">Inclusive Disability Support Services for All Abilities</h1>
-    				<h2 class="landingTitles">Disability Services in Victoria</h2>
+    				<h2 class="landingTitles">Based in Victoria</h2>
     				<section class="btnsContainer" id="btnIndex">
-    					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Roll Film</a></div>
+    					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Watch our video!</a></div>
     				</section>
     			</section>
     		</section>
-
-
-
-
-
-    		<!-- <section class="mobileTopImgContainer">
-					<img 
-					class="asyncImage mobileTopImg"
-					src="img/merch/merchPic4-min.webp" 
-					data-src="img/merch/merchPic4.webp" 
-					alt="Crew Image">
-    		</section>
-    		<article class="topContent whiteBg">
-    			<section class="topWritten">
-    				<h1 id="mobileh1" class="gothamBold">Inclusive Disability Support Services for All Abilities</h1>
-    				<h2 id="mobileh2" class="gothamBook">Disability Services in Victoria</h2>
-    				<p><i>That Disability Adventure Company (TDAC)</i> provides inclusive day programs for people with disabilities. If you're looking for fun things to do in the city, NDIS assistance with daily life or independent living help, we're the guys for you!</p>
-    				<p>Based in Melbourne, Gippsland, and the Mornington Peninsula, we aim to be different to your regular support worker agencies. Our programs are experience-based adventures designed to improve living skills, social confidence, and create lasting memories.</p>
-    				<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team. Want to find out more? Check out our promo video below!</p>
-    				<section class="btnsContainer" id="btnIndex">
-    					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Roll Film</a></div>
-    				</section>
-    			</section>
-
-    			<section class="topImgContainer">
-    				<img 
-						class="asyncImage topImg"
-						src="img/index/crew-min.webp" 
-						data-src="img/index/crew.webp" 
-						alt="Crew Image">
-    			</section>
-    		</article> -->
     	</section>
+
+    	<section class="whoAreWeContainer">
+    		<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
+    		<h2>Who are we?</h2>
+    		<p>We provides inclusive day programs and overnight stays for people with disabilities.</p>
+    		<p>If you're looking for fun things to do in the city, NDIS assistance with daily life or 
+independent living help, we're the guys for you!</p>
+    	</section>
+
+    	<section class="howDoWeWorkContainer">
+    		<section class="howContainer">
+    			<img src="img/index/friends.webp" alt="Friends hanging together">
+    		</section>
+    		<section class="howContainer" id="howText">
+    			<h2>How do we work?</h2>
+    			<p>Based out of Melbourne, Gippsland and the Mornington Peninsula, we run our programs all over the region.</p>
+    			<p>So how does it work?</p>
+    			<p>Usually our programs are based on a specific venue such as Le Mans, Gippy Groovers or the AFL.</p>
+    			<p>When you sign up to an activity, we will arrange transport to pick you up and drop you back where you started. If this isn’t possible for any reason, a pick up location is arranged at the most convenient spot for you.</p>
+    			<section class="btnsContainer" id="howBtn">
+  					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="linkHow">Watch our video!</a></div>
+  				</section>
+    		</section>
+    	</section>
+
+    	<section class="howDoWeWorkContainer" id="oppositeColours">
+    		<section class="howContainer" id="howText">
+    			<h2>Are we right for you?</h2>
+    			<p>We pride ourselves on being an inclusive disability service for all disabilities. </p>
+    			<p>Our programs are for people with mild to moderate disabilities, aged between 18 and 45.</p>
+    			<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
+    			<section class="btnsContainer" id="rightBtn">
+  					<div class="topBtns accentBlueBg"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Do something else!</a></div>
+  				</section>
+    		</section>
+    		<section class="howContainer">
+    			<img src="img/index/kicks.webp" alt="Football with TDAC">
+    		</section>
+    	</section>
+
+    	<section class="eventContainer"></section>
+
 
     	<!-- What we offer panel -->
     	<section class="panelContainer whiteBg" id="here">
@@ -252,6 +260,17 @@
 			<?php include ('inc/js/coreJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
 			<?php include ('inc/js/slideshowJs.php');?>
+			const nav = document.getElementById('mynav');
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
 		</script>
 	</body>
 </html>

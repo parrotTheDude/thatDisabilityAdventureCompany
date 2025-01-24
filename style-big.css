@@ -25,12 +25,7 @@ p {
 a {
 	color: #233036;
 	text-decoration: none;
-  background-image: linear-gradient(
-    to right,
-    #f28022,
-    #f28022 50%,
-    #000 50%
-  );
+  background-image: linear-gradient( to right, #f28022, #f28022 50%, #fff 50% );
   background-size: 200% 100%;
   background-position: -100%;
   -webkit-background-clip: text;
@@ -203,7 +198,7 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(1, 1, 1, 0.3);
 }
 
 .logoContainer {
@@ -229,8 +224,8 @@ menu li {
 }
 
 .dropbtn {
-  background-color: #fff;
-  color: #000;  
+  background-color: rgba(1, 1, 1, 0);
+  color: #fff;  
   padding: 1rem 0.2rem 1rem 1rem;
   font-size: 1rem;
   font-family: gothamBold, Tahoma, sans-serif;;
@@ -238,8 +233,8 @@ menu li {
 }
 
 .mobileDropbtn {
-  background-color: #fff;
-  color: #000;  
+  background-color: #233036;
+  color: #fff;
   font-size: 1.5rem;
   font-family: gothamBold, Tahoma, sans-serif;;
   border: none;
@@ -257,14 +252,15 @@ menu li {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(1, 1, 1, 0.7);
   min-width: 14rem;
   box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top: 0.6rem;
 }
 
 .dropdown-content a {
-  color: black;
+  color: #fff;
   padding: 1rem;
   text-decoration: none;
   display: block;
@@ -276,11 +272,11 @@ menu li {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #f28022; color: #fff}
-.dropdown:hover .downArrow {filter: invert(1);}
 
 .downArrow {
   width: 1rem;
   height: 1rem;
+  filter: invert(1);
 }
 
 .ulSecondary {
@@ -363,7 +359,7 @@ menu li {
 }
 
 .mobileNavContainer {
-  background-color: #fff;
+  background-color: #233036;
   position: absolute;
   width: 10rem;
   height: 100%;
@@ -503,6 +499,7 @@ main {
 #btnIndex {
   flex-wrap: wrap;
   display: flex;
+  margin: 1rem 0rem 3rem 0rem;
 }
 
 .indexVideo {
@@ -1091,39 +1088,106 @@ footer {
 .landingHero {
   width: 100%;
   height: 100vh;
-}
-
-.landingPic {
-  width: 100%;
-  height: 100vh;
+  background-image: url(img/index/landingPic.webp);
+  background-position: center;
+  background-repeat: no-repeat;
   display: block;
   position: relative;
-  object-fit: contain;
-}
-
-.landingPic img{
-  width: 100%;
-  height: auto;
-  object-fit: contain;
 }
 
 .landingHeroText {
   display: block;
   position: absolute;
-  z-index: 10;
-  top: 70vh;
   text-align: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  height: 30vh;
-  padding-top: 1.5rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .landingTitles{
   color: #fff;
+  margin: 1rem 0rem;
   font-family: gothamBook, Tahoma, sans-serif;
 }
 
+.whoAreWeContainer {
+  width: 100%;
+  height: 18rem;
+  background-color: #fff;
+  color: #000;
+  display: block;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.howDoWeWorkContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #327892;
+  color: #fff;
+}
+
+.howContainer {
+  width: 50%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.howContainer p {
+  padding: 0.7rem 0;
+}
+
+.howContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.howBtn {
+  background-color: #fff;
+}
+
+#howText {
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+#linkHow {
+  color: #327892;
+}
+
+#oppositeColours {
+  background-color: #fff;
+  color: #000;
+}
+
+.eventContainer {
+  width: 100%;
+  height: 20rem;
+  background-color: #327892;
+  color: #fff;
+}
+
+#howBtn {
+  margin: 0;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#rightBtn {
+  margin: 0;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.nav-colored { background-color:#233036; 
+  transition-duration: 0.3s; }
+.nav-transparent { background-color:rgba(1,1,1,0.3); 
+  transition-duration: 0.3s;}
 
 
 /* Merch Page */
@@ -1383,7 +1447,6 @@ footer {
   }
   .topContentContainer {
     height: auto;
-    padding: 2rem 0rem;
   }
 }
 
@@ -1396,6 +1459,12 @@ footer {
   .logo {
    padding: 0.7rem 1rem 0rem;
   }
+  .howDoWeWorkContainer {
+    flex-wrap: wrap;
+  }
+  .howContainer {
+    width: 100%;
+  }
   .whiteBgspec {
     background-color: #327892;
   }
@@ -1403,6 +1472,12 @@ footer {
     color: #fff;
   }
   #btnIndex {
+    justify-content: center;
+  }
+  #howBtn {
+    justify-content: center;
+  }
+  #rightBtn {
     justify-content: center;
   }
   .mobileNav {
@@ -1418,7 +1493,6 @@ footer {
     height: auto;
     display: block;
     background-color: #fff;
-    padding-top: 6rem;
   }
   .aboutContentContainer {
     height: auto;
@@ -1529,6 +1603,9 @@ footer {
 @media screen and (max-width: 650px){
   #menuToggle {
     width: 75%;
+  }
+  #btnIndex {
+    margin-bottom: 6rem;
   }
   .hideMobile {
     display: none;
