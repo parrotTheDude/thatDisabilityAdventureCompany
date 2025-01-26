@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -82,7 +83,7 @@
     			<h2 class="bigTitle">How do we work?</h2>
     			<p>Based out of Melbourne, Gippsland and the Mornington Peninsula, we run our programs all over the region.</p>
     			<p>So how does it work?</p>
-    			<p>Usually our programs are based on a specific venue such as Le Mans, Gippy Groovers or the AFL.</p>
+    			<p>Usually our programs are based on a specific venue such as Le Mans, Fortress or the AFL.</p>
     			<p>When you sign up to an activity, we will arrange transport to pick you up and drop you back where you started. If this isn’t possible for any reason, a pick up location is arranged at the most convenient spot for you.</p>
     			<section class="btnsContainer" id="howBtn">
   					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="linkHow">Watch our video!</a></div>
