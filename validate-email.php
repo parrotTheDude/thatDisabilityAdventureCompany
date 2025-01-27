@@ -1,79 +1,88 @@
-<?php 
-  require_once('inc/variables.php');
-  require_once('inc/db-connect.php');
+<?php
+require_once('inc/variables.php');
+require_once('inc/db-connect.php');
 
-  db_connect();
+// Connect to the database
+db_connect();
 
- 	// Sets variables for the token passed from the email link
-  $token = $_GET['tkn'];
-  // Check variables
-	$tokenValid = false;
-	$tokenExpired = false;
-	// Updates the error message accordingly
-	$errorCheck = "Your email was sucessfully validated. Thanks!";
-	// Gets the current dateTime
-	$currentDateTime = date("Y-m-d H:i:s", time());
+$token = $_GET['tkn'] ?? ''; // Ensure token is retrieved safely
+$tokenValid = false;
+$tokenExpired = false;
+$errorCheck = "Your email was successfully validated. Thanks!";
+$currentDateTime = date("Y-m-d H:i:s");
 
-	try {
-		// Selects the userToken data from the db where the token matches
-		$sql_statement = "
-			SELECT `emailToken`, `dateCreated`, `tokenSpent`, `salt`, `email` 
-			FROM `user_tokens` 
-			JOIN user ON user_tokens.id = user.id
-			WHERE `emailToken` = '$token'";
+try {
+    // Prepare SQL statement to safely fetch token data
+    $stmt = $db_link->prepare("
+        SELECT ut.emailToken, ut.dateCreated, ut.tokenSpent, u.salt, u.email 
+        FROM user_tokens ut
+        JOIN user u ON ut.id = u.id
+        WHERE ut.emailToken = ?
+    ");
+    $stmt->bind_param('s', $token);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-  	$validEmailCheck = $db_link->query($sql_statement) or die($db_link->error);
+    if ($result->num_rows > 0) {
+        $emailCheckRow = $result->fetch_assoc();
+        $tokenSpent = $emailCheckRow['tokenSpent'];
+        $email = $emailCheckRow['email'];
+        $salt = $emailCheckRow['salt'];
+        $dateTokenGen = $emailCheckRow['dateCreated'];
 
-	  $emailCheck_row = $validEmailCheck->fetch_assoc();
+        // Recreate the hash to validate the token
+        $hash = hash('sha256', $email . $salt);
 
-	  // Assigns the db data to variables
-	  $tokenSpent = $emailCheck_row['tokenSpent'];
-	  // Recreates the hash to validate the token
-	  $email = $emailCheck_row['email'];
-	  $salt = $emailCheck_row['salt'];
-	  $dateTokenGen = $emailCheck_row['dateCreated'];
-  	$hash =  $email . $salt;
-		$checkToken = hash('sha256', $hash);
+        if ($tokenSpent == 0) {
+            if (strtotime($currentDateTime) - strtotime($dateTokenGen) < 86400) {
+                if ($hash === $token) {
+                    $tokenValid = true;
+                } else {
+                    $errorCheck = "This token is invalid.";
+                }
+            } else {
+                $tokenExpired = true;
+                $errorCheck = "This link has expired. Please request a new one.";
+            }
+        } else {
+            $errorCheck = "This token has already been used.";
+        }
+    } else {
+        $errorCheck = "This token doesn't exist.";
+    }
 
-		// Checks if the email value exists
-	  if(mysqli_num_rows($validEmailCheck)) {
-	  	if ($tokenSpent == 0) {
-	  		// Checks if the token was created within the last 24 hours
-		  	if(strtotime($currentDateTime) - strtotime($dateTokenGen) < 86400) {
-		  		// If the token matches the token gen then it is granted
-		  		if ($checkToken == $token) {
-		  			$tokenValid = true;
-		  		} else {
-		  			$tokenValid = false;
-		  			$errorCheck = "This token has expired.";
-		  		}
-		  	} else {
-		  		// If it is over 24hrs then the token is deemed expired
-		  		$tokenExpired = true;
-		  		$errorCheck = "This link has expired. Please request a new link from the team.";
-		  	}
-	  	} else {
-	  		$tokenValid = false;
-	  		$errorCheck = "This token as already been used";
-	  	}
-	  }	else {
-	  	$tokenValid = false;
-	  	$errorCheck = "This token doesn't exist";
-	  }
+    // Update user and token status if valid and not expired
+    if ($tokenValid && !$tokenExpired) {
+        $db_link->begin_transaction(); // Start transaction
 
-	  // Double bool to make sure the token is valid and witin expiry. Then updates the email to be valid and the last updated along with it
-	  if ($tokenValid == true && $tokenExpired == false) {
-	  	$sql_statement = "
-      UPDATE `user` SET `email_valid`= 1, `last_updated`= '$currentDateTime' WHERE email = '$email'";
-      $users = $db_link->query($sql_statement) or die($db_link->error);
-      $sql_statement = "
-      UPDATE `user_tokens` SET `tokenSpent`= 1 WHERE emailToken = '$checkToken'";
-      $users = $db_link->query($sql_statement) or die($db_link->error);
-	  }
-	} catch (Exception $e) {
-		$errorCheck = "Something went wrong";
-	}
+        // Update user email validation status
+        $stmt = $db_link->prepare("
+            UPDATE user SET email_valid = 1, last_updated = ? WHERE email = ?
+        ");
+        $stmt->bind_param('ss', $currentDateTime, $email);
+        $stmt->execute();
 
+        // Update token as spent
+        $stmt = $db_link->prepare("
+            UPDATE user_tokens SET tokenSpent = 1 WHERE emailToken = ?
+        ");
+        $stmt->bind_param('s', $token);
+        $stmt->execute();
+
+        $db_link->commit(); // Commit transaction
+    }
+} catch (Exception $e) {
+    $db_link->rollback(); // Rollback transaction if an error occurs
+    $errorCheck = "Something went wrong. Please try again later.";
+} finally {
+    // Safely close the statement and connection
+    if (isset($stmt) && $stmt instanceof mysqli_stmt) {
+        $stmt->close();
+    }
+    if (isset($db_link) && $db_link instanceof mysqli) {
+        $db_link->close();
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
