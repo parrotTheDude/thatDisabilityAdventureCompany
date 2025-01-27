@@ -52,27 +52,31 @@
     			<img src="img/index/friends.webp" alt="Friends hanging together">
     		</section>
     		<section class="howContainer" id="howText">
-    			<h2 class="bigTitle">How do we work?</h2>
-    			<p>Based out of Melbourne, Gippsland and the Mornington Peninsula, we run our programs all over the region.</p>
-    			<p>So how does it work?</p>
-    			<p>Usually our programs are based on a specific venue such as Le Mans, Fortress or the AFL.</p>
-    			<p>When you sign up to an activity, we will arrange transport to pick you up and drop you back where you started. If this isn’t possible for any reason, a pick up location is arranged at the most convenient spot for you.</p>
-    			<section class="btnsContainer" id="howBtn">
-  					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="linkHow">Watch our video!</a></div>
-  				</section>
+    			<section class="indexTextSmall">
+	    			<h2 class="bigTitle">How do we work?</h2>
+	    			<p>Based out of Melbourne, Gippsland and the Mornington Peninsula, we run our programs all over the region.</p>
+	    			<p>So how does it work?</p>
+	    			<p>Usually our programs are based on a specific venue such as Le Mans, Fortress or the AFL.</p>
+	    			<p>When you sign up to an activity, we will arrange transport to pick you up and drop you back where you started. If this isn’t possible for any reason, a pick up location is arranged at the most convenient spot for you.</p>
+	    			<section class="btnsContainer" id="howBtn">
+	  					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="linkHow">Watch our video!</a></div>
+	  				</section>
+	  			</section>
     		</section>
     	</section>
 
     	<section class="howDoWeWorkContainer" id="oppositeColours">
     		<section class="howContainer" id="whyText">
-    			<h2 class="bigTitle">Are we right for you?</h2>
-    			<p>We pride ourselves on being an inclusive disability service for all disabilities. </p>
-    			<p>Our programs are for people with mild to moderate disabilities, aged between 18 and 45.</p>
-    			<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
-    			<p>Interested in learning more? Get in contact today.</p>
-    			<section class="btnsContainer" id="rightBtn">
-  					<div class="topBtns accentBlueBg"><a href="https://thatdisabilityadventurecompany.com.au/contact" class="linkBtn" id="whiteTxt">Contact us</a></div>
-  				</section>
+    			<section class="indexTextSmall rightAlign">
+	    			<h2 class="bigTitle">Are we right for you?</h2>
+	    			<p>We pride ourselves on being an inclusive disability service for all disabilities. </p>
+	    			<p>Our programs are for people with mild to moderate disabilities, aged between 18 and 45.</p>
+	    			<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
+	    			<p>Interested in learning more? Get in contact today.</p>
+	    			<section class="btnsContainer rightBtnAlign" id="rightBtn">
+	  					<div class="topBtns accentBlueBg"><a href="https://thatdisabilityadventurecompany.com.au/contact" class="linkBtn" id="whiteTxt">Contact us</a></div>
+	  				</section>
+	  			</section>
     		</section>
     		<section class="howContainer">
     			<img src="img/index/kicks.webp" alt="Football with TDAC">
