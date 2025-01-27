@@ -256,19 +256,9 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
-			<?php include ('inc/js/imageLoaderJs.php');?>
 			<?php include ('inc/js/slideshowJs.php');?>
-			const nav = document.getElementById('mynav');
-window.onscroll = function () { 
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-    } 
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-    }
-};
+			<?php include ('inc/js/navJs.php');?>
+			
 		</script>
 	</body>
 </html>

@@ -27,6 +27,9 @@
 <meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
 <meta property="og:type" content="website" />
 
+
+<meta name="theme-color" content="#233036"/>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

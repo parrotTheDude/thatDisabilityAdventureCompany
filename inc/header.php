@@ -1,11 +1,9 @@
-<?php include ('inc/alertBanner.php'); ?>
-
 <!-- Nav section including logo -->
-<nav>
+<nav id="myNav">
 	<!-- Logo container -->
 	<section class="logoContainer">
 		<a href="https://thatdisabilityadventurecompany.com.au/">
-			<img  class="logo" alt="TDAC Logo" src="icons/logo.webp">
+			<img  class="logo" alt="TDAC Logo" src="icons/whiteLogo.webp">
 		</a>
 	</section>
 
