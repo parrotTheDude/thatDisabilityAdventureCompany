@@ -25,12 +25,16 @@
 			<!-- Content menu for the mobile devices -->
 			<?php include ('inc/mobileNav.php');?>
 
+			<section class="topContact">
+				<img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg">
+				<h1>Join the TDAC Community</h1>
+			</section>
+
     	<!-- Get in Touch Panel -->
 			<section class="panelContainer midBg" id="here">
 				<section class="contactContainer white">
 					<section class="contactTitleContainer">
-						<img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg" loading="lazy">
-						<h1 id="contactTitle">Get in touch today!</h1>
+						<h2 id="contactTitle">Get in touch today!</h2>
 						<br />
 					</section>
 

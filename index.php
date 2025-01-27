@@ -41,7 +41,7 @@
     		<section class="textContainerWhoWeAre">
     			<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
 	    		<h2 class="bigTitle">Who are we?</h2>
-	    		<p>We provides inclusive day programs and overnight stays for people with disabilities.</p>
+	    		<p>We provide inclusive day programs and overnight stays for people with disabilities.</p>
 	    		<p>If you're looking for fun things to do in the city, NDIS assistance with daily life or 
 	independent living help, we're the guys for you!</p>
     		</section>

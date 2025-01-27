@@ -35,7 +35,7 @@ $message = $message ?? 'No message provided.';
         <?php include('inc/mobileNav.php'); ?>
 
         <!-- Get in Touch Panel -->
-        <section class="panelContainer midBg" id="here">
+        <section class="panelContainer navCompensation midBg" id="here">
             <section class="contactContainer white">
                 <section class="contactTitleContainer">
                     <img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg" loading="lazy">

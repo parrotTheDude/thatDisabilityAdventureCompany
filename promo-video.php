@@ -65,7 +65,7 @@
 			<!-- Content menu for the mobile devices -->
 			<?php include ('inc/mobileNav.php');?>
 
-			<section class="videoH1">
+			<section class="videoH1 navCompensation">
 				<h1>That Disability Adventure Company</h1>
 			</section>
 

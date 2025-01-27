@@ -26,7 +26,7 @@
 			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Primary Panel -->
-    	<section class="aboutContentContainer">
+    	<section class="aboutContentContainer navCompensation">
     		<section class="mobileTopImgContainer" id="careerSizing">
     			<img 
 					class="mobileTopImg"

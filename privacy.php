@@ -26,7 +26,7 @@
 			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Primary Panel -->
-    	<section class="privacyContainer">
+    	<section class="privacyContainer navCompensation">
     		<section class="privacy">
     			<h1>Privacy Policy</h1>
     			<h2>THAT DISABILITY ADVENTURE COMPANY – PRIVACY POLICY</h2>

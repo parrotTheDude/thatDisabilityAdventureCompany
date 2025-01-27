@@ -26,7 +26,7 @@
 			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Merch Panel -->
-    	<section class="mainMerchPanel">
+    	<section class="mainMerchPanel navCompensation">
     		<section class="mainMerchTextContainer">
     			<section class="mainMerchText">
 	    			<h1>Merchandise</h1>
