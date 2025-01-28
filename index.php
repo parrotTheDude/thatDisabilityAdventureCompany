@@ -31,7 +31,6 @@
     				<h2 class="landingTitles">Based in Victoria</h2>
     				<section class="btnsContainer" id="btnIndex">
     					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Watch our video!</a></div>
-
     				</section>
     			</section>
     		</section>

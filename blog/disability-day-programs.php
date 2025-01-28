@@ -13,7 +13,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
 		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/disability-day-programs" />
+		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs" />
 
 		<!-- Title and Description tags -->
 		<title>Disability Day Programs | TDAC Australia</title>
@@ -23,11 +23,9 @@
 		<meta property="og:locale" content="en" />
 		<meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
 		<meta property="og:site_name" content="Disability Day Programs | TDAC Australia" />
-		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/disability-day-programs" />
+		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs" />
 		<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
 		<meta property="og:type" content="website" />
-
-		<meta name="ahrefs-site-verification" content="29ed00ef87140d2c7762f181473c1d417200feb2d956e5db6a1699253c6ebb45">
 
 		<script type="application/ld+json">
 		{
@@ -36,7 +34,7 @@
 		  "name": "Disability Day Programs | TDAC Australia",
 		  "image": "https://thatdisabilityadventurecompany.com.au/icons/logo.webp",
 		  "@id": "",
-		  "url": "https://thatdisabilityadventurecompany.com.au/disability-day-programs ?>",
+		  "url": "https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs",
 		  "sameAs": [
 		    "https://www.facebook.com/ThatDisabilityAdventureCompany/",
 		    "https://www.instagram.com/thatdisabilityadventurecompany/"
@@ -49,14 +47,14 @@
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<?php 
-			  include ('inc/header.php');
+			  include ('../inc/header.php');
 		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main>
 			<!-- Content menu for the mobile devices -->
-			<?php include ('inc/mobileNav.php');?>
+			<?php include ('../inc/mobileNav.php');?>
 
 			<article>
 				<section class="articleTitleContainer">
@@ -159,12 +157,12 @@
 
 		</main>
 
-		<?php include ('inc/footer.php');?>
+		<?php include ('../inc/footer.php');?>
 
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
-			<?php include ('inc/js/coreJs.php');?>
-			<?php include ('inc/js/imageLoaderJs.php');?>
+			<?php include ('../inc/js/coreJs.php');?>
+			<?php include ('../inc/js/imageLoaderJs.php');?>
 		</script>
 	</body>
 </html>

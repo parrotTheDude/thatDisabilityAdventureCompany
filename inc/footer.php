@@ -10,13 +10,13 @@
 			<li><a href="https://thatdisabilityadventurecompany.com.au/group-activities">Group Activites</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/overnight-stays">Overnight Stays</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/lifeskills">Lifeskills</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/sitemap.xml" target="_blank">Sitemap</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/blog/disability-support-services">Support Services</a></li>
 		</menu>
 		<menu class="footerNav">
 			<li><a href="https://thatdisabilityadventurecompany.com.au/one-to-one">One to One</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/register">Become a participant</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/careers">Join our team!</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/disability-day-programs">Blog</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/register">Register</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/careers">Careers</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs">Day Programs</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/privacy">Privacy Policy</a></li>
 
@@ -50,19 +50,7 @@
 	</section>
 </footer>
 
-<!-- hCaptcha JS -->
-<!-- <script type="text/javascript">
-	const form = document.getElementById('form');
-	form.addEventListener('submit', function(e) {
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-    if (!hCaptcha) {
-        e.preventDefault();
-        alert("Please fill out captcha field")
-        return
-    }
-	});
-</script> -->
-
-<?php include ('inc/analytics.php');?>
+<!-- 100% privacy-first analytics -->
+<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
 
