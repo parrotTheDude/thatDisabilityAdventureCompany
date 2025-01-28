@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Important Links -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://thatdisabilityadventurecompany.com.au/">
-
-		<!-- Links for style sheets -->
-		<link rel="stylesheet" href="/style.css">
-
-			<!--Add favorites icons-->   
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
-		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog/disability-support-services" />
-
-		<!-- Title and Description tags -->
-		<title>Group Based Disability Support Services | TDAC Australia</title>
-		<meta name="description" content="What are group based activities for those with mild to moderate disabilities. How can they help and why is it important?" />
-
-		<meta property="og:title" content="Group Based Disability Support Services | TDAC Australia" />
-		<meta property="og:locale" content="en" />
-		<meta property="og:description" content="What are group based activities for those with mild to moderate disabilities. How can they help and why is it important?" />
-		<meta property="og:site_name" content="Group Based Disability Support Services | TDAC Australia" />
-		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/blog/disability-support-services" />
-		<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic2.webp" />
-		<meta property="og:type" content="website" />
-
-		<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "article",
-		  "name": "Group Based Disability Support Services | TDAC Australia",
-		  "image": "https://thatdisabilityadventurecompany.com.au/img/merch/merchPic2.webp",
-		  "@id": "",
-		  "url": "https://thatdisabilityadventurecompany.com.au//disability-support-services",
-		  "sameAs": [
-		    "https://www.facebook.com/ThatDisabilityAdventureCompany/",
-		    "https://www.instagram.com/thatdisabilityadventurecompany/"
-		  ]
-		}
-		</script>
+		<?php
+			$page_title = 'Group Based Disability Support Services | TDAC Australia';
+			$page_decription = 'What are group based activities for those with mild to moderate disabilities. How can they help and why is it important?';
+			$page_name = '/blog/disability-support-services';
+		  include ('../inc/blogHead.php');
+		?>
 	</head>
 
 	<body id="theTop">
@@ -60,7 +26,7 @@
 				<section class="articleTitleContainer">
 					<section class="textContainerSmaller">
 						<h1 class="articleTitle">Group-based activities</h1>
-						<h2> Creating confidence and a sense of belonging for those with mild to moderate disabilities</h2>
+						<h2>Creating confidence and a sense of belonging for those with mild to moderate disabilities</h2>
 						<span class="author">By Pari  |  28th Jan, 2025  |  10 min read</span>
 						<br />
 						<span class="author">[Accessible blog]</span>
@@ -177,7 +143,6 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('../inc/js/coreJs.php');?>
-			<?php include ('../inc/js/imageLoaderJs.php');?>
 		</script>
 	</body>
 </html>

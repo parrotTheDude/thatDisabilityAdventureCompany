@@ -10,13 +10,12 @@
 			<li><a href="https://thatdisabilityadventurecompany.com.au/group-activities">Group Activites</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/overnight-stays">Overnight Stays</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/lifeskills">Lifeskills</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/blog/disability-support-services">Support Services</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/blog">Blog</a></li>
 		</menu>
 		<menu class="footerNav">
 			<li><a href="https://thatdisabilityadventurecompany.com.au/one-to-one">One to One</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/register">Register</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/careers">Careers</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs">Day Programs</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/privacy">Privacy Policy</a></li>
 

@@ -10,6 +10,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au<?php echo htmlspecialchars($page_name); ?>" />
 
 <!-- Title and Description tags -->
 <title>
@@ -24,42 +25,18 @@
 <meta property="og:description" content="<?php echo htmlspecialchars($page_decription); ?>" />
 <meta property="og:site_name" content="That Disability Adventure Company" />
 <meta property="og:url" content="https://thatdisabilityadventurecompany.com.au<?php echo htmlspecialchars($page_name); ?>" />
-<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
-<meta property="og:type" content="website" />
-
-<meta name="theme-color" content="#233036"/>
+<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic2.webp" />
+<meta property="og:type" content="article" />
+<meta name="theme-color" content="#fff"/>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "article",
   "name": "<?php echo htmlspecialchars($page_title); ?>",
-  "image": "https://thatdisabilityadventurecompany.com.au/icons/logo.webp",
+  "image": "https://thatdisabilityadventurecompany.com.au/img/merch/merchPic2.webp",
   "@id": "",
-  "url": "https://thatdisabilityadventurecompany.com.au<?php echo htmlspecialchars($page_name); ?>",
-  "telephone": "1800 319 581",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "",
-    "addressLocality": "",
-    "addressRegion": "VIC",
-    "postalCode": "",
-    "addressCountry": "AU"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "09:00",
-    "closes": "18:00"
-  },
+   "url": "https://thatdisabilityadventurecompany.com.au<?php echo htmlspecialchars($page_name); ?>",
   "sameAs": [
     "https://www.facebook.com/ThatDisabilityAdventureCompany/",
     "https://www.instagram.com/thatdisabilityadventurecompany/"

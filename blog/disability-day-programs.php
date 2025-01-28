@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Important Links -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://thatdisabilityadventurecompany.com.au/">
-
-		<!-- Links for style sheets -->
-		<link rel="stylesheet" href="/style.css">
-
-			<!--Add favorites icons-->   
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="apple-touch-icon" href="icons/appleTouch.webp"/>
-		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs" />
-
-		<!-- Title and Description tags -->
-		<title>Disability Day Programs | TDAC Australia</title>
-		<meta name="description" content="For individuals with disabilities, finding meaningful ways to connect, grow, and thrive is essential. Disability day programs help people grow, make friends, and feel included in their community." />
-
-		<meta property="og:title" content="Disability Day Programs | TDAC Australia" />
-		<meta property="og:locale" content="en" />
-		<meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
-		<meta property="og:site_name" content="Disability Day Programs | TDAC Australia" />
-		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs" />
-		<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
-		<meta property="og:type" content="website" />
-
-		<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "article",
-		  "name": "Disability Day Programs | TDAC Australia",
-		  "image": "https://thatdisabilityadventurecompany.com.au/icons/logo.webp",
-		  "@id": "",
-		  "url": "https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs",
-		  "sameAs": [
-		    "https://www.facebook.com/ThatDisabilityAdventureCompany/",
-		    "https://www.instagram.com/thatdisabilityadventurecompany/"
-		  ]
-		}
-		</script>
+		<?php
+			$page_title = 'Disability Day Programs | TDAC Australia';
+			$page_decription = 'For individuals with disabilities, finding meaningful ways to connect, grow, and thrive is essential. Disability day programs help people grow, make friends, and feel included in their community.';
+			$page_name = '/blog/disability-day-programs';
+		  include ('../inc/blogHead.php');
+		?>
 	</head>
 
 	<body id="theTop">
@@ -150,6 +116,9 @@
 
 					    <p>At TDAC, we believe in creating opportunities for growth, connection, and empowerment. We are trying to provide the best disability day programs in Victoria. If you're interested in exploring our programs, <a class="articleLink" href="https://thatdisabilityadventurecompany.com.au/group-activities">check out our group activities today!</a></p>
 					    <p>For more information, <a class="articleLink" href="https://thatdisabilityadventurecompany.com.au/contact">head over to our contact page to get in touch today!</a></p>
+					    <section class="btnsContainer">
+	    					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/contact" class="linkBtn" id="whiteTxt">Get in touch</a></div>
+	    				</section>
 					  </section>
 					</section>
 				</section>
@@ -162,7 +131,6 @@
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
 			<?php include ('../inc/js/coreJs.php');?>
-			<?php include ('../inc/js/imageLoaderJs.php');?>
 		</script>
 	</body>
 </html>
