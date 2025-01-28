@@ -1,1 +1,0 @@
-let videoplayed=!1;function videoPlayer(e){var d=document.getElementById("videoToggle");!1===videoplayed?(d.classList.add("videoDisplay"),videoplayed=!0):(d.classList.remove("videoDisplay"),document.getElementById("video").pause(),videoplayed=!1)}
