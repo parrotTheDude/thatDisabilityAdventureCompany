@@ -1,49 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Important Links -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<base href="https://thatdisabilityadventurecompany.com.au/">
-
-		<!-- Links for style sheets -->
-		<link rel="stylesheet" href="/style-big.css">
-
-		<!-- Title and Description tags -->
-		<title>TEST PAGE</title>
-		<meta name="description" content="Testing page" />
-		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
-		<meta name="theme-color" content="#233036"/>
+		<?php
+			$page_title = 'TESTING AREA';
+			$page_decription = 'We provide disability services for young adults looking to improve their independent living skills and engage in activities for people with disabilities.';
+			$page_name = '/';
+		  include ('inc/head.php');
+		?>
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
 	</head>
 
 	<body id="theTop">
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
-			<!-- Nav section including logo -->
-			<nav id="myNav">
-				<!-- Logo container -->
-				<section class="logoContainer">
-					<a href="https://thatdisabilityadventurecompany.com.au/">
-						<img  class="logo" alt="TDAC Logo" src="icons/whiteLogo.webp">
-					</a>
-				</section>
-
-				<!-- Navigation Menu -->
-				<section class="mobile">
-					<?php include ('inc/desktopNav.php'); ?>
-
-					<!-- Mobile burger menu -->
-			  	<section class='mobileNav' onclick="menuSwitch(this)">
-			  		<div class="container">
-						  <div class="bar1"></div>
-						  <div class="bar2"></div>
-						  <div class="bar3"></div>
-						</div>
-			  	</section>
-
-			  </section>
-			</nav>
+			<?php 
+			  include ('inc/header.php');
+		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
@@ -53,23 +25,17 @@
 			
 			<!-- Primary Panel -->
     	<section class="topContentContainer">
-    		<section class="landingHero">
-    			<section class="landingHeroText">
-    				<h1 class="landingTitles">Inclusive Disability Support Services For All Disabilities</h1>
-    				<h2 class="landingTitles">Based in Victoria</h2>
-    				<section class="btnsContainer" id="btnIndex">
-    					<div class="topBtns accentBlueBg indexVideo"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="whiteTxt">Watch our video!</a></div>
-
-    				</section>
-    			</section>
+    		<section class="serviceImgContainer">
+    			<img src="img/titleShots/groupPic.webp" alt="Group Picture at TDAC">
     		</section>
+
     	</section>
 
     	<section class="whoAreWeContainer">
     		<section class="textContainerWhoWeAre">
     			<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
 	    		<h2 class="bigTitle">Who are we?</h2>
-	    		<p>We provides inclusive day programs and overnight stays for people with disabilities.</p>
+	    		<p>We provide inclusive day programs and overnight stays for people with disabilities.</p>
 	    		<p>If you're looking for fun things to do in the city, NDIS assistance with daily life or 
 	independent living help, we're the guys for you!</p>
     		</section>
@@ -80,27 +46,31 @@
     			<img src="img/index/friends.webp" alt="Friends hanging together">
     		</section>
     		<section class="howContainer" id="howText">
-    			<h2 class="bigTitle">How do we work?</h2>
-    			<p>Based out of Melbourne, Gippsland and the Mornington Peninsula, we run our programs all over the region.</p>
-    			<p>So how does it work?</p>
-    			<p>Usually our programs are based on a specific venue such as Le Mans, Fortress or the AFL.</p>
-    			<p>When you sign up to an activity, we will arrange transport to pick you up and drop you back where you started. If this isn’t possible for any reason, a pick up location is arranged at the most convenient spot for you.</p>
-    			<section class="btnsContainer" id="howBtn">
-  					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="linkHow">Watch our video!</a></div>
-  				</section>
+    			<section class="indexTextSmall">
+	    			<h2 class="bigTitle">How do we work?</h2>
+	    			<p>Based out of Melbourne, Gippsland and the Mornington Peninsula, we run our programs all over the region.</p>
+	    			<p>So how does it work?</p>
+	    			<p>Usually our programs are based on a specific venue such as Le Mans, Fortress or the AFL.</p>
+	    			<p>When you sign up to an activity, we will arrange transport to pick you up and drop you back where you started. If this isn’t possible for any reason, a pick up location is arranged at the most convenient spot for you.</p>
+	    			<section class="btnsContainer" id="howBtn">
+	  					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/promo-video" class="linkBtn" id="linkHow">Watch our video!</a></div>
+	  				</section>
+	  			</section>
     		</section>
     	</section>
 
     	<section class="howDoWeWorkContainer" id="oppositeColours">
     		<section class="howContainer" id="whyText">
-    			<h2 class="bigTitle">Are we right for you?</h2>
-    			<p>We pride ourselves on being an inclusive disability service for all disabilities. </p>
-    			<p>Our programs are for people with mild to moderate disabilities, aged between 18 and 45.</p>
-    			<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
-    			<p>Interested in learning more? Get in contact today.</p>
-    			<section class="btnsContainer" id="rightBtn">
-  					<div class="topBtns accentBlueBg"><a href="https://thatdisabilityadventurecompany.com.au/contact" class="linkBtn" id="whiteTxt">Contact us</a></div>
-  				</section>
+    			<section class="indexTextSmall rightAlign">
+	    			<h2 class="bigTitle">Are we right for you?</h2>
+	    			<p>We pride ourselves on being an inclusive disability service for all disabilities. </p>
+	    			<p>Our programs are for people with mild to moderate disabilities, aged between 18 and 45.</p>
+	    			<p>We believe our programs are some of the best activities for young adults looking to try out new things while being supported by our excellent team.</p>
+	    			<p>Interested in learning more? Get in contact today.</p>
+	    			<section class="btnsContainer rightBtnAlign" id="rightBtn">
+	  					<div class="topBtns accentBlueBg"><a href="https://thatdisabilityadventurecompany.com.au/contact" class="linkBtn" id="whiteTxt">Contact us</a></div>
+	  				</section>
+	  			</section>
     		</section>
     		<section class="howContainer">
     			<img src="img/index/kicks.webp" alt="Football with TDAC">
@@ -257,8 +227,6 @@
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
 			<?php include ('inc/js/slideshowJs.php');?>
-			<?php include ('inc/js/navJs.php');?>
-			
 		</script>
 	</body>
 </html>

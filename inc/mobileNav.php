@@ -6,7 +6,7 @@
 	<li><a href="https://thatdisabilityadventurecompany.com.au/lifeskills">Lifeskills</a></li>
 	<li><a href="https://thatdisabilityadventurecompany.com.au/about-us">About</a></li>
 	<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
-	<section class="hideSocials">
+	<section class="socialsMobile">
 		<a href="https://www.instagram.com/thatdisabilityadventurecompany" target="_blank"><img class="topSocials" alt="Instagram Icon" src="icons/insta.svg"></a>
 		<span class="gap"></span>
 		<a href="https://www.facebook.com/ThatDisabilityAdventureCompany/" target="_blank"><img class="topSocials" alt="Facebook Icon" src="icons/facebook.svg"></a>
