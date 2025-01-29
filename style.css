@@ -6,7 +6,7 @@ body {
     font-display: swap;
 }
 h1 {
-    font-family: drukSuper, Tahoma, sans-serif;
+    font-family: gothamBook, Tahoma, sans-serif;
     font-size: 2.5rem;
     margin: 2rem 0;
 }
@@ -343,6 +343,13 @@ main {
     justify-content: space-between;
     height: 100vh;
     background-color: #375b6d;
+}
+.topServiceContent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .topContent {
     width: 90%;
@@ -906,6 +913,7 @@ footer {
 	height: auto;
 	display: block;
 	position: relative;
+    margin-top: 4.6rem;
 }
 .serviceImgContainer img {
 	width: 100%;
@@ -1256,6 +1264,9 @@ footer {
     .progress-container {
         padding-top: 5.6rem;
     }
+    .serviceImgContainer {
+        margin-top: 6rem;
+    }
 }
 @media screen and (min-width: 1024px) {
     .mobileTopImgContainer {
@@ -1351,6 +1362,9 @@ footer {
     #mobileh1 {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
+    }
+    .serviceImgContainer {
+        margin-top: 6rem;
     }
     .indexTextSmall {
         width: 100%;

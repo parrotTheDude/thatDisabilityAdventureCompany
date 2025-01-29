@@ -24,11 +24,13 @@
 			<?php include ('inc/mobileNav.php');?>
 			
 			<!-- Primary Panel -->
-    	<section class="topContentContainer">
+    	<section class="topServiceContent">
     		<section class="serviceImgContainer">
     			<img src="img/titleShots/groupPic.webp" alt="Group Picture at TDAC">
     		</section>
-
+    		<section class="serviceTitle">
+    			<h1>Explore Our Group-Based Activities</h1>
+    		</section>
     	</section>
 
     	<section class="whoAreWeContainer">
