@@ -20,14 +20,29 @@
         <div class="inputContainer">
           <input type="number" name="phone" id="phone" title="Australian number must be 10 digits long. Format like this example: 0456654456" placeholder="0456 654 654" required class="formInput" />
         </div>
+        <div class="inputContainer">
+          <select name="age" id="age" class="formInput" required placeholder="Age Range">
+            <option value="18-22">18-22</option>
+            <option value="23-30">23-30</option>
+            <option value="31-39">31-39</option>
+            <option value="40-45">40-45</option>
+          </select>
+        </div>
+        <div class="inputContainer">
+          <select name="location" id="location" class="formInput" required placeholder="location">
+            <option value="Melbourne">Melbourne</option>
+            <option value="Gippsland">Gippsland</option>
+            <option value="Mornington Peninsula">Mornington Peninsula</option>
+          </select>
+        </div>
         <div class="formMessage">
           <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
         </div>
-
-        <!-- To be used if and when I upgrade the plan again -->
-        <!-- <div class="h-captcha" data-sitekey="d31cc366-e12a-4ec0-89e0-e4e051de8d32"></div>
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script> -->
-
+        <div class="radioCheck">
+          <label>Preferred Contact Method:</label><br>
+          <input type="radio" name="preferred_contact" value="email" checked> Email
+          <input type="radio" name="preferred_contact" value="phone"> Phone
+        </div>
         <div class="formBtnContainer">
           <button type="submit" id="formBtn" name="submit" class="topBtns whiteBg">Send Message</button>
         </div>

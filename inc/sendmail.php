@@ -8,12 +8,6 @@ db_connect();
 
 use Postmark\PostmarkClient;
 
-// Set default values for variables
-$name = "John Doe";
-$email = "random@email.com";
-$phone = "0456123123";
-$message = "No message sent";
-
 try {
     // Check if the form is submitted
     if (isset($_POST['submit'])) {
@@ -21,36 +15,34 @@ try {
         $name = ucwords(strtolower(trim($_POST['name'])));
         $l_name = ucwords(strtolower(trim($_POST['last_name'])));
         $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
-        $phone = preg_replace("/[^0-9]/", '', $_POST['phone']);
+        $phone = preg_replace("/[^0-9]/", '', $_POST['phone']); // Strip non-numeric characters
         $message = htmlspecialchars(trim($_POST['message']));
+
+        // Validate and set default values for age and location
+        $valid_age_ranges = ['18-22', '23-30', '31-39', '40-45'];
+        $valid_locations = ['Melbourne', 'Gippsland', 'Mornington Peninsula'];
+        $valid_contact_methods = ['email', 'phone']; // Ensuring valid values
+
+        $age_range = (isset($_POST['age']) && in_array($_POST['age'], $valid_age_ranges)) ? $_POST['age'] : '18-22';
+        $location = (isset($_POST['location']) && in_array($_POST['location'], $valid_locations)) ? $_POST['location'] : 'Melbourne';
+
+        // Check for preferred contact method from the radio buttons (default: email)
+        $preferred_contact = (isset($_POST['preferred_contact']) && in_array($_POST['preferred_contact'], $valid_contact_methods))
+            ? $_POST['preferred_contact'] 
+            : 'email';
+
         $dateCreated = date("Y-m-d H:i:s");
-        $lastUpdated = $dateCreated;
-        $hash = $name . $dateCreated;
-        $id = hash('sha256', $hash);
-        $emailValid = 0;
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception("Invalid email format.");
         }
 
-        // Check if the user exists in the database
-        $stmt = $db_link->prepare("SELECT email FROM user WHERE email = ?");
-        $stmt->bind_param('s', $email);
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        if ($result->num_rows > 0) {
-            // Update the last updated timestamp for existing user
-            $stmt = $db_link->prepare("UPDATE user SET last_updated = ? WHERE email = ?");
-            $stmt->bind_param('ss', $lastUpdated, $email);
-        } else {
-            // Insert a new user record
-            $stmt = $db_link->prepare("
-                INSERT INTO user (id, first_name, last_name, email, email_valid, phone, date_created, last_updated) 
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            ");
-            $stmt->bind_param('ssssisss', $id, $name, $l_name, $email, $emailValid, $phone, $dateCreated, $lastUpdated);
-        }
+        // Insert a new contact form submission (Tracking Multiple Entries)
+        $stmt = $db_link->prepare("
+            INSERT INTO contact_form_submissions (first_name, last_name, email, phone, created_at, age_range, location, preferred_contact, message) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ");
+        $stmt->bind_param('sssssssss', $name, $l_name, $email, $phone, $dateCreated, $age_range, $location, $preferred_contact, $message);
 
         if (!$stmt->execute()) {
             throw new Exception("Database operation failed: " . $stmt->error);
@@ -59,7 +51,7 @@ try {
         // Send emails using Postmark
         $client = new PostmarkClient(POSTMARK_TOKEN);
 
-        // Email to the user
+        // Email to the user (confirmation)
         $client->sendEmailWithTemplate(
             FROM_EMAIL,
             $email,
@@ -70,7 +62,7 @@ try {
             true
         );
 
-        // Email to the company
+        // Email to the company (contact form submission)
         $client->sendEmailWithTemplate(
             FROM_EMAIL,
             TO_EMAIL,
@@ -79,7 +71,10 @@ try {
                 "name" => $name,
                 "email" => $email,
                 "telephone" => $phone,
-                "message" => $message
+                "message" => $message,
+                "age_range" => $age_range,
+                "location" => $location,
+                "preferred_contact" => $preferred_contact
             ],
             true,
             "contact-form-enquiry",
