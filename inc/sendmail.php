@@ -1,4 +1,10 @@
 <?php
+
+if (!empty($_POST['honeypot'])) {
+    // This is spam, ignore the submission
+    exit();
+}
+
 // Import dependencies
 require_once('./vendor/autoload.php');
 require_once('inc/variables.php');

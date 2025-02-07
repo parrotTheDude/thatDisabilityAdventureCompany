@@ -40,6 +40,7 @@
 
 					<section class="contactFormContainer">
 			      <form action="thank-you" method="POST" id="form" class="formStyle">
+			      	<input type="text" name="honeypot" id="honeypot" style="display: none;" autocomplete="off">
 			        <div class="inputContainer">
 			          <input type="text" name="name" id="first_name" placeholder="Firstname*" required class="formInput"/>
 			        </div>
