@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Group Based Disability Support Services | TDAC Australia';
+			$page_title = 'Disability Support Services | TDAC Australia';
 			$page_decription = 'What are group based activities for those with mild to moderate disabilities. How can they help and why is it important?';
 			$page_name = '/blog/disability-support-services';
 		  include ('../inc/blogHead.php');
