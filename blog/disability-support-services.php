@@ -25,7 +25,7 @@
 			<article>
 				<section class="articleTitleContainer">
 					<section class="textContainerSmaller">
-						<h1 class="articleTitle">Group-based activities</h1>
+						<h1 class="articleTitle">Group Based Disability Support Services</h1>
 						<h2>Creating confidence and a sense of belonging for those with mild to moderate disabilities</h2>
 						<span class="author">By Pari  |  28th Jan, 2025  |  10 min read</span>
 						<br />
