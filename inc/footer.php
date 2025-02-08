@@ -22,6 +22,7 @@
 	<!-- Newsletter Subscription Box in Footer -->
 	<div id="newsletter-container">
 	  <form id="newsletter-form">
+	  	<label>Subscribe to our newsletter</label>
 	    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
 	    <button type="submit">Subscribe</button>
 	  </form>
