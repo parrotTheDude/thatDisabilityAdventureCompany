@@ -38,6 +38,24 @@
 
 				<!-- Displays all the panels -->
 				<section class="blogDisplayPanel">
+					
+				<!-- Blog Panel -->
+				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/assistance-with-daily-life-ndis">
+						<section class="blogImgContainer">
+							<img src="img/blog/assistance1.webp" alt="Assistance with daily life">
+						</section>
+						<section class="blogText">
+							<h2>NDIS Assistance with Daily Life</h2>
+							<section class="blogDetails">
+								<p>Supporting Independent Living through One-to-One Support</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogDisplayPanel">
 					<!-- Blog Panel -->
 					<section class="blogPanel">
 						<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/disability-support-services">
