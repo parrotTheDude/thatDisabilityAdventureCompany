@@ -16,25 +16,24 @@
 		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/promo-video" />
 
 		<!-- Title and Description tags -->
-		<title>Promo Video for That Disability Adventure Company</title>
-		<meta name="description" content="Watch the TDAC promo to see how our inclusive programs empower individuals with disabilities to grow, connect, and create lasting memories." />
+		<title>Join the Adventure | That Disability Adventure Company</title>
+		<meta name="description" content="Watch the TDAC promo video to see how our inclusive programs empower individuals with disabilities to grow, connect, and create lasting memories." />
 
-		<meta property="og:title" content="Inclusive NDIS Adventures & Disability Programs | TDAC Australia" />
+		<meta property="og:title" content="Join the Adventure | That Disability Adventure Company" />
 		<meta property="og:locale" content="en" />
-		<meta property="og:description" content="Empowering individuals with disabilities in Melbourne and Gippsland through tailored programs, fostering skills, friendships, and unforgettable adventures." />
-		<meta property="og:site_name" content="Inclusive NDIS Adventures & Disability Programs | TDAC Australia" />
+		<meta property="og:description" content="Watch the TDAC promo video to see how our inclusive programs empower individuals with disabilities to grow, connect, and create lasting memories." />
+		<meta property="og:site_name" content="Join the Adventure | That Disability Adventure Company" />
 		<meta property="og:url" content="https://thatdisabilityadventurecompany.com.au/promo-video" />
 		<meta property="og:image" content="https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp" />
-		<meta property="og:type" content="website" />
-
-		<meta name="ahrefs-site-verification" content="29ed00ef87140d2c7762f181473c1d417200feb2d956e5db6a1699253c6ebb45">
+		<meta property="og:video" content="https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4" />
+		<meta property="og:type" content="video.other" />
 
 		<script type="application/ld+json">
 	    {
 	      "@context": "https://schema.org",
 	      "@type": "VideoObject",
-	      "name": "Who is That Disability Adventure Company?",
-	      "description": "That Disability Adventure Company (TDAC) is committed to empowering individuals with disabilities through inclusive, experience-based programs designed to inspire growth and foster connections. Our offerings include group activities, overnight stays, and life skills development, all tailored to align with NDIS goals. Based in Melbourne, Gippsland and the mornington peninsula, TDAC provides a supportive environment where participants can build confidence, enhance independence, and create lasting memories while achieving personal goals.",
+	      "name": "Join the Adventure | That Disability Adventure Company",
+	      "description": "Watch the TDAC promo video to see how our inclusive programs empower individuals with disabilities to grow, connect, and create lasting memories.",
 	      "thumbnailUrl": [
 	        "https://thatdisabilityadventurecompany.com.au/img/merch/merchPic4.webp"
 	       ],
@@ -55,7 +54,6 @@
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<?php 
-			  $page_name = 'index';
 			  include ('inc/header.php');
 		  ?>
 		</header>
@@ -66,19 +64,21 @@
 			<?php include ('inc/mobileNav.php');?>
 
 			<section class="videoH1 navCompensation">
-				<h1>That Disability Adventure Company</h1>
+				<h1>Join the Adventure</h1>
+				<p>Watch our introductory video to see what we're all about!</p>
 			</section>
 
 			<section class="videoPlayer">
 				<iframe src="https://thatdisabilityadventurecompany.com.au/videos/tdacPromo.mp4" class="iFrameClass" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-					<video id="video" controls autoplay>
-				  <source src="videos/tdacPromo.mp4" type="video/mp4" preload="none">
+					<video id="video" controls autoplay preload="none" poster="img/index/groupPic.webp">>
+				  <source src="videos/tdacPromo.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 				</iframe>
 			</section>
     	
     	<?php include ('inc/contactForm.php');?>
+    	<?php include ('inc/faq.php'); ?>
 		</main>
 
 		<?php include ('inc/footer.php');?>
@@ -87,6 +87,7 @@
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
+			<?php include ('inc/js/faqJs.php');?>
 		</script>
 	</body>
 </html>

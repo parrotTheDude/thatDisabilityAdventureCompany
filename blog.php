@@ -26,7 +26,7 @@
 				<section class="articleTitleContainer">
 					<section class="textContainerSmaller">
 						<h1 class="articleTitle">Our Blogs</h1>
-						<h2>Check out our latest blogs written by our team members.</h2>
+						<p>Welcome to the TDAC Blog! Here, we share stories, insights, and updates about our programs and the incredible journeys of our participants. Dive in to learn more about our community and the adventures we embark on together.</p>
 					</section>
 				</section>
 

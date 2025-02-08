@@ -52,16 +52,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://thatdisabilityadventurecompany.com.au/register</loc>
-  <lastmod>2025-01-27T23:04:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://thatdisabilityadventurecompany.com.au/careers</loc>
-  <lastmod>2025-01-27T23:04:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://thatdisabilityadventurecompany.com.au/blog/disability-day-programs</loc>
   <lastmod>2025-01-27T23:04:17+00:00</lastmod>
   <priority>0.80</priority>
@@ -74,6 +64,11 @@
 <url>
   <loc>https://thatdisabilityadventurecompany.com.au/privacy</loc>
   <lastmod>2025-01-27T23:04:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://thatdisabilityadventurecompany.com.au/day-programs-for-adults-with-disabilities-in-mornington-peninsula</loc>
+  <lastmod>2025-02-08T23:04:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

@@ -28,6 +28,7 @@
 			<section class="topContact">
 				<img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg">
 				<h1>Join the TDAC Community</h1>
+				<p>Check out our FAQ panel underneath the contact form below.</p>
 			</section>
 
     	<!-- Get in Touch Panel -->
@@ -83,6 +84,8 @@
 			    </section>
 				</section>
 			</section>
+
+			<?php include ('inc/faq.php'); ?>
 		</main>
 
 		<?php include ('inc/footer.php');?>
@@ -91,6 +94,7 @@
 		<script>
 			<?php include ('inc/js/coreJs.php');?>
 			<?php include ('inc/js/imageLoaderJs.php');?>
+			<?php include ('inc/js/faqJs.php');?>
 		</script>
 	</body>
 </html>
