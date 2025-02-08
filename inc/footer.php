@@ -16,9 +16,17 @@
 			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/privacy">Privacy Policy</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/blog">Blog</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/day-programs-for-adults-with-disabilities-in-mornington-peninsula">Mornington Peninsula</a></li>
 		</menu>
 	</section>
+
+	<!-- Newsletter Subscription Box in Footer -->
+	<div id="newsletter-container">
+	  <form id="newsletter-form">
+	    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+	    <button type="submit">Subscribe</button>
+	  </form>
+	  <p id="newsletter-message"></p>
+	</div>
 
 	<section class="socialIcons">
 		<a href="https://www.instagram.com/thatdisabilityadventurecompany/" target="_blank"><img class="icon" alt="Instagram Icon" src="icons/insta.svg" loading="lazy"></a>
@@ -50,4 +58,34 @@
 <!-- 100% privacy-first analytics -->
 <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+
+<script>
+document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    var email = document.getElementById("newsletter-email").value;
+    var messageBox = document.getElementById("newsletter-message");
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://thatdisabilityadventurecompany.com.au/admin/subscribe-newsletter", true); // Use HTTPS
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            console.log("AJAX Response:", xhr.responseText); // Debugging log
+            console.log("AJAX Status:", xhr.status);
+
+            if (xhr.status === 200) {
+                messageBox.innerHTML = xhr.responseText;
+                messageBox.style.color = "green";
+                document.getElementById("newsletter-form").reset(); // Clear input field
+            } else {
+                messageBox.innerHTML = "Error subscribing. Try again.";
+                messageBox.style.color = "red";
+            }
+        }
+    };
+    xhr.send("email=" + encodeURIComponent(email));
+});
+</script>
 

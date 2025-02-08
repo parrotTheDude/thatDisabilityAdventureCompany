@@ -5,7 +5,7 @@
 			$page_title = 'Day Programs for Adults with Disabilities  in Mornington Peninsula';
 			$page_decription = 'We provide engaging, inclusive, and life-enriching day programs for adults with disabilities in the Mornington Peninsula.';
 			$page_name = '/day-programs-for-adults-with-disabilities-in-mornington-peninsula';
-		  include ('inc/head.php');
+		  include ('../inc/head.php');
 		?>
 	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/day-programs-for-adults-with-disabilities-in-mornington-peninsula" />
 	</head>
@@ -14,14 +14,14 @@
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<?php 
-			  include ('inc/header.php');
+			  include ('../inc/header.php');
 		  ?>
 		</header>
 
 		<!-- Main area for all the information needed -->
 		<main>
 			<!-- Content menu for the mobile devices -->
-			<?php include ('inc/mobileNav.php');?>
+			<?php include ('../inc/mobileNav.php');?>
 
 			<article>
 				<section class="articleTitleContainer">
@@ -70,14 +70,14 @@
 				  </section>
 				</section>
 
-    		<?php include ('inc/contactForm.php');?>
+    		<?php include ('../inc/contactForm.php');?>
 		</main>
 
-		<?php include ('inc/footer.php');?>
+		<?php include ('../inc/footer.php');?>
 
 		<!-- JS Section to make the mobile menu funciton and hide the rest of the content when it is active -->
 		<script>
-			<?php include ('inc/js/coreJs.php');?>
+			<?php include ('../inc/js/coreJs.php');?>
 		</script>
 	</body>
 </html>

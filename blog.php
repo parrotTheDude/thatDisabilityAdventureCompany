@@ -69,6 +69,21 @@
 						</a>
 					</section>
 
+					<section class="blogPanel">
+						<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/day-programs-for-adults-with-disabilities-in-mornington-peninsula">
+							<section class="blogImgContainer">
+								<img src="img/merch/merchPic3.webp" alt="Day Programs for Adults with Disabilities in Mornington Peninsula">
+							</section>
+							<section class="blogText">
+								<h2>Day Programs for Adults with Disabilities in Mornington Peninsula</h2>
+								<section class="blogDetails">
+									<p>We provide engaging, inclusive, and life-enriching day programs for adults with disabilities in the Mornington Peninsula.</p>
+								</section>
+								<p><b>Read more...</b></p>
+							</section>
+						</a>
+					</section>
+
 				</section>
 		</main>
 
