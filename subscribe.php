@@ -1,64 +1,55 @@
 <?php
-// Import database connection
-require_once('inc/variables.php');
-require_once('inc/db-connect.php');
-
-db_connect();
-
-header("Content-Type: text/plain");
-
-// Debugging: Check if email is received
-if (!isset($_GET['email']) || empty($_GET['email'])) {
-    echo "Error: No email received.\n";
-    header("Location: /?subscription=error&reason=no_email");
-    exit;
-}
-
-// Get and sanitize email
-$email = filter_var(trim($_GET['email']), FILTER_SANITIZE_EMAIL);
-echo "Received email: " . $email . "\n";
-
-// Validate email format
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "Error: Invalid email format.\n";
-    header("Location: /?subscription=error&reason=invalid_email");
-    exit;
-}
-
-try {
-    // Insert email into the database (Prevent duplicates)
-    $stmt = $db_link->prepare("
-        INSERT INTO email_subscriptions (email, is_subscribed, subscribed_at) 
-        VALUES (?, TRUE, NOW()) 
-        ON DUPLICATE KEY UPDATE is_subscribed = TRUE, subscribed_at = NOW()
-    ");
-
-    if (!$stmt) {
-        echo "Error preparing statement: " . $db_link->error . "\n";
-        header("Location: /?subscription=error&reason=db_prepare_fail");
-        exit;
-    }
-
-    $stmt->bind_param('s', $email);
-    
-    if (!$stmt->execute()) {
-        echo "Error executing statement: " . $stmt->error . "\n";
-        header("Location: /?subscription=error&reason=db_execute_fail");
-        exit;
-    }
-
-    echo "Subscription successful!\n";
-    header("Location: /?subscription=success");
-    exit;
-} catch (Exception $e) {
-    error_log("Error inserting email: " . $e->getMessage());
-    echo "Error: Exception occurred.\n";
-    header("Location: /?subscription=error&reason=exception");
-    exit;
-} finally {
-    if (isset($stmt)) {
-        $stmt->close();
-    }
-    $db_link->close();
-}
+// Check if email is passed via URL
+$email = isset($_GET['email']) ? filter_var($_GET['email'], FILTER_SANITIZE_EMAIL) : '';
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Subscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        input {
+            padding: 8px;
+            width: 95%;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #327892;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .logo {
+            width: 12rem;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" alt="TDAC Logo" src="icons/logo.webp">
+    <h2>Newsletter Subscription</h2>
+    <p>Enter your email below to confirm your subscription.</p>
+    
+    <form action="admin/process-subscription" method="POST">
+        <input type="email" name="email" value="<?= htmlspecialchars($email) ?>" required placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>
