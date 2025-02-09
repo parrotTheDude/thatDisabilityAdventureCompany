@@ -6,6 +6,8 @@
 
   db_connect();
 
+  // This will be my batch email handler. It is functional. Just needs to be connected to the db to get specific contact lists depending on the newsletter. Currently it is set to only email the newsletter
+
   use Postmark\PostmarkClient;
   use Postmark\Models\PostmarkAttachment;
 

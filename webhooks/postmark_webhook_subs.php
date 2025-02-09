@@ -5,6 +5,8 @@ require_once('../inc/db-connect.php'); // Load database connection
 
 use Postmark\PostmarkClient;
 
+// This webhook waits for Postmark to reach out. It then notifies the admin of a subscription change or spam complaint. If it is sub related, the local DB is updated to reflect the users decision. 
+
 // Connect to DB
 db_connect();
 

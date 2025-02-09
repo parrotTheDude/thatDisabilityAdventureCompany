@@ -5,6 +5,8 @@ require_once('../inc/db-connect.php');
 
 db_connect();
 
+// This page is called by subscribe.php. It takes the email to be subscribed and checks if it is already in the db. If not then it is added, otherwise it's subscription timestamp is updated. The page then passes the user to the index with an alert describing what happened.
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
 

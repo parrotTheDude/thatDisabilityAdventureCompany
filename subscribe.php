@@ -3,12 +3,14 @@
 $email = isset($_GET['email']) ? filter_var($_GET['email'], FILTER_SANITIZE_EMAIL) : '';
 ?>
 
+<!-- This page is responsibile for handling clients who come from the link in the newsletter. It takes their email if it has it and adds it to the form box. Users can then edit it or add their own email in to subscribe to the newsletter. This is just form handling. The user is then sent to admin/process-subscription.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirm Subscription</title>
+    <title>Confirm Subscription | That Disability Adventure Company</title>
     <style>
         body {
             font-family: Arial, sans-serif;

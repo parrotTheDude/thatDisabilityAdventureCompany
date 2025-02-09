@@ -5,6 +5,9 @@ require_once('../inc/db-connect.php');
 
 db_connect();
 
+// This handles the newsletter subscription box located in the footer. It is called as an AJAX element and returns a result depending on the outcome.
+
+
 header("Content-Type: text/plain"); // Plain text response
 
 // Debugging: Log and check the request method
