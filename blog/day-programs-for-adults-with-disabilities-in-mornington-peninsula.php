@@ -7,7 +7,7 @@
 			$page_name = '/day-programs-for-adults-with-disabilities-in-mornington-peninsula';
 		  include ('../inc/head.php');
 		?>
-	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/day-programs-for-adults-with-disabilities-in-mornington-peninsula" />
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog/day-programs-for-adults-with-disabilities-in-mornington-peninsula" />
 	</head>
 
 	<body id="theTop">
