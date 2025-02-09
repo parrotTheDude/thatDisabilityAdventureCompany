@@ -11,6 +11,7 @@
 	</head>
 
 	<body id="theTop">
+		<div id="subscription-popup">Successfully subscribed to our newsletter! 🎉</div>
 		<!-- Header section includes the alert banner and navigation -->
 		<header>
 			<?php 
@@ -233,5 +234,16 @@
 			<?php include ('inc/js/coreJs.php');?>
 			<?php include ('inc/js/slideshowJs.php');?>
 		</script>
+		<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if the URL contains a subscription status
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("subscription") === "success") {
+        let popup = document.getElementById("subscription-popup");
+        popup.style.display = "block"; // Show pop-up
+        setTimeout(() => { popup.style.display = "none"; }, 5000); // Hide after 5 sec
+    }
+});
+</script>
 	</body>
 </html>
