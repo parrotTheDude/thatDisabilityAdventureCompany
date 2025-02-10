@@ -10,7 +10,7 @@ $email = isset($_GET['email']) ? filter_var($_GET['email'], FILTER_SANITIZE_EMAI
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirm Subscription | That Disability Adventure Company</title>
+    <title>Confirm Subscription | TDAC Australia</title>
     <style>
         body {
             font-family: Arial, sans-serif;

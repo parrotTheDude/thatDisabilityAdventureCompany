@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Page Not Found | TDAC Adventures';
+			$page_title = 'Page Not Found | TDAC Australia';
 			$page_decription = 'Oops! The page you’re looking for doesn’t exist. Explore our programs or head back to the homepage to discover more about TDAC.';
 			$page_name = '/404';
 		  include ('inc/head.php');

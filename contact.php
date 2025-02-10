@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Get in Touch with TDAC';
+			$page_title = 'Contact Us | TDAC Australia';
 			$page_decription = 'Have questions or want to learn more about TDAC? Contact us today to explore our programs, services, and how we can support you or your loved ones!';
 			$page_name = '/contact';
 		  include ('inc/head.php');

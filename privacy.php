@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'TDAC Privacy Policy | Your Data, Our Commitment';
+			$page_title = 'Privacy Policy | TDAC Australia';
 			$page_decription = 'Learn how TDAC protects your personal information. Our Privacy Policy outlines how we collect, use, and safeguard your data to ensure your privacy.';
 			$page_name = '/privacy';
 		  include ('inc/head.php');

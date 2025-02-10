@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Life Skills | TDAC Australia';
+			$page_title = 'Independent Living Skills | TDAC Australia';
 			$page_decription = 'Develop practical life skills to enhance independence and confidence in everyday tasks through guided, hands-on support.';
 			$page_name = '/lifeskills';
 		  include ('inc/head.php');

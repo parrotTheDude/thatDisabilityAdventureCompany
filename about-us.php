@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'About TDAC: Inclusive Adventures and Support Programs';
+			$page_title = 'About | TDAC Australia';
 			$page_decription = 'Learn about TDAC’s mission to provide inclusive adventures and supportive programs, empowering individuals with disabilities to thrive and connect.';
 			$page_name = '/about-us';
 		  include ('inc/head.php');
@@ -46,13 +46,36 @@
 					alt="TDAC T-shirt model">
     			</section>
     			<section class="topWritten">
-    				<h1 class="gothamBold" id="aboutTitle">That Disability Adventure Company</h1>
-    				<p>Who are we? <i>That Disability Adventure Company</i> is a passionate provider of inclusive, experience-based programs for individuals with disabilities. We focus on building confidence, fostering meaningful connections, and helping participants develop essential life skills. Based in Melbourne and Gippsland, our services are aligned with NDIS goals and tailored to support personal growth and independence. At TDAC, we believe in creating opportunities that inspire, empower, and leave lasting memories.</p>
+    				<h1 class="gothamBold" id="aboutTitle">Who are TDAC?</h1>
+    				<p>That Disability Adventure Company, also know as TDAC, is a small group of young adults looking to make a difference in the lifes of those with disabilities.</p>
+    				<p>We aim to create a safe and supporting enviroment while running our wide range of fun activities.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentBlueBg" role="button" onclick="theTeam()">Meet the team!</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="theTeam()">Tell me more!</button>
     				</section>
     			</section>
     		</article>
+    	</section>
+
+    	<section class="fullWidth midBg white">
+    		<section class="textLayer">
+    			<h2>Why are we different?</h2>
+    			<p>With the average age of our support workers being 25, we believe having a young team of dedicated support workers is what sets us apart from other disability agencies.</p>
+    			<p>Our focus is fun. We want everyone who comes on board with us to have the best time and come away from every adventure feeling more confident in themselves and their abilities.</p>
+    		</section>
+    	</section>
+
+    	<section class="fullWidth whiteBg">
+    		<section class="textLayer">
+	    		<img src="img/merch/merchPic2.webp">
+	    	</section>
+    	</section>
+
+    	<section class="fullWidth midBg white">
+    		<section class="textLayer">
+	    		<h2>What kind of programs do we offer?</h2>
+	    		<p>Our programs range from one off activities and events to recurring weekly activities to help participants build up life skills through repetition.</p>
+	    		<p>We offer <a class="inlineLink" href="https://thatdisabilityadventurecompany.com.au/group-activities">group activites</a>, <a class="inlineLink" href="https://thatdisabilityadventurecompany.com.au/one-to-one">individual one to one support</a>, <a class="inlineLink" href="https://thatdisabilityadventurecompany.com.au/lifeskills">life skill workshops</a> and <a class="inlineLink" href="https://thatdisabilityadventurecompany.com.au/overnight-stays">overnight stays</a> as part of the range. To explore more on each activity click on any of them or use the naivigation panel.</p>
+	    	</section>
     	</section>
 
     	<!-- Team panel -->

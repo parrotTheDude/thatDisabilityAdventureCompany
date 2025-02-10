@@ -16,7 +16,7 @@
 		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/promo-video" />
 
 		<!-- Title and Description tags -->
-		<title>Join the Adventure | That Disability Adventure Company</title>
+		<title>Join the Adventure | TDAC Australia</title>
 		<meta name="description" content="Watch the TDAC promo video to see how our inclusive programs empower individuals with disabilities to grow, connect, and create lasting memories." />
 
 		<meta property="og:title" content="Join the Adventure | That Disability Adventure Company" />
