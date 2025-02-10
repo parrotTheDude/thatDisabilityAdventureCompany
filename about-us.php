@@ -32,8 +32,7 @@
     		<section class="mobileTopImgContainer" id="aboutSizing">
     			<img 
 					class="asyncImage mobileTopImg"
-					src="img/about/aboutUs-min.webp" 
-					data-src="img/about/aboutUs.webp" 
+					src="img/about/aboutUs.webp"
 					alt="TDAC T-shirt model">
     		</section>
 
@@ -41,8 +40,7 @@
     			<section class="aboutImgContainer">
     				<img 
 					class="asyncImage topImg"
-					src="img/about/aboutUs-min.webp" 
-					data-src="img/about/aboutUs.webp" 
+					src="img/about/aboutUs.webp"
 					alt="TDAC T-shirt model">
     			</section>
     			<section class="topWritten">
@@ -56,7 +54,7 @@
     		</article>
     	</section>
 
-    	<section class="fullWidth midBg white">
+    	<section class="fullWidth midBg white"  id="team">
     		<section class="textLayer">
     			<h2>Why are we different?</h2>
     			<p>With the average age of our support workers being 25, we believe having a young team of dedicated support workers is what sets us apart from other disability agencies.</p>
@@ -64,9 +62,9 @@
     		</section>
     	</section>
 
-    	<section class="fullWidth whiteBg">
-    		<section class="textLayer">
-	    		<img src="img/merch/merchPic2.webp">
+    	<section class="fullWidth midBg">
+    		<section class="imgLayer">
+	    		<img src="img/merch/merchPic2.webp" loading="lazy" alt="One to One support in a group enviroment">
 	    	</section>
     	</section>
 
@@ -79,12 +77,12 @@
     	</section>
 
     	<!-- Team panel -->
-    	<section class="panelContainer whiteBg" id="team">
+    	<section class="panelContainer whiteBg">
     		<section class="topContent whiteBg">
     			<section class="floatContainer">
     				<section class="floatTitleContainer">
     					<img class="lrgIcon" src="icons/team.svg" alt="Team Icon" loading="lazy">
-    					<h2>The team!</h2>
+    					<h2>Meet the Team</h2>
     				</section>
     				<section class="floater">
     					<section>
@@ -95,7 +93,7 @@
 								loading="lazy">
     					</section>
     					<section class="floatText">
-    						<h2>Isaiah Abrahams</h2>
+    						<h3>Isaiah Abrahams</h3>
     					</section>
     				</section>
     				
@@ -108,7 +106,7 @@
 								loading="lazy">
     					</section>
     					<section class="floatText">
-    						<h2>Cody Plant</h2>
+    						<h3>Cody Plant</h3>
     					</section>
     				</section>
 
@@ -117,44 +115,37 @@
     						<img 
 								class="floatImg"
 								src="img/about/unknown.webp" 
-								alt="Unknown Man"
+								alt="Daniel Burke"
 								loading="lazy">
     					</section>
     					<section class="floatText">
-    						<h2>Daniel Burke</h2>
+    						<h3>Daniel Burke</h3>
     					</section>
     				</section>
-    			</section>
-    		</section>
-    	</section>
 
-    	<!-- Activities Panel -->
-    	<section class="aboutContentContainer">
-    		<section class="mobileTopImgContainer">
-    				<img 
-							class="mobileTopImg"
-							src="img/about/snow.webp" 
-							alt="Snow trip with TDAC"
-							loading="lazy">
-    		</section>
-
-    		<article class="topContent whiteBg">
-    			<section class="aboutImgContainer">
-    				<img 
-							class="topImg"
-							src="img/about/snow.webp" 
-							alt="Snow trip with TDAC"
-							loading="lazy">
-    			</section>
-    			<section class="topWritten">
-    				<h2 class="gothamBook" id="aboutSubTitle">Are you ready for the experience of a life time?</h2>
-    				<p>Explore exciting events designed for individuals with disabilities! From group adventures to skill-building workshops, our events offer inclusive opportunities to connect, grow, and create lasting memories. Check out our upcoming events and join the fun today!</p>
-    				<section class="btnsContainer" id="aboutBtn">
-    					<div id="buttonFixAbout" class="topBtns accentBlueBg marginEdit"><a href="https://thatdisabilityadventurecompany.com.au/group-activities" class="linkBtn" id="specialB">See our group activities!</a></div>
+    				<section class="floater">
+    					<section>
+    						<img 
+								class="floatImg"
+								src="img/about/bRudy1.webp" 
+								alt="Blake Rudy"
+								loading="lazy">
+    					</section>
+    					<section class="floatText">
+    						<h3>Blake Rudy</h3>
+    					</section>
     				</section>
+
     			</section>
-    		</article>
+    		</section>
     	</section>
+
+    	<section class="fullWidth midBg" id="hideDesktop">
+    		<section class="imgLayer">
+	    		<img src="img/merch/merchPic3.webp" loading="lazy" alt="One to One support in a group enviroment">
+	    	</section>
+    	</section>
+
     	<?php include ('inc/contactForm.php');?>
 		</main>
 

@@ -314,7 +314,7 @@ menu li {
     position: absolute;
     width: 10rem;
     height: 100%;
-    right: -31rem;
+    right: -35rem;
     width: 50%;
     z-index: 80;
     transition: 0.6s ease;
@@ -337,7 +337,7 @@ main {
     position: relative;
 }
 #specialB {
-    color: #fff;
+    background-color: #fff;
 }
 .panelContainer {
     display: flex;
@@ -365,6 +365,7 @@ main {
     width: 50%;
     padding: 2rem;
     margin: auto;
+    text-align: center;
 }
 .topImgContainer {
     display: flex;
@@ -468,14 +469,14 @@ main {
 .floater {
     width: calc(33.33333% - 1rem);
     height: auto;
-    background-color: #375b6d;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     margin: 0.5rem;
-    padding-bottom: 1rem;
 }
 .floatImg {
     width: 100%;
-    height: 30%;
+  	height: auto;
+  	border-radius: 20rem;
 }
 .floatText {
     display: flex;
@@ -484,7 +485,6 @@ main {
     justify-content: center;
     margin: auto;
     text-align: center;
-    padding: 1.5rem 0;
 }
 .floatText h3 {
     width: 90%;
@@ -511,7 +511,7 @@ main {
     text-align: center;
     margin: 1rem auto 0;
     color: #000;
-    padding: 2.5rem;
+    padding: 1rem;
 }
 .floatTitleContainer h2 {
     width: 95%;
@@ -549,7 +549,7 @@ main {
 }
 #buttonFixAbout {
     max-width: 16rem;
-    margin: auto;
+    background-color: #fff;
 }
 #buttonFix404 {
     max-width: 15rem;
@@ -558,8 +558,8 @@ main {
 .floater {
     width: calc(50% - 1rem);
     height: auto;
-    background-color: #375b6d;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     margin: 0.5rem;
     padding-bottom: 1rem;
 }
@@ -578,8 +578,7 @@ main {
     width: 90%;
     max-width: 800px;
     text-align: center;
-    margin: 2rem auto;
-    s;
+    margin: 3rem auto;
 }
 .formInput {
     width: 95%;
@@ -870,6 +869,7 @@ footer {
 }
 .inlineLink {
 	text-decoration: underline;
+	color: #fff;
 }
 .slideshow-container {
     width: 100%;
@@ -899,7 +899,11 @@ footer {
 	margin: auto;
 	padding: 2rem;
 }
-.textLayer img {
+.imgLayer {
+	width: 50%;
+	margin: auto;
+}
+.imgLayer img {
 	width: 100%;
 	height: auto;
 }
@@ -915,7 +919,7 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 40rem;
-    background-color: #375b6d;
+    background-color: #fff;
 }
 #contactSizing {
     min-height: 16rem;
@@ -1417,8 +1421,8 @@ footer {
     .mobileTopImgContainer {
         display: none;
     }
-    .floatTitleContainer h2 {
-        font-size: 2rem;
+    #specialB {
+    	color: ;
     }
     .contactTitleContainer h2 {
         font-size: 2rem;
@@ -1428,6 +1432,7 @@ footer {
     }
     .aboutContentContainer {
         height: auto;
+        background-color: #fff;
     }
     #topContactWritten {
         width: 40%;
@@ -1446,6 +1451,9 @@ footer {
     }
     .rightBtnAlign {
         justify-content: right;
+    }
+    #hideDesktop{
+    	display: none;
     }
 }
 @media screen and (min-width: 1475px) {
@@ -1498,6 +1506,9 @@ footer {
     .topContentContainer {
         height: auto;
     }
+    .floater {
+    	width: calc(33% - 1rem);
+    }
 }
 @media screen and (max-width: 1024px) {
     #mobileh1 {
@@ -1512,6 +1523,9 @@ footer {
     }
     .textLayer {
     	width: 95%;
+    }
+    .imgLayer {
+    	width: 100%;
     }
     .indexTextSmall {
         text-align: center;
@@ -1566,7 +1580,6 @@ footer {
     .aboutContentContainer {
         height: auto;
         display: block;
-        background-color: #fff;
     }
     .topImgContainer {
         display: none;
@@ -1606,14 +1619,6 @@ footer {
     }
     .floatTitleContainer {
         margin: auto;
-        color: #fff;
-    }
-    .floatContainer {
-        background-color: #375b6d;
-    }
-    .floater {
-        background-color: #fff;
-        color: #000;
     }
     .topSocials {
         width: 3rem;
@@ -1674,6 +1679,15 @@ footer {
 @media screen and (max-width: 650px) {
     #menuToggle {
         width: 90%;
+    }
+    .eventContainer {
+    	  padding: 2rem 0 0rem;
+    }
+    .floatText {
+    	  margin-top: 2rem;
+    }
+    .eventTitle {
+    	padding-bottom: 2rem;
     }
     .blogPanel {
         width: 100%;
