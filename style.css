@@ -82,6 +82,7 @@ video {
 }
 .videoH1 p {
     color: #fff;
+    padding-bottom: 1rem;
 }
 #closeSVG {
     width: 2rem;
@@ -561,7 +562,6 @@ main {
     background-color: #fff;
     color: #000;
     margin: 0.5rem;
-    padding-bottom: 1rem;
 }
 #reviewFloater2 {
     padding: 1.5rem;
@@ -899,6 +899,9 @@ footer {
 	margin: auto;
 	padding: 2rem;
 }
+.textLayer h2 {
+    margin: 0;
+}
 .imgLayer {
 	width: 50%;
 	margin: auto;
@@ -1054,7 +1057,7 @@ footer {
     color: #000;
     display: block;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 1.8rem;
 }
 .textContainerWhoWeAre {
     width: 90%;
@@ -1531,6 +1534,9 @@ footer {
         text-align: center;
         margin: auto;
     }
+    .faq-container {
+        margin: auto;
+    }
     .blogPanel {
         width: 45%;
         margin: 1rem;
@@ -1682,9 +1688,6 @@ footer {
     }
     .eventContainer {
     	  padding: 2rem 0 0rem;
-    }
-    .floatText {
-    	  margin-top: 2rem;
     }
     .eventTitle {
     	padding-bottom: 2rem;

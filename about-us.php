@@ -45,16 +45,16 @@
     			</section>
     			<section class="topWritten">
     				<h1 class="gothamBold" id="aboutTitle">Who are TDAC?</h1>
-    				<p>That Disability Adventure Company, also know as TDAC, is a small group of young adults looking to make a difference in the lifes of those with disabilities.</p>
+    				<p>That Disability Adventure Company, also know as TDAC, is a small group of young adults looking to make a difference in the lives of those with disabilities.</p>
     				<p>We aim to create a safe and supporting enviroment while running our wide range of fun activities.</p>
     				<section class="btnsContainer" id="aboutBtn">
-    					<button class="topBtns accentBlueBg" role="button" onclick="theTeam()">Tell me more!</button>
+    					<button class="topBtns accentBlueBg" role="button" onclick="theTeam()">Meet the team</button>
     				</section>
     			</section>
     		</article>
     	</section>
 
-    	<section class="fullWidth midBg white"  id="team">
+    	<section class="fullWidth midBg white">
     		<section class="textLayer">
     			<h2>Why are we different?</h2>
     			<p>With the average age of our support workers being 25, we believe having a young team of dedicated support workers is what sets us apart from other disability agencies.</p>
@@ -77,7 +77,7 @@
     	</section>
 
     	<!-- Team panel -->
-    	<section class="panelContainer whiteBg">
+    	<section class="panelContainer whiteBg" id="team">
     		<section class="topContent whiteBg">
     			<section class="floatContainer">
     				<section class="floatTitleContainer">
