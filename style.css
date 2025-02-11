@@ -474,10 +474,21 @@ main {
     color: #000;
     margin: 0.5rem;
 }
+.floaterInx {
+    width: calc(33.33333% - 1rem);
+    height: auto;
+    background-color: #375b6d;
+    color: #000;
+    margin: 0.5rem;
+}
 .floatImg {
     width: 100%;
   	height: auto;
   	border-radius: 20rem;
+}
+.floatImgInx {
+    width: 100%;
+    height: auto;
 }
 .floatText {
     display: flex;
@@ -491,6 +502,21 @@ main {
     width: 90%;
 }
 .floatText p {
+    margin: 0;
+}
+.floatTextInx {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.floatTextInx h3 {
+    width: 90%;
+}
+.floatTextInx p {
     margin: 0;
 }
 .radioCheck {
@@ -561,6 +587,13 @@ main {
     height: auto;
     background-color: #fff;
     color: #000;
+    margin: 0.5rem;
+}
+.floaterInx {
+    width: calc(50% - 1rem);
+    height: auto;
+    background-color: #375b6d;
+    color: #fff;
     margin: 0.5rem;
 }
 #reviewFloater2 {
@@ -1482,6 +1515,9 @@ footer {
     .floater {
         width: calc(25% - 1rem);
     }
+    .floaterInx {
+        width: calc(25% - 1rem);
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1585px) {
     .mobileNavContainer {
@@ -1511,6 +1547,9 @@ footer {
     }
     .floater {
     	width: calc(33% - 1rem);
+    }
+    .floaterInx {
+        width: calc(33% - 1rem);
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1669,6 +1708,9 @@ footer {
     .floater {
         width: calc(50% - 1rem);
     }
+    .floaterInx {
+        width: calc(50% - 1rem);
+    }
     .formMessage {
         width: 96%;
     }
@@ -1685,6 +1727,10 @@ footer {
 @media screen and (max-width: 650px) {
     #menuToggle {
         width: 90%;
+    }
+    #black {
+        color: #000;
+        background-color: #fff;
     }
     .eventContainer {
     	  padding: 2rem 0 0rem;
@@ -1710,6 +1756,11 @@ footer {
         padding: 0 1rem 1rem 0.5rem;
     }
     .floater {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .floaterInx {
         margin: 0;
         width: 100%;
         border-radius: 0;

@@ -119,15 +119,15 @@
     					<img class="lrgIcon" alt="Connection Icon" src="icons/networking.svg" loading="lazy">
     					<h2>Our Programs & Supportive Services</h2>
     				</section>
-    				<section class="floater">
+    				<section class="floaterInx">
     					<section>
     						<img 
-		  					class="floatImg"
+		  					class="floatImgInx"
 		  					src="img/index/groupPic.webp"
 		  					alt="Day out in the forest"
 		  					loading="lazy">
     					</section>
-    					<section class="floatText">
+    					<section class="floatTextInx">
     						<img class="lrgIcon" alt="Group Icon" src="icons/group.svg" loading="lazy">
     						<h3>Group Based Activities</h3>
     						<p>Our most popular program! The majority of our programs are run in groups. This is done to create a fun and social enviroment for all. Some of our previous activities include La Mans Racing, Ski Trips away and the Hijinx Hotel.</p>
@@ -135,15 +135,15 @@
     					</section>
     				</section>
     				
-    				<section class="floater">
+    				<section class="floaterInx">
     					<section>
     						<img 
-		  					class="floatImg"
+		  					class="floatImgInx"
 		  					src="img/index/overnight.webp"
 		  					alt="Games Night"
 		  					loading="lazy">
     					</section>
-    					<section class="floatText">
+    					<section class="floatTextInx">
     						<img class="lrgIcon" alt="Overnight Icon" src="icons/half-moon.svg" loading="lazy">
     						<h3>Overnight Stays</h3>
     						<p>Our overnight stay program are made to provide a safe, supportive space for individuals with disabilities. We aim to help individuals build independence, make friends, and enjoy unique, memorable experiences while taking a break away from home.</p>
@@ -151,15 +151,15 @@
     					</section>
     				</section>
 
-    				<section class="floater">
+    				<section class="floaterInx">
     					<section>
     						<img 
-		  					class="floatImg"
+		  					class="floatImgInx"
 		  					src="img/index/life.webp"
 		  					alt="iFly Group Picture"
 		  					loading="lazy">
     					</section>
-    					<section class="floatText">
+    					<section class="floatTextInx">
     						<img class="lrgIcon" alt="Life Skills Icon" src="icons/skill.svg" loading="lazy">
     						<h3>Life Skills Program</h3>
     						<p>The life skills programs aim to help those who find every day tasks a challenge. Some of our previous programs have been cooking classes and gym sessions with personal trainers. With every program we want our participants to gain confidence for everyday living.</p>
@@ -167,15 +167,15 @@
     					</section>
 
     				</section>
-    				<section class="floater">
+    				<section class="floaterInx">
     					<section>
     						<img 
-		  					class="floatImg"
+		  					class="floatImgInx"
 		  					src="img/index/oneOnOne.webp"
 		  					alt="Outing at the F1"
 		  					loading="lazy">
     					</section>
-    					<section class="floatText">
+    					<section class="floatTextInx">
     						<img class="lrgIcon" alt="One on One Icon" src="icons/friends.svg" loading="lazy">
     						<h3>1 on 1 Support</h3>
     						<p>Experience one-on-one support tailored to individual needs, helping people with disabilities achieve their goals, build independence, and live life to the fullest.</p>
