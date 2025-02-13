@@ -8,7 +8,7 @@
 			$page_name = '/';
 		  include ('inc/head.php');
 		?>
-	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/" />
+	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/test" />
 	</head>
 
 	<body id="theTop">

@@ -4,7 +4,7 @@
 		<?php
 			$page_title = 'Day Programs for Adults with Disabilities  in Mornington Peninsula';
 			$page_decription = 'We provide engaging, inclusive, and life-enriching day programs for adults with disabilities in the Mornington Peninsula.';
-			$page_name = '/day-programs-for-adults-with-disabilities-in-mornington-peninsula';
+			$page_name = '/blog/day-programs-for-adults-with-disabilities-in-mornington-peninsula';
 		  include ('../inc/head.php');
 		?>
 	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog/day-programs-for-adults-with-disabilities-in-mornington-peninsula" />

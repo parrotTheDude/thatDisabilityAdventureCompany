@@ -7,6 +7,7 @@
 			$page_name = '/blog';
 		  include ('inc/blogHead.php');
 		?>
+		<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog" />
 	</head>
 
 	<body id="theTop">
