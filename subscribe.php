@@ -15,7 +15,7 @@ $email = isset($_GET['email']) ? filter_var($_GET['email'], FILTER_SANITIZE_EMAI
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 3rem 0rem;
         }
         form {
             display: inline-block;
@@ -29,6 +29,12 @@ $email = isset($_GET['email']) ? filter_var($_GET['email'], FILTER_SANITIZE_EMAI
             width: 95%;
             font-size: 1rem;
             margin-bottom: 10px;
+        }
+        label {
+            text-align: left !important;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
         }
         button {
             background-color: #327892;
@@ -50,7 +56,8 @@ $email = isset($_GET['email']) ? filter_var($_GET['email'], FILTER_SANITIZE_EMAI
     <p>Enter your email below to confirm your subscription.</p>
     
     <form action="admin/process-subscription" method="POST">
-        <input type="email" name="email" value="<?= htmlspecialchars($email) ?>" required placeholder="Enter your email">
+        <label>Email Address:</label>
+        <input type="email" name="email" required placeholder="Enter your email">
         <button type="submit">Subscribe</button>
     </form>
 </body>

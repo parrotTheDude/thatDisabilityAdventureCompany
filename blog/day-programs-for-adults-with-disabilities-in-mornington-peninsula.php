@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php
-			$page_title = 'Day Programs for Adults with Disabilities  in Mornington Peninsula';
+			$page_title = 'Day Programs for Adults with Disabilities in Mornington Peninsula';
 			$page_decription = 'We provide engaging, inclusive, and life-enriching day programs for adults with disabilities in the Mornington Peninsula.';
 			$page_name = '/blog/day-programs-for-adults-with-disabilities-in-mornington-peninsula';
 		  include ('../inc/head.php');
@@ -26,7 +26,7 @@
 			<article>
 				<section class="articleTitleContainer">
 					<section class="textContainerSmaller">
-						<h1 class="articleTitle">Day Programs for Adults with Disabilities in Mornington Peninsula</h1>
+						<h1 class="articleTitle">Disability Programs in the Mornington Peninsula</h1>
 					</section>
 				</section>
 
