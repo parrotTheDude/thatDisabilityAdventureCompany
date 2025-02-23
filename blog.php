@@ -42,6 +42,21 @@
 					
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/ndis-autism">
+						<section class="blogImgContainer">
+							<img src="img/blog/assistance2.webp" alt="Autism NDIS">
+						</section>
+						<section class="blogText">
+							<h2>Autism and the NDIS</h2>
+							<section class="blogDetails">
+								<p>Autism is one of the most common disabilities supported by the NDIS. The scheme recognises that autism exists on a spectrum, meaning that individuals with autism may require varying levels of support.</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/assistance-with-daily-life-ndis">
 						<section class="blogImgContainer">
 							<img src="img/blog/assistance1.webp" alt="Assistance with daily life">

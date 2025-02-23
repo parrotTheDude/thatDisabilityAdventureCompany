@@ -3,7 +3,7 @@
 	<head>
 		<?php
 			$page_title = 'Assistance with Daily Life NDIS | TDAC Australia';
-			$page_decription = '“Practical tips, guides, and insights on NDIS daily life assistance—helping participants navigate support, services, and independence with ease.”';
+			$page_decription = 'Practical tips, guides, and insights on NDIS daily life assistance—helping participants navigate support, services, and independence with ease.';
 			$page_name = '/blog/assistance-with-daily-life-ndis';
 		  include ('../inc/blogHead.php');
 		?>
