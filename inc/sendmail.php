@@ -1,7 +1,7 @@
 <?php
 
-if (!empty($_POST['honeypot'])) {
-    // This is spam, ignore the submission
+if (!empty($_POST['honeypot']) || !empty($_POST['user_comment'])) {
+    // Bot detected, ignore the submission
     exit();
 }
 

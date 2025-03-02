@@ -42,6 +42,11 @@
 					<section class="contactFormContainer">
 			      <form action="thank-you" method="POST" id="form" class="formStyle">
 			      	<input type="text" name="honeypot" id="honeypot" style="display: none;" autocomplete="off">
+			      	<!-- Second Visible Honeypot (CSS will hide it but bots might fill it) -->
+						  <div class="honeypot-container">
+						    <label for="user_comment">Leave this field blank:</label>
+						    <input type="text" name="user_comment" id="user_comment">
+						  </div>
 			        <div class="inputContainer">
 			          <input type="text" name="name" id="first_name" placeholder="Firstname*" required class="formInput"/>
 			        </div>
