@@ -5,6 +5,16 @@ if (!empty($_POST['honeypot']) || !empty($_POST['user_comment'])) {
     exit();
 }
 
+// Hardcoded spam emails list
+$spamEmails = [
+    'tjangamarra.vincent@gmail.com',
+    'bemibrooks.dev@gmail.com',
+    'demibrooks.dev@gmail.com',
+    'seorankingtech@gmail.com',
+    'info@holzman.pawtrim.shop',
+    'dewey.anja81@googlemail.com'
+];
+
 // Import dependencies
 require_once('./vendor/autoload.php');
 require_once('inc/variables.php');
@@ -23,6 +33,11 @@ try {
         $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
         $phone = preg_replace("/[^0-9]/", '', $_POST['phone']); // Strip non-numeric characters
         $message = htmlspecialchars(trim($_POST['message']));
+
+        // Check if the email is in the spam list
+        if (in_array(strtolower($email), array_map('strtolower', $spamEmails))) {
+            throw new Exception("This email address has been blocked.");
+        }
 
         // Validate and set default values for age and location
         $valid_age_ranges = ['18-22', '23-30', '31-39', '40-45'];
