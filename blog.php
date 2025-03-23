@@ -42,6 +42,21 @@
 					
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/arcades">
+						<section class="blogImgContainer">
+							<img src="img/index/leMans.webp" alt="Arcades">
+						</section>
+						<section class="blogText">
+							<h2>Top Arcades in Melbourne & Why They’re Perfect for Everyone</h2>
+							<section class="blogDetails">
+								<p>Explore Melbourne's best arcades and why they're great for everyone — including those with disabilities. Discover inclusive fun for all!</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/ndis-autism">
 						<section class="blogImgContainer">
 							<img src="img/blog/assistance2.webp" alt="Autism NDIS">
