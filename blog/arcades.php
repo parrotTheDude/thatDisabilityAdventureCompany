@@ -4,7 +4,7 @@
     <?php
       $page_title = 'Top Arcades in Melbourne | TDAC Australia';
       $page_decription = "Explore Melbourne's best arcades and why they're great for everyone — including those with disabilities. Discover inclusive fun for all!";
-      $page_name = '/blog/top-arcades-melbourne';
+      $page_name = '/blog/arcades';
       include ('../inc/blogHead.php');
     ?>
 	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/blog/arcades" />
