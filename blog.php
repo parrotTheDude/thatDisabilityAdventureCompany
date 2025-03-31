@@ -39,6 +39,22 @@
 
 				<!-- Displays all the panels -->
 				<section class="blogDisplayPanel">
+
+				<!-- Blog Panel -->
+				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/support-worker">
+						<section class="blogImgContainer">
+							<img src="img/blog/gangAtF1.webp" alt="f1">
+						</section>
+						<section class="blogText">
+							<h2>More Than a Job: The Importance of Young Support Workers</h2>
+							<section class="blogDetails">
+								<p>Discover why young, gender-diverse support workers are vital to Australia's disability care sector. Learn how TDAC is reshaping disability support.</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
 					
 				<!-- Blog Panel -->
 				<section class="blogPanel">
