@@ -44,7 +44,7 @@
 
           <img src="/img/blog/dudesF1.webp" class="articleImg" alt="Young TDAC workers supporting clients">
           <div class="topBtns accentBlueBg indexVideo">
-              <a href="https://thatdisabilityadventurecompany.com.au/about" class="linkBtn" id="whiteTxt">About Us</a>
+              <a href="https://thatdisabilityadventurecompany.com.au/about-us" class="linkBtn" id="whiteTxt">About Us</a>
             </div>
 
           <section class="paragraphSection">
