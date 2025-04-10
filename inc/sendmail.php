@@ -20,8 +20,6 @@ require_once('./vendor/autoload.php');
 require_once('inc/variables.php');
 require_once('inc/db-connect.php');
 
-db_connect();
-
 use Postmark\PostmarkClient;
 
 try {
@@ -33,6 +31,15 @@ try {
         $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
         $phone = preg_replace("/[^0-9]/", '', $_POST['phone']); // Strip non-numeric characters
         $message = htmlspecialchars(trim($_POST['message']));
+
+        // Extra spam checks
+        if (strtolower($name) === 'search') {
+            exit();
+        }
+
+        if (preg_match('/(https?:\/\/)?(www\.)?thatdisabilityadventurecompany\.com\.au/i', $message)) {
+            exit();
+        }
 
         // Check if the email is in the spam list
         if (in_array(strtolower($email), array_map('strtolower', $spamEmails))) {
@@ -56,17 +63,6 @@ try {
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception("Invalid email format.");
-        }
-
-        // Insert a new contact form submission (Tracking Multiple Entries)
-        $stmt = $db_link->prepare("
-            INSERT INTO contact_form_submissions (first_name, last_name, email, phone, created_at, age_range, location, preferred_contact, message) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ");
-        $stmt->bind_param('sssssssss', $name, $l_name, $email, $phone, $dateCreated, $age_range, $location, $preferred_contact, $message);
-
-        if (!$stmt->execute()) {
-            throw new Exception("Database operation failed: " . $stmt->error);
         }
 
         // Send emails using Postmark
@@ -107,7 +103,5 @@ try {
     // Log the error and show a user-friendly message
     error_log("Error: " . $e->getMessage());
 } finally {
-    // Close the database connection
-    $db_link->close();
 }
 ?>
