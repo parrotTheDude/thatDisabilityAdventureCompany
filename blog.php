@@ -42,6 +42,22 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/accessible-things-to-do-in-melbourne">
+						<section class="blogImgContainer">
+							<img src="img/blog/melbourne1.webp" alt="f1">
+						</section>
+						<section class="blogText">
+							<h2>Top 10 Fun and Accessible Things to Do in Melbourne</h2>
+							<section class="blogDetails">
+								<p>Discover the best things to do in Melboure with accessability in mind!</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<!-- Blog Panel -->
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/support-worker">
 						<section class="blogImgContainer">
 							<img src="img/blog/gangAtF1.webp" alt="f1">
