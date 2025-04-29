@@ -1,3 +1,4 @@
+<?php require_once('inc/variables.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,6 +10,7 @@
 		?>
 
 	<link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/contact" />
+  <script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_SITE_KEY; ?>"></script>
 	</head>
 
 	<body id="theTop">
@@ -40,52 +42,100 @@
 					</section>
 
 					<section class="contactFormContainer">
-			      <form action="thank-you" method="POST" id="form" class="formStyle">
-			      	<input type="text" name="honeypot" id="honeypot" style="display: none;" autocomplete="off">
-			      	<!-- Second Visible Honeypot (CSS will hide it but bots might fill it) -->
+			      <!-- ✅ Contact Form -->
+						<form method="POST" id="contactForm" class="formStyle" novalidate>
+						  <!-- Honeypots -->
+						  <input type="text" name="honeypot" id="honeypot" style="display: none;" autocomplete="off">
 						  <div class="honeypot-container">
 						    <label for="user_comment">Leave this field blank:</label>
 						    <input type="text" name="user_comment" id="user_comment">
 						  </div>
-			        <div class="inputContainer">
-			          <input type="text" name="name" id="first_name" placeholder="Firstname*" required class="formInput"/>
-			        </div>
-			        <div class="inputContainer">
-			          <input type="text" name="last_name" id="last_name" placeholder="Lastname*" required class="formInput">
-			        </div>
-			        <div class="inputContainer">
-			          <input type="email" name="email" id="email" placeholder="your@email.com*" required class="formInput" />
-			        </div>
-			        <div class="inputContainer">
-			          <input type="number" name="phone" id="phone" title="Australian number must be 10 digits long. Format like this example: 0456654456" placeholder="0456 654 654" required class="formInput" />
-			        </div>
-			        <div class="inputContainer">
-			          <select name="age" id="age" class="formInput" required placeholder="Age Range">
-			            <option value="18-22">18-22</option>
-			            <option value="23-30">23-30</option>
-			            <option value="31-39">31-39</option>
-			            <option value="40-45">40-45</option>
-			          </select>
-			        </div>
-			        <div class="inputContainer">
-			          <select name="location" id="location" class="formInput" required placeholder="location">
-			            <option value="Melbourne">Melbourne</option>
-			            <option value="Gippsland">Gippsland</option>
-			            <option value="Mornington Peninsula">Mornington Peninsula</option>
-			          </select>
-			        </div>
-			        <div class="formMessage">
-			          <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
-			        </div>
-			        <div class="radioCheck">
-			        	<label>Preferred Contact Method:</label><br>
-    						<input type="radio" name="preferred_contact" value="email" checked> Email
-    						<input type="radio" name="preferred_contact" value="phone"> Phone
-			        </div>
-			        <div class="formBtnContainer">
-			          <button type="submit" id="formBtn" name="submit" class="topBtns whiteBg">Send Message</button>
-			        </div>
-			      </form>
+
+						  <div class="inputContainer">
+						    <input type="text" name="name" id="first_name" placeholder="Firstname*" required class="formInput" />
+						  </div>
+
+						  <div class="inputContainer">
+						    <input type="text" name="last_name" id="last_name" placeholder="Lastname*" required class="formInput">
+						  </div>
+
+						  <div class="inputContainer">
+						    <input type="email" name="email" id="email" placeholder="your@email.com*" required class="formInput" />
+						  </div>
+
+						  <div class="inputContainer">
+						    <input type="number" name="phone" id="phone" title="Australian number must be 10 digits long. Format like this example: 0456654456" placeholder="0456 654 654" required class="formInput" />
+						  </div>
+
+						  <div class="inputContainer">
+						    <select name="age" id="age" class="formInput" required>
+						      <option value="">Age Range</option>
+						      <option value="18-22">18-22</option>
+						      <option value="23-30">23-30</option>
+						      <option value="31-39">31-39</option>
+						      <option value="40-45">40-45</option>
+						    </select>
+						  </div>
+
+						  <div class="inputContainer">
+						    <select name="location" id="location" class="formInput" required>
+						      <option value="">Location</option>
+						      <option value="Melbourne">Melbourne</option>
+						      <option value="Gippsland">Gippsland</option>
+						      <option value="Mornington Peninsula">Mornington Peninsula</option>
+						    </select>
+						  </div>
+
+						  <div class="formMessage">
+						    <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
+						  </div>
+
+						  <div class="radioCheck">
+						    <label>Preferred Contact Method:</label><br>
+						    <input type="radio" name="preferred_contact" value="email" checked> Email
+						    <input type="radio" name="preferred_contact" value="phone"> Phone
+						  </div>
+
+						  <div class="formBtnContainer">
+						    <button type="submit" id="formBtn" class="topBtns whiteBg">Send Message</button>
+						  </div>
+						</form>
+
+						<div id="formMessage" style="margin-top: 1rem;"></div>
+
+						<script>
+						const form = document.getElementById('contactForm');
+						const messageBox = document.getElementById('formMessage');
+
+						form.addEventListener('submit', function (event) {
+						  event.preventDefault();
+						  messageBox.textContent = 'Sending...';
+
+						  grecaptcha.ready(function () {
+						    grecaptcha.execute('<?php echo RECAPTCHA_SITE_KEY; ?>', { action: 'submit' }).then(function (token) {
+						      const formData = new FormData(form);
+						      formData.append('g-recaptcha-response', token);
+
+						      fetch('inc/sendmail.php', {
+						        method: 'POST',
+						        body: formData
+						      })
+						      .then(res => res.json())
+						      .then(data => {
+						        if (data.success) {
+						          messageBox.textContent = '✅ Message sent!';
+						          form.reset();
+						        } else {
+						          messageBox.textContent = '❌ ' + (data.message || 'Something went wrong.');
+						        }
+						      })
+						      .catch(() => {
+						        messageBox.textContent = '❌ Network error.';
+						      });
+						    });
+						  });
+						});
+						</script>
 			    </section>
 				</section>
 			</section>
