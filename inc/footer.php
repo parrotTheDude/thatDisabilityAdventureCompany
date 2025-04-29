@@ -1,3 +1,5 @@
+<?php require_once('inc/variables.php'); ?>
+<script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_SITE_KEY; ?>"></script>
 <footer class="darkBg white">
 	<section class="footLogoCon">
 		<img class="footerLogo" alt="TDAC White Logo" src="icons/whiteLogo.webp" loading="lazy">
@@ -60,33 +62,51 @@
 <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
 
+
 <script>
 document.getElementById("newsletter-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent page reload
+    event.preventDefault();
 
-    var email = document.getElementById("newsletter-email").value;
-    var messageBox = document.getElementById("newsletter-message");
+    const email = document.getElementById("newsletter-email").value;
+    const messageBox = document.getElementById("newsletter-message");
+    const submitBtn = this.querySelector("button");
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://thatdisabilityadventurecompany.com.au/admin/subscribe-newsletter", true); // Use HTTPS
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    messageBox.textContent = "⏳ Verifying...";
+    submitBtn.disabled = true;
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            console.log("AJAX Response:", xhr.responseText); // Debugging log
-            console.log("AJAX Status:", xhr.status);
-
-            if (xhr.status === 200) {
-                messageBox.innerHTML = xhr.responseText;
-                messageBox.style.color = "green";
-                document.getElementById("newsletter-form").reset(); // Clear input field
-            } else {
-                messageBox.innerHTML = "Error subscribing. Try again.";
+    grecaptcha.ready(function () {
+        grecaptcha.execute("<?php echo RECAPTCHA_SITE_KEY; ?>", { action: "newsletter" }).then(function (token) {
+            fetch("https://accounts.thatdisabilityadventurecompany.com.au/newsletter/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    email: email,
+                    "g-recaptcha-response": token
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    messageBox.innerHTML = "✅ Successfully subscribed!";
+                    messageBox.style.color = "green";
+                    document.getElementById("newsletter-form").reset();
+                } else {
+                    messageBox.innerHTML = "❌ " + (data.message || "Subscription failed.");
+                    messageBox.style.color = "red";
+                }
+            })
+            .catch(() => {
+                messageBox.innerHTML = "❌ Network error. Please try again.";
                 messageBox.style.color = "red";
-            }
-        }
-    };
-    xhr.send("email=" + encodeURIComponent(email));
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+            });
+        });
+    });
 });
 </script>
 
