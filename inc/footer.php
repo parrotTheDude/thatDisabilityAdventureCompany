@@ -76,7 +76,7 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
 
     grecaptcha.ready(function () {
         grecaptcha.execute("<?php echo RECAPTCHA_SITE_KEY; ?>", { action: "newsletter" }).then(function (token) {
-			fetch("https://accounts.thatdisabilityadventurecompany.com.au/newsletter-signup", {
+			fetch("https://accounts.thatdisabilityadventurecompany.com.au/api/newsletter-signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
