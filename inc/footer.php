@@ -1,4 +1,4 @@
-<?php require_once('inc/variables.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/inc/variables.php'); ?>
 <script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_SITE_KEY; ?>"></script>
 <footer class="darkBg white">
 	<section class="footLogoCon">

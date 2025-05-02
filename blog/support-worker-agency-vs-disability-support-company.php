@@ -24,7 +24,7 @@
             <h1 class="articleTitle">Support Worker Agency vs Disability Support Company: What's the Best Choice for You?</h1>
             <span class="author">By Pari | 2nd May 2025 | 10 min read</span>
           </section>
-          <img src="/img/blog/support-choice.webp" class="articleImg" alt="Support worker helping a client">
+          <img src="img/merch/merchPic1.webp" class="articleImg" alt="TDAC Support">
         </section>
 
         <div class="progressbarHead">
@@ -107,10 +107,11 @@
       </article>
     </main>
 
-    <?php include ('../inc/footer.php'); ?>
+  <?php include ('../inc/footer.php'); ?>
 
-    <script>
-      <?php include ('../inc/js/coreJs.php');?>
-    </script>
-  </body>
+  <script>
+    <?php include ('../inc/js/coreJs.php'); ?>
+  </script>
+</body>
+
 </html>

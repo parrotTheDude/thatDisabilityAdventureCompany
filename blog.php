@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/support-worker-agency-vs-disability-support-company">
+						<section class="blogImgContainer">
+							<img src="img/merch/merchPic1.webp" alt="f1">
+						</section>
+						<section class="blogText">
+							<h2>Support Worker Agency vs Disability Support Company</h2>
+							<section class="blogDetails">
+								<p>Compare agencies and support companies to find the best disability care for your long-term goals.</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/accessible-things-to-do-in-melbourne">
 						<section class="blogImgContainer">
 							<img src="img/blog/melbourne1.webp" alt="f1">
