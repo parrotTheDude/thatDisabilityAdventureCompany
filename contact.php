@@ -28,9 +28,20 @@
 			<?php include ('inc/mobileNav.php');?>
 
 			<section class="topContact">
-				<img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg">
-				<h1>Join the TDAC Community</h1>
-				<p>Check out our FAQ panel underneath the contact form below.</p>
+			  <img class="lrgIcon" alt="Contact Form Icon" src="icons/email.svg">
+			  <h1>Join the TDAC Community</h1>
+			  <p>Have questions or want to connect? Fill out the form below or browse our FAQs.</p>
+
+			  <!-- CTA: Support Worker Subsection -->
+			  <div class="supportWorkerCTA" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid rgba(255,255,255,0.2);">
+			    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Are you a Support Worker?</h3>
+			    <p style="font-size: 1rem; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+			      Submit your application with your resume today.
+			    </p>
+			    <section class="btnsContainer" id="applyBtn">
+	  					<div class="topBtns accentBlueBg howBtn"><a href="https://thatdisabilityadventurecompany.com.au/become-a-support-worker" class="linkBtn" id="linkHow">Apply Now!</a></div>
+	  			</section>
+			  </div>
 			</section>
 
     	<!-- Get in Touch Panel -->
