@@ -9,7 +9,7 @@
       include ('inc/head.php');
     ?>
 
-    <link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/support-worker" />
+    <link rel="canonical" href="https://thatdisabilityadventurecompany.com.au/become-a-support-worker" />
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_SITE_KEY; ?>"></script>
   </head>
   <body id="theTop">

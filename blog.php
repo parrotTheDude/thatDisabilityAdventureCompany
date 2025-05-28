@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/what-tdac-really-stands-for">
+						<section class="blogImgContainer">
+							<img src="img/blog/assistance1.webp" alt="f1">
+						</section>
+						<section class="blogText">
+							<h2>What TDAC Really Stands For</h2>
+							<section class="blogDetails">
+								<p>Don’t confuse us with visas – we are That Disability Adventure Company</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/support-worker-agency-vs-disability-support-company">
 						<section class="blogImgContainer">
 							<img src="img/merch/merchPic1.webp" alt="f1">
