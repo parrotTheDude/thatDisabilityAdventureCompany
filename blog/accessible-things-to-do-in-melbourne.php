@@ -99,7 +99,7 @@
               <h3>Accessibility and good-to-knows:</h3>
               <ul>
                 <li>The NGV is free to visit and Companion or Carer Card holders receive concession priced tickets to all exhibitions and programs, with a complimentary ticket for their companion</li>
-                <li>The gallery offers Exhibition Access Guides for each exhibition which are available to download from the relevant exhibition page at <a href="ngv.vic.gov.au">ngv.vic.gov.au</a></li>
+                <li>The gallery offers Exhibition Access Guides for each exhibition which are available to download from the relevant exhibition page at ngv.vic.gov.au</li>
                 <li>For major exhibitions, sensory maps are also available on the NGV website showing the locations of audio-visual content</li>
                 <li>Wheelchairs are available for free hire and wheelchair access is available in the auditorium, studios, education theatres and toilets, as well as throughout the gallery spaces</li>
               </ul>
