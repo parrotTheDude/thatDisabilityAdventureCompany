@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/how-adventures-improve-mental-health-for-people-with-disabilities">
+						<section class="blogImgContainer">
+							<img src="img/blog/day-trip-in-melbourne.webp" alt="f1">
+						</section>
+						<section class="blogText">
+							<h2>How Adventures Improve Mental Health for People with Disabilities</h2>
+							<section class="blogDetails">
+								<p>Nature, Movement & Meaningful Connections</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/what-tdac-really-stands-for">
 						<section class="blogImgContainer">
 							<img src="img/blog/assistance1.webp" alt="f1">
