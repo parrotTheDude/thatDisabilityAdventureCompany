@@ -44,7 +44,7 @@
 				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/how-adventures-improve-mental-health-for-people-with-disabilities">
 						<section class="blogImgContainer">
-							<img src="img/blog/day-trip-in-melbourne.webp" alt="f1">
+							<img src="img/blog/day-trip-in-melbourne.webp" alt="Mental Health and Disability">
 						</section>
 						<section class="blogText">
 							<h2>How Adventures Improve Mental Health for People with Disabilities</h2>
@@ -57,9 +57,24 @@
 				</section>
 
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/6-adaptive-travel-gear-essentials-for-your-next-adventure">
+						<section class="blogImgContainer">
+							<img src="img/index/oneOnOne.webp" alt="One to One">
+						</section>
+						<section class="blogText">
+							<h2>6 Adaptive Travel Gear Essentials for Your Next Adventure</h2>
+							<section class="blogDetails">
+								<p>Tools to support comfort, confidence and independence on the road</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/what-tdac-really-stands-for">
 						<section class="blogImgContainer">
-							<img src="img/blog/assistance1.webp" alt="f1">
+							<img src="img/blog/assistance1.webp" alt="What TDAC Stands for">
 						</section>
 						<section class="blogText">
 							<h2>What TDAC Really Stands For</h2>
@@ -74,7 +89,7 @@
 				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/support-worker-agency-vs-disability-support-company">
 						<section class="blogImgContainer">
-							<img src="img/merch/merchPic1.webp" alt="f1">
+							<img src="img/merch/merchPic1.webp" alt="Support worker agencies">
 						</section>
 						<section class="blogText">
 							<h2>Support Worker Agency vs Disability Support Company</h2>
@@ -105,7 +120,7 @@
 				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/support-worker">
 						<section class="blogImgContainer">
-							<img src="img/blog/gangAtF1.webp" alt="f1">
+							<img src="img/blog/gangAtF1.webp" alt="Things to do in Melbourne">
 						</section>
 						<section class="blogText">
 							<h2>More Than a Job: The Importance of Young Support Workers</h2>
