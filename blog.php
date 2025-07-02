@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/what-to-look-for-in-a-disability-support-company">
+						<section class="blogImgContainer">
+							<img src="img/blog/festival.webp" alt="Looking for a disablity support company">
+						</section>
+						<section class="blogText">
+							<h2>What to Look for in a Disability Support Company: A Family Guide</h2>
+							<section class="blogDetails">
+								<p>How to Choose the Right Fit for Your Child, Sibling or Family Members</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/how-adventures-improve-mental-health-for-people-with-disabilities">
 						<section class="blogImgContainer">
 							<img src="img/blog/day-trip-in-melbourne.webp" alt="Mental Health and Disability">
