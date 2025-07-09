@@ -33,7 +33,7 @@ try {
     $phone = preg_replace('/[^0-9]/', '', $_POST['phone'] ?? '');
     $location = trim($_POST['location'] ?? 'Unknown');
     $rating = trim($_POST['experience_rating'] ?? 'Unspecified');
-    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
+    $message = nl2br(htmlspecialchars(trim($_POST['message'] ?? '')));
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         throw new Exception('Invalid email address.');

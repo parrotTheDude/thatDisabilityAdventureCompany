@@ -33,7 +33,7 @@ try {
     $l_name = ucwords(strtolower(trim($_POST['last_name'] ?? '')));
     $email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
     $phone = preg_replace('/[^0-9]/', '', $_POST['phone'] ?? '');
-    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
+    $message = trim($_POST['message'] ?? '');
     $age = $_POST['age'] ?? 'Unknown';
     $location = $_POST['location'] ?? 'Unknown';
     $preferred = $_POST['preferred_contact'] ?? 'email';
