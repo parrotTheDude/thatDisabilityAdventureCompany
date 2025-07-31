@@ -13,7 +13,7 @@
 			<li><a href="https://thatdisabilityadventurecompany.com.au/group-activities">Group Based Activites</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/overnight-stays">Overnight Stays</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/one-to-one">1:1 Support</a></li>
-			<li><a href="https://thatdisabilityadventurecompany.com.au/lifeskills">Lifeskills</a></li>
+			<li><a href="https://thatdisabilityadventurecompany.com.au/lifeskills">Life Skills</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/about-us">About</a></li>
 			<li><a href="https://thatdisabilityadventurecompany.com.au/contact">Contact Us</a></li>
 			<section class="hideSocials">

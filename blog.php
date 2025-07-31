@@ -124,7 +124,7 @@
 						<section class="blogText">
 							<h2>Top 10 Fun and Accessible Things to Do in Melbourne</h2>
 							<section class="blogDetails">
-								<p>Discover the best things to do in Melboure with accessability in mind!</p>
+								<p>Discover the best things to do in Melbourne with accessibility in mind!</p>
 							</section>
 							<p><b>Read more...</b></p>
 						</section>
