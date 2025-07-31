@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/accessible-travel-planning-guide">
+						<section class="blogImgContainer">
+							<img src="img/contact/snowFriends.webp" alt="Looking for a disablity support company">
+						</section>
+						<section class="blogText">
+							<h2>A Beginner's Guide to Planning an Accessible Adventure</h2>
+							<section class="blogDetails">
+								<p>Learn how to effectively plan an adventure.</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/what-to-look-for-in-a-disability-support-company">
 						<section class="blogImgContainer">
 							<img src="img/blog/festival.webp" alt="Looking for a disablity support company">
