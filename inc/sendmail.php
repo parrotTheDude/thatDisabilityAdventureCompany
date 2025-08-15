@@ -36,7 +36,6 @@ try {
     $message = trim($_POST['message'] ?? '');
     $age = $_POST['age'] ?? 'Unknown';
     $location = $_POST['location'] ?? 'Unknown';
-    $preferred = $_POST['preferred_contact'] ?? 'email';
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         throw new Exception('Invalid email address.');
@@ -72,7 +71,6 @@ try {
             "message" => $message,
             "age_range" => $age,
             "location" => $location,
-            "preferred_contact" => $preferred
         ],
         true,
         "contact-form-enquiry",

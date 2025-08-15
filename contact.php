@@ -101,12 +101,6 @@
 						    <textarea rows="5" name="message" id="message" placeholder="Your Message" class="formMessage" required></textarea>
 						  </div>
 
-						  <div class="radioCheck">
-						    <label>Preferred Contact Method:</label><br>
-						    <input type="radio" name="preferred_contact" value="email" checked> Email
-						    <input type="radio" name="preferred_contact" value="phone"> Phone
-						  </div>
-
 						  <div class="formBtnContainer">
 						    <button type="submit" id="formBtn" class="topBtns whiteBg">Send Message</button>
 						  </div>

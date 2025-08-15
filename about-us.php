@@ -114,7 +114,7 @@
     					<section>
     						<img 
 								class="floatImg"
-								src="img/about/unknown.webp" 
+								src="img/about/danB.webp" 
 								alt="Daniel Burke"
 								loading="lazy">
     					</section>
@@ -133,6 +133,45 @@
     					</section>
     					<section class="floatText">
     						<h3>Blake Rudy</h3>
+    					</section>
+    				</section>
+
+					<section class="floater">
+    					<section>
+    						<img 
+								class="floatImg"
+								src="img/about/kaylaH.webp" 
+								alt="Kayla H"
+								loading="lazy">
+    					</section>
+    					<section class="floatText">
+    						<h3>Kayla H</h3>
+    					</section>
+    				</section>
+
+					<section class="floater">
+    					<section>
+    						<img 
+								class="floatImg"
+								src="img/about/sebastianL.webp" 
+								alt="Sebastian L"
+								loading="lazy">
+    					</section>
+    					<section class="floatText">
+    						<h3>Sebastian L</h3>
+    					</section>
+    				</section>
+
+					<section class="floater">
+    					<section>
+    						<img 
+								class="floatImg"
+								src="img/about/stelaT.webp" 
+								alt="Stela T"
+								loading="lazy">
+    					</section>
+    					<section class="floatText">
+    						<h3>Stela T</h3>
     					</section>
     				</section>
 
