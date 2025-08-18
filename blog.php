@@ -44,7 +44,7 @@
 				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/top-5-best-disability-friendly-adventures-in-victoria">
 						<section class="blogImgContainer">
-							<img src="img/contact/winter1.webp" alt="Winter scene in Victoria">
+							<img src="img/blog/winter1.webp" alt="Winter scene in Victoria">
 						</section>
 						<section class="blogText">
 							<h2>Top 5 Best Disability Friendly Adventure in Victoria</h2>
