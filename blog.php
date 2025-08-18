@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/top-5-best-disability-friendly-adventures-in-victoria">
+						<section class="blogImgContainer">
+							<img src="img/contact/winter1.webp" alt="Winter scene in Victoria">
+						</section>
+						<section class="blogText">
+							<h2>Top 5 Best Disability Friendly Adventure in Victoria</h2>
+							<section class="blogDetails">
+								<p>Embracing Winter with Accessible and Inclusive Adventures</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/accessible-travel-planning-guide">
 						<section class="blogImgContainer">
 							<img src="img/contact/snowFriends.webp" alt="Looking for a disablity support company">
