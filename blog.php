@@ -42,6 +42,21 @@
 
 				<!-- Blog Panel -->
 				<section class="blogPanel">
+					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/indoor-gaming-vs-outdoor-adventure-why-teens-with-disabilities-need-both">
+						<section class="blogImgContainer">
+							<img src="img/merch/merchPic4.webp" alt="Winter scene in Victoria">
+						</section>
+						<section class="blogText">
+							<h2>Indoor Gaming vs. Outdoor Adventure: Why Teens with Disabilities Need Both</h2>
+							<section class="blogDetails">
+								<p>Explore why teens with disabilities need both indoor gaming and outdoor adventure.</p>
+							</section>
+							<p><b>Read more...</b></p>
+						</section>
+					</a>
+				</section>
+
+				<section class="blogPanel">
 					<a class="blogLink" href="https://thatdisabilityadventurecompany.com.au/blog/top-5-best-disability-friendly-adventures-in-victoria">
 						<section class="blogImgContainer">
 							<img src="img/blog/winter1.webp" alt="Winter scene in Victoria">
